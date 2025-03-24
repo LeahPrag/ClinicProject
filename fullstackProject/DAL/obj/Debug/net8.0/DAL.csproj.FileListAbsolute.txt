@@ -1,0 +1,11 @@
+H:\לאהלה\c#\DAL\DAL\bin\Debug\net8.0\DAL.deps.json
+H:\לאהלה\c#\DAL\DAL\bin\Debug\net8.0\DAL.dll
+H:\לאהלה\c#\DAL\DAL\bin\Debug\net8.0\DAL.pdb
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.dll
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\refint\DAL.dll
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\DAL.pdb
+H:\לאהלה\c#\DAL\DAL\obj\Debug\net8.0\ref\DAL.dll
