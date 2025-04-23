@@ -7,7 +7,7 @@ public partial class ClinicQueue
 {
     public int QueueId { get; set; }
 
-    public int AppointmentTime { get; set; }
+    public DateTime AppointmentDate { get; set; }
 
     public int ClientId { get; set; }
 

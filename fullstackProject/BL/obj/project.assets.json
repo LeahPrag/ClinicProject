@@ -2679,23 +2679,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\מלול חנה מרים\\.nuget\\packages\\": {},
+    "C:\\Users\\פרג לאה\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\לאהלה\\c#\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "projectUniqueName": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "H:\\לאהלה\\c#\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
-      "packagesPath": "C:\\Users\\מלול חנה מרים\\.nuget\\packages\\",
-      "outputPath": "H:\\לאהלה\\c#\\ClinicProject\\fullstackProject\\BL\\obj\\",
+      "projectPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\פרג לאה\\.nuget\\packages\\",
+      "outputPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\מלול חנה מרים\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\פרג לאה\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2711,8 +2711,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\לאהלה\\c#\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
-              "projectPath": "H:\\לאהלה\\c#\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
+            "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
+              "projectPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
             }
           }
         }
