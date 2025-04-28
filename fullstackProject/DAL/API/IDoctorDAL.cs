@@ -1,6 +1,10 @@
-﻿namespace DAL.service
+﻿using DAL.Models;
+
+namespace DAL.API
 {
-    internal interface IDoctorDAL
+    public interface IDoctorDAL
     {
+        List<ClinicQueue> GetDoctorQueesForToday(int doctorId, DateOnly day);
+        int SearchADoctor(string doctor_firtsname, string doctor_lastname);
     }
 }
