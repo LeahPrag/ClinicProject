@@ -3120,11 +3120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+      "projectUniqueName": "H:\\לאהלה\\project correct\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
       "projectName": "SERVER",
-      "projectPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+      "projectPath": "H:\\לאהלה\\project correct\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
       "packagesPath": "C:\\Users\\פרג לאה\\.nuget\\packages\\",
-      "outputPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\SERVER\\obj\\",
+      "outputPath": "H:\\לאהלה\\project correct\\ClinicProject\\fullstackProject\\SERVER\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3146,8 +3146,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\BL\\BL.csproj": {
-              "projectPath": "H:\\לאהלה\\‏‏תיקיה חדשה\\ClinicProject\\fullstackProject\\BL\\BL.csproj"
+            "H:\\לאהלה\\project correct\\ClinicProject\\fullstackProject\\BL\\BL.csproj": {
+              "projectPath": "H:\\לאהלה\\project correct\\ClinicProject\\fullstackProject\\BL\\BL.csproj"
             }
           }
         }
