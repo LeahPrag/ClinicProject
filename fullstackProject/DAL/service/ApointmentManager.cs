@@ -41,7 +41,7 @@ namespace DAL.service
         public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {
 
-            List<Doctor> doctors = db.Doctors.ToList();
+            List<Doctor> doctors = db.Client.ToList();
             Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
             if (d == null)
             {

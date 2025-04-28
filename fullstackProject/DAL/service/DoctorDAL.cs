@@ -18,7 +18,7 @@ namespace DAL.service
 
         public List<Doctor> GetList()
         {
-            return _dbManager.Doctors.ToList();
+            return _dbManager.Client.ToList();
         }
 
         public List<ClinicQueue> GetDoctorQueesForToday(int doctorId, DateOnly day)
@@ -40,7 +40,7 @@ namespace DAL.service
         public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {
 
-            List<Doctor> doctors = _dbManager.Doctors.ToList();
+            List<Doctor> doctors = _dbManager.Client.ToList();
             Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
             if (d == null)
             {
