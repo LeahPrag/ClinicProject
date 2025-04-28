@@ -67,7 +67,7 @@ public partial class DB_Manager : DbContext
             entity.ToTable("ClinicQueue");
 
             entity.Property(e => e.QueueId).HasColumnName("queue_id");
-            entity.Property(e => e.AppointmentTime).HasColumnName("appointment_time");
+            entity.Property(e => e.AppointmentDate).HasColumnName("appointment_time");
             entity.Property(e => e.ClientId).HasColumnName("client_id");
             entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
             entity.Property(e => e.IsAvailable).HasColumnName("is_available");
