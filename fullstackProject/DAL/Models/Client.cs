@@ -19,7 +19,7 @@ public partial class Client
 
     public string Address { get; set; } = null!;
 
+    public virtual ICollection<AvailableQueue> AvailableQueues { get; set; } = new List<AvailableQueue>();
+
     public virtual ICollection<ClinicQueue> ClinicQueues { get; set; } = new List<ClinicQueue>();
-
-
 }

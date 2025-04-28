@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\",
+  "WorkspaceRootPath": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\clinicproject\\fullstackproject\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\clinicproject\\fullstackproject\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\clinicproject\\fullstackproject\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\clinicproject\\fullstackproject\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\clinicproject\\fullstackproject\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\clinicproject\\fullstackproject\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\clinicproject\\fullstackproject\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|h:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\clinicproject\\fullstackproject\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -41,9 +41,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
+              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
               "RelativeDocumentMoniker": "SERVER\\Program.cs",
-              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
+              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
               "RelativeToolTip": "SERVER\\Program.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAswA8AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,9 +54,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BL.csproj",
-              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
               "RelativeDocumentMoniker": "BL\\BL.csproj",
-              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
               "RelativeToolTip": "BL\\BL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -66,9 +66,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SERVER.csproj",
-              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
               "RelativeDocumentMoniker": "SERVER\\SERVER.csproj",
-              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
               "RelativeToolTip": "SERVER\\SERVER.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -111,9 +111,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DAL.csproj",
-              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+              "DocumentMoniker": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
               "RelativeDocumentMoniker": "DAL\\DAL.csproj",
-              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\project correct\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+              "ToolTip": "H:\\\u05DC\u05D0\u05D4\u05DC\u05D4\\hhhhhhhhhhhhhh\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
               "RelativeToolTip": "DAL\\DAL.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
