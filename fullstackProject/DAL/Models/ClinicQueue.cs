@@ -7,13 +7,13 @@ public partial class ClinicQueue
 {
     public int QueueId { get; set; }
 
-    public DateTime AppointmentDate { get; set; }
-
     public int ClientId { get; set; }
 
     public bool IsAvailable { get; set; }
 
     public int DoctorId { get; set; }
+
+    public DateTime AppointmentDate { get; set; }
 
     public virtual Client Client { get; set; } = null!;
 
