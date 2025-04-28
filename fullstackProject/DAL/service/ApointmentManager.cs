@@ -23,6 +23,18 @@ namespace DAL.service
             return -1;////////////////
 
         }
+        public ClinicQueue SearchAnAppointment(DateTime AppointmentDate, string id)
+        {
+
+            List<ClinicQueue> clinicQueues = db.ClinicQueues.ToList();
+            ClinicQueue c = clinicQueues.FirstOrDefault(x => x.AppointmentDate .Equals(AppointmentDate) && x.IsAvailable.Equals(true));
+            if (c == null)
+            {
+                return c;
+            }
+            return null;////////////////
+
+        }
         public int SearchADoctor(string doctor_firtsname, string doctor_lastname)///צריכים לקבל רק קליינט ID
         {
 
@@ -50,6 +62,7 @@ namespace DAL.service
 
             if (SearchAClient(client_firstname, client_lastname) != -1 && SearchADoctor(doctor_firtsname, doctor_lastname) != -1)
             {
+
                 return true;
             }
             return false;
