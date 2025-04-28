@@ -21,5 +21,5 @@ public partial class Client
 
     public virtual ICollection<ClinicQueue> ClinicQueues { get; set; } = new List<ClinicQueue>();
 
-
+    /////jfrderse3
 }
