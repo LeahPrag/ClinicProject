@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.service
 {
-    internal class DoctorDAL: IDoctorDAL
+    public class DoctorDAL: IDoctorDAL
     {
         private readonly DB_Manager _dbManager;
+        
         public DoctorDAL(DB_Manager dbManager)
         {
             _dbManager = dbManager;

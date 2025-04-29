@@ -18,7 +18,7 @@ namespace BL.service
 
         public DoctorBL(IDoctorDAL doctorDal)
         {
-            doctorDal = _doctorDal;
+            _doctorDal=doctorDal;
         }
 
         public int GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
