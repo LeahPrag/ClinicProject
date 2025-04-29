@@ -4017,31 +4017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\אברהמס דבורה\\.nuget\\packages\\": {},
+    "C:\\Users\\מלול חנה מרים\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "projectUniqueName": "H:\\c#\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\פרג לאה\\.nuget\\packages\\",
-      "outputPath": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\DAL\\obj\\",
-=======
-      "projectUniqueName": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
-      "projectName": "DAL",
-      "projectPath": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\אברהמס דבורה\\.nuget\\packages\\",
-      "outputPath": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\obj\\",
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
+      "projectPath": "H:\\c#\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\מלול חנה מרים\\.nuget\\packages\\",
+      "outputPath": "H:\\c#\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\אברהמס דבורה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\מלול חנה מרים\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4114,5 +4106,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file H:\\c#\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

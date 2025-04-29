@@ -9,19 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SERVER
 build_property.RootNamespace = SERVER
-<<<<<<< HEAD
-build_property.ProjectDir = H:\לאהלה\רזרבי2\ClinicProject\fullstackProject\SERVER\
-=======
-build_property.ProjectDir = H:\shiffi\‏‏תיקיה חדשה (2)\ClinicProject\fullstackProject\SERVER\
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
+build_property.ProjectDir = H:\c#\‏‏תיקיה חדשה (2)\ClinicProject\fullstackProject\SERVER\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
-build_property.MSBuildProjectDirectory = H:\לאהלה\רזרבי2\ClinicProject\fullstackProject\SERVER
-=======
-build_property.MSBuildProjectDirectory = H:\shiffi\‏‏תיקיה חדשה (2)\ClinicProject\fullstackProject\SERVER
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
+build_property.MSBuildProjectDirectory = H:\c#\‏‏תיקיה חדשה (2)\ClinicProject\fullstackProject\SERVER
 build_property._RazorSourceGeneratorDebug = 
