@@ -9,8 +9,6 @@ public partial class ClinicQueue
 
     public int ClientId { get; set; }
 
-    public bool IsAvailable { get; set; }
-
     public int DoctorId { get; set; }
 
     public DateTime AppointmentDate { get; set; }
