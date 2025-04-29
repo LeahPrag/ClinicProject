@@ -11,7 +11,7 @@ public partial class Doctor
 
     public string LastName { get; set; } = null!;
 
-    public string Specialization { get; set; } = null!;
+    public string Specialization { get; set; }=null!;
 
     public virtual ICollection<AvailableQueue> AvailableQueues { get; set; } = new List<AvailableQueue>();
 

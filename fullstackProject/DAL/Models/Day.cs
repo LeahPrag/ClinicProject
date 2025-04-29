@@ -14,4 +14,5 @@ public partial class Day
     public int EndHour { get; set; }
 
     public virtual ICollection<DayDoctor> DayDoctors { get; set; } = new List<DayDoctor>();
+    //ljbjhjht
 }
