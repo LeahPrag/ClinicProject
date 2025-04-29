@@ -14,6 +14,7 @@ public partial class Client
     public string? Phone { get; set; }
 
     public string? Email { get; set; }
+    public string IDNumber { get; set; } = null!;
 
     public DateOnly BirthDate { get; set; }
 
