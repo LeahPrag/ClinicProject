@@ -2679,23 +2679,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\פרג לאה\\.nuget\\packages\\": {},
+    "C:\\Users\\אברהמס דבורה\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
       "projectName": "BL",
       "projectPath": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\פרג לאה\\.nuget\\packages\\",
       "outputPath": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\BL\\obj\\",
+=======
+      "projectUniqueName": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "projectName": "BL",
+      "projectPath": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\אברהמס דבורה\\.nuget\\packages\\",
+      "outputPath": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\BL\\obj\\",
+>>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\פרג לאה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\אברהמס דבורה\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2711,8 +2719,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
               "projectPath": "H:\\לאהלה\\רזרבי2\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
+=======
+            "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
+              "projectPath": "H:\\shiffi\\‏‏תיקיה חדשה (2)\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
+>>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
             }
           }
         }

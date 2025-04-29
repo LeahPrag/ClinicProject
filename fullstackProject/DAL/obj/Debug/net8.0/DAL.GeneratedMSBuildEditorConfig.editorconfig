@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DAL
+<<<<<<< HEAD
 build_property.ProjectDir = H:\לאהלה\רזרבי2\ClinicProject\fullstackProject\DAL\
+=======
+build_property.ProjectDir = H:\shiffi\‏‏תיקיה חדשה (2)\ClinicProject\fullstackProject\DAL\
+>>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
