@@ -1,4 +1,5 @@
 ﻿using DAL.API;
+using DAL.service;
 
 namespace BL.API
 {
@@ -6,5 +7,6 @@ namespace BL.API
     {
         IDoctorDAL GetDoctorDAL();
         IClinicQueueDAL GetClinicQueueDAL();
+        IClientDAL GetClientDAL();
     }
 }

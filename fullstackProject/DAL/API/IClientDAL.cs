@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DAL.Models;
 
-namespace DAL.API
+namespace DAL.service
 {
-    internal interface IClientDAL
+    public interface IClientDAL
     {
+        void AddClient(Client client);
+        bool ClientExistById(int id);
+        List<Client> GetAllClients();
+        Client GetClientById(int id);
+        void RemoveClient(Client client);
+        void UpdatePatient(Client client);
     }
 }

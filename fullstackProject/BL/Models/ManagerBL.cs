@@ -1,5 +1,6 @@
 ﻿using BL.API;
 using DAL.API;
+using DAL.service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,7 @@ namespace BL.Models
         private readonly IClinicQueueDAL _clinicQueueDAL;
 
         private readonly IDoctorDAL _doctorDAL;
-
-
+        private readonly IClientDAL _clientDAL;
         public ManagerBL(IClinicQueueDAL clinicQueueDAL, IDoctorDAL doctorDAL)
         {
             _clinicQueueDAL= clinicQueueDAL;
@@ -29,5 +29,11 @@ namespace BL.Models
         {
             return _doctorDAL;
         }
+        public IClientDAL GetClientDAL()
+        {
+            return _clientDAL;
+        }
+
+        
     }
 }

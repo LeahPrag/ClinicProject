@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.service
 {
-    internal class ClientDAL
+    public class ClientDAL : IClientDAL
     {
         private readonly DB_Manager _dbManager;
         public ClientDAL(DB_Manager dbManager)
