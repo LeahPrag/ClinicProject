@@ -58,5 +58,17 @@ namespace DAL.service
             }
             _dbManager.Clients.Update(client);
         }
+        public int SearchClient(string client_firtsname, string client_lastname)
+        {
+
+            List<Doctor> clients = _dbManager.Doctors.ToList();
+            Client c = clients.FirstOrDefault(x => x.FirstName.Equals(client_firtsname) && x.FirstName.Equals(client_lastname));
+            if (c != null)
+            {
+                return c.ClientId;
+            }
+            return -1;
+
+        }
     }
 }

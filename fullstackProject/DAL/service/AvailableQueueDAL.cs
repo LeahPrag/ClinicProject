@@ -17,28 +17,27 @@ namespace DAL.service
         }
 
 
-<<<<<<< HEAD
         public Boolean MakeAnAppointment(int doctorId, int clientId, DateTime dateTime)
         {
             // Check if the appointment exists
             var c = db.AvailableQueues.FirstOrDefault(t => t.DoctorId == doctorId &&
-                                                           t.ClientId == clientId &&
                                                            t.AppointmentDate == dateTime);
-=======
+            ClinicQueue newQueue = new ClinicQueue(c, db.);
+            if (c == null)
+                return false;
+            return true;
+        }
         public Boolean MakeAnAppointment(int doctorId, DateTime dateTime,Client client)
         {
             // Check if the appointment exists
             var c = db.AvailableQueues.FirstOrDefault(t => t.DoctorId == doctorId && t.AppointmentDate == dateTime);
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
+
 
             if (c != null)
             {
                 // Remove it from AvailableQueues
                 db.AvailableQueues.Remove(c);
-<<<<<<< HEAD
-                
-                // Add it to ClinicQueues
-=======
+
 
                 // Add it to ClinicQueues
                 ClinicQueue s = new ClinicQueue();
@@ -52,7 +51,6 @@ namespace DAL.service
                 
 
 
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
                 //db.ClinicQueues.Add(c);
 
                 return true;
@@ -78,10 +76,6 @@ namespace DAL.service
 
             return false;
         }
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 23d7b9c75a15578bd658726647031950b36428d6
     }
 }
