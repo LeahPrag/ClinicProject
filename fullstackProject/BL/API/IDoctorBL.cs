@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BL.API
 {
-    public interface IManagerBL
+    public interface IDoctorBL
     {
-        IDoctorBL GetDoctorBL();
-        IClinicQueueBL GetClinicQueueBL();
+        int GetNumOfClientForToday(string firstName, string lastName, DateOnly day);
+
     }
 }

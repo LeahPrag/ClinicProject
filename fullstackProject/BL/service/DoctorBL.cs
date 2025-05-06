@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BL.API;
 using DAL.API;
 
 
@@ -12,7 +13,7 @@ using DAL.API;
 
 namespace BL.service
 {
-    internal class DoctorBL
+    internal class DoctorBL: IDoctorBL
     {
         private readonly IDoctorDAL _doctorDal;
 

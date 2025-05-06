@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace BL.service
 {
-    public class ClinicQueueBL
+    public class ClinicQueueBL: IClinicQueueBL
     {
 
-        private readonly IManagerBL _managerBL;
+        private readonly IManagerDAL _managerBL;
 
 
-        public ClinicQueueBL(IManagerBL managerBL)
+        public ClinicQueueBL(IManagerDAL managerBL)
         {
 
             _managerBL = managerBL;

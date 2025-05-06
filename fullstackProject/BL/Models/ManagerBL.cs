@@ -9,31 +9,28 @@ using System.Threading.Tasks;
 
 namespace BL.Models
 {
-    public class ManagerBL:IManagerBL
+    public class ManagerBL : IManagerBL
     {
-        private readonly IClinicQueueDAL _clinicQueueDAL;
+        private readonly IClinicQueueBL _clinicQueueBL;
 
-        private readonly IDoctorDAL _doctorDAL;
-        private readonly IClientDAL _clientDAL;
-        public ManagerBL(IClinicQueueDAL clinicQueueDAL, IDoctorDAL doctorDAL)
+        private readonly IDoctorBL _doctorBL;
+        public ManagerBL(IClinicQueueBL clinicQueueBL, IDoctorBL doctorBL)
         {
-            _clinicQueueDAL= clinicQueueDAL;
-            _doctorDAL= doctorDAL;
-        }
-
-        public IClinicQueueDAL GetClinicQueueDAL()
-        {
-            return _clinicQueueDAL;
-        }
-        public IDoctorDAL GetDoctorDAL()
-        {
-            return _doctorDAL;
-        }
-        public IClientDAL GetClientDAL()
-        {
-            return _clientDAL;
+            _clinicQueueBL = clinicQueueBL;
+            _doctorBL = doctorBL;
         }
 
-        
+        public IClinicQueueBL GetClinicQueueBL()
+        {
+            return _clinicQueueBL;
+        }
+        public IDoctorBL GetDoctorBL()
+        {
+            return _doctorBL;
+        }
+        //public IClientDAL GetClientDAL()
+        //{
+        //    return _clientDAL;
+        //}
     }
 }
