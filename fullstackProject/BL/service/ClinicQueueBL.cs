@@ -24,8 +24,8 @@ namespace BL.service
         public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string clientFirstname, string clientLastname, DateOnly date)
         {
             int doctorID = _managerBL.GetDoctorDAL().SearchADoctor(doctorFirstname, doctorLastname);
-            int clientID = _managerBL.GetClientDAL().SearchAClient(clientFirstname, clientLastname);//// מלכי צריכה לעשות
-            return _managerBL.GetClinicQueueDAL().DeleteAnApointment(doctorID, clientID);
+            //int clientID = _managerBL.GetClientDAL().SearchAClient(clientFirstname, clientLastname);//// מלכי צריכה לעשות
+            return _managerBL.GetClinicQueueDAL().DeleteAnApointment(doctorID,11 );// clientID
         }
 
 

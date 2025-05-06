@@ -7,12 +7,12 @@ namespace SERVER.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClinicController : ControllerBase
+    public class DoctorController : ControllerBase
     {
 
         IManagerDAL managerDAL;
         IManagerBL managerBL;
-        public ClinicController(IManagerDAL _managerDAL, IManagerBL _managerBL )
+        public DoctorController(IManagerDAL _managerDAL, IManagerBL _managerBL )
         {
             managerBL = _managerBL;
             managerDAL = _managerDAL;

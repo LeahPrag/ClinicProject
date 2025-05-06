@@ -22,7 +22,7 @@ namespace DAL.service
             // Check if the appointment exists
             var c = db.AvailableQueues.FirstOrDefault(t => t.DoctorId == doctorId &&
                                                            t.AppointmentDate == dateTime);
-            ClinicQueue newQueue = new ClinicQueue(c, db.);
+            ClinicQueue newQueue = new ClinicQueue(c, db.Clients.FirstOrDefault(c=> c.ClientId== clientId));
             if (c == null)
                 return false;
             return true;

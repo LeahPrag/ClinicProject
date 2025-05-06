@@ -13,7 +13,7 @@ using DAL.API;
 
 namespace BL.service
 {
-    internal class DoctorBL: IDoctorBL
+    public class DoctorBL: IDoctorBL
     {
         private readonly IDoctorDAL _doctorDal;
 

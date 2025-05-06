@@ -28,4 +28,8 @@ public partial class ClinicQueue
         Client = c;
 
     }
+    public ClinicQueue()
+    {
+        
+    }
 }

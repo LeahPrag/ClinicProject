@@ -41,14 +41,14 @@ public partial class DB_Manager : DbContext
             entity.Property(e => e.AppointmentDate)
                 .HasColumnType("datetime")
                 .HasColumnName("appointment_date");
-            entity.Property(e => e.ClientId).HasColumnName("client_id");
-            entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
-            entity.Property(e => e.IsAvailable).HasColumnName("is_available");
 
-            entity.HasOne(d => d.Client).WithMany(p => p.AvailableQueues)
-                .HasForeignKey(d => d.ClientId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Available__clien__778AC167");
+            entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
+
+
+            //entity.HasOne(d => d.Client).WithMany(p => p.AvailableQueues)
+            //    .HasForeignKey(d => d.ClientId)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK__Available__clien__778AC167");
 
             entity.HasOne(d => d.Doctor).WithMany(p => p.AvailableQueues)
                 .HasForeignKey(d => d.DoctorId)

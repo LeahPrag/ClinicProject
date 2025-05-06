@@ -21,17 +21,17 @@ namespace DAL.service
         }
 
         //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
-        public Client GetClientById(int id)
+        public Client GetClientById(string id)
         {
             List<Client> clients = _dbManager.Clients.ToList();
-            return clients.FirstOrDefault(x => x.ClientId == id);
+            return clients.FirstOrDefault(x => x.ClientId.Equals(id));
         }
 
         //חיפוש פציינט ע"פ ת"ז-בוליאני
-        public bool ClientExistById(int id)
+        public bool ClientExistById(string id)
         {
             List<Client> clients = _dbManager.Clients.ToList();
-            Client c = clients.FirstOrDefault(x => x.ClientId == id);
+            Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
             if (c == null) return false;
             return true;
         }
@@ -43,32 +43,22 @@ namespace DAL.service
         }
 
         //מוחק פציינט
-        public void RemoveClient(Client client)
+        public void RemoveClient(string id)
         {
+            Client client = GetClientById(id);
             _dbManager.Clients.Remove(client);
         }
 
         //מעדכן פרטי פציינט קיים אם קיים
-        public void UpdatePatient(Client client)
+        public void UpdateClient(Client client)
         {
             List<Client> clients = _dbManager.Clients.ToList();
-            if (!ClientExistById(client.ClientId))
+            if (!ClientExistById(client.IDNumber))
             {
                 // error- the client not defined
             }
             _dbManager.Clients.Update(client);
         }
-        public int SearchClient(string client_firtsname, string client_lastname)
-        {
 
-            List<Doctor> clients = _dbManager.Doctors.ToList();
-            Client c = clients.FirstOrDefault(x => x.FirstName.Equals(client_firtsname) && x.FirstName.Equals(client_lastname));
-            if (c != null)
-            {
-                return c.ClientId;
-            }
-            return -1;
-
-        }
     }
 }
