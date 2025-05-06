@@ -101,7 +101,7 @@ public partial class DB_Manager : DbContext
                 .HasColumnName("appointment_date");
             entity.Property(e => e.ClientId).HasColumnName("client_id");
             entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
-            entity.Property(e => e.IsAvailable).HasColumnName("is_available");
+
 
             entity.HasOne(d => d.Client).WithMany(p => p.ClinicQueues)
                 .HasForeignKey(d => d.ClientId)

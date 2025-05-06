@@ -21,10 +21,10 @@ namespace BL.service
             _managerBL = managerBL;
         }
 
-        public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string clientFirstname, string clientLastname, DateOnly date)
+        public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
         {
             int doctorID = _managerBL.GetDoctorDAL().SearchADoctor(doctorFirstname, doctorLastname);
-            //int clientID = _managerBL.GetClientDAL().SearchAClient(clientFirstname, clientLastname);//// מלכי צריכה לעשות
+            //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
             return _managerBL.GetClinicQueueDAL().DeleteAnApointment(doctorID,11 );// clientID
         }
 

@@ -33,3 +33,9 @@ H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DA
 H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.dll
 H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\refint\DAL.dll
 H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.deps.json
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.dll
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.pdb
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+H:\לאהלה\רזרבי3\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
