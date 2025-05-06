@@ -5,10 +5,10 @@ namespace DAL.service
     public interface IClientDAL
     {
         void AddClient(Client client);
-        bool ClientExistById(int id);
+        bool ClientExistById(string id);
         List<Client> GetAllClients();
-        Client GetClientById(int id);
-        void RemoveClient(Client client);
-        void UpdatePatient(Client client);
+        Client GetClientById(string id);
+        void RemoveClient(string id);
+        void UpdateClient(Client client);
     }
 }
