@@ -8,8 +8,8 @@ namespace BL.Exceptions
 {
     public class ClientNotExsistException : Exception
     {
-     
-              public int StatusCode { get; }
+
+        public int StatusCode { get; }
         public ClientNotExsistException(string ClientId) : base($"The Client with Id {ClientId} not exsist")
         {
             StatusCode = 600;
@@ -21,7 +21,7 @@ namespace BL.Exceptions
         public int StatusCode { get; }
         public ClientAlradyExsistException(string ClientId) : base($"The  Client with Id {ClientId} aleady exsist")
         {
-            StatusCode = 978;
+            StatusCode = 604;
         }
 
     }
@@ -29,12 +29,23 @@ namespace BL.Exceptions
     {
 
         public int StatusCode { get; }
-        public DoctorNotExsistException(string firstName ,string lastName) : base($"The doctor: {firstName} {lastName} not exsist")
+        public DoctorNotExsistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} not exsist")
         {
-            StatusCode = 897;
+            StatusCode = 620;
         }
-
     }
+    public class DoctorAlradyExsistException : Exception
+    {
+
+        public int StatusCode { get; }
+        public DoctorAlradyExsistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} aleady exsist")
+        {
+            StatusCode = 624;
+        }
+    }
+
+
+
 
 }
 

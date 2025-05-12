@@ -2685,11 +2685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
       "projectName": "BL",
-      "projectPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\BL\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2711,8 +2711,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
+            "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj"
             }
           }
         }

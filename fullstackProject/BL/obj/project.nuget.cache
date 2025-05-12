@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6XRH7hBmXUskDQryhPcPAQCenQuAROOq7u2QiwN8OJhAdLX3+wl8RkPqPkTHmWWotVonFsEsUDkJHtrIvI0CBw==",
+  "dgSpecHash": "1O1e5woZ0Vq9PXfOOaVpR/2hCDLlYMqJ+s7KmsVLNh60vs4VvfM68FDyzbMoga8bSwcoO32iBJnphjZ6AFuupg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\ClinicProject\\fullstackProject\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
