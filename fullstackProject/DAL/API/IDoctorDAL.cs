@@ -4,7 +4,9 @@ namespace DAL.API
 {
     public interface IDoctorDAL
     {
-        List<ClinicQueue> GetDoctorQueesForToday(int doctorId, DateOnly day);
-        int SearchADoctor(string doctor_firtsname, string doctor_lastname);
+        public Task<int> SearchADoctor(string doctor_firtsname, string doctor_lastname);
+        public Task<List<int>> ClientsNamse(int doctorID);
+        public Task<int> GetDoctorQueesForToday(int doctorId, DateOnly day);
+        public Task<List<Doctor>> GetList();
     }
 }

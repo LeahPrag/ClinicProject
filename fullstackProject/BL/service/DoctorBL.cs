@@ -22,10 +22,13 @@ namespace BL.service
             _doctorDal=doctorDal._doctorDAL;
         }
 
-        public int GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
+        public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
         {
-            int doctorId = _doctorDal.SearchADoctor(firstName, lastName);
-            return _doctorDal.GetDoctorQueesForToday(doctorId,day).Count;
+            //int doctorId = _doctorDal.SearchADoctor(firstName, lastName);
+            //return _doctorDal.GetDoctorQueesForToday(doctorId,day);
+            int doctorId = await _doctorDal.SearchADoctor(firstName, lastName);
+            int queueCount = await _doctorDal.GetDoctorQueesForToday(doctorId, day);
+            return queueCount;
         }
 
 

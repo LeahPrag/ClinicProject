@@ -1,5 +1,6 @@
 ﻿using DAL.API;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,49 +11,46 @@ namespace DAL.service
 {
     public class DoctorDAL: IDoctorDAL
     {
-        private readonly DB_Manager _dbManager;
+        private  DB_Manager _dbManager;
         
         public DoctorDAL(DB_Manager dbManager)
         {
             _dbManager = dbManager;
         }
-
-        public List<Doctor> GetList()
+        public async Task<List<Doctor>> GetList()
         {
-            return _dbManager.Doctors.ToList();
+            return await _dbManager.Doctors.ToListAsync();
         }
-
-        public List<ClinicQueue> GetDoctorQueesForToday(int doctorId, DateOnly day)
+        public async Task<int> GetDoctorQueesForToday(int doctorId, DateOnly day)
         {
-
             var clinicQueues = _dbManager.ClinicQueues
-                .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month== day.Month && t.AppointmentDate.Year==day.Year)
-                .ToList(); 
+                .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
+                .ToList();
 
-            return clinicQueues;
+            return await Task.FromResult(clinicQueues.Count);
         }
-        public List<int> ClientsNamse(int doctorID)
+
+        public async Task<List<int>> ClientsNamse(int doctorID)
         {
-            return _dbManager.ClinicQueues
-                             .Where(c => c.DoctorId== doctorID)
-                             .Select(c => c.ClientId)
-                             .ToList();
+            return await _dbManager.ClinicQueues
+                         .Where(c => c.DoctorId == doctorID)
+                         .Select(c => c.ClientId)
+                         .ToListAsync(); // Use ToListAsync for async database operations
         }
-        public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
+        public async Task<int> SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {
 
-            //List<Doctor> doctors = _dbManager.Doctors.ToList();
-            int? id= _dbManager.Doctors
-                             .Where(c => c.FirstName == doctor_firtsname && c.LastName== doctor_lastname)
-                             .Select(c => c.DoctorId)
-                             .FirstOrDefault();
-            //Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
+            int? id = await _dbManager.Doctors
+                                      .Where(c => c.FirstName == doctor_firtsname && c.LastName == doctor_lastname)
+                                      .Select(c => c.DoctorId)
+                                      .FirstOrDefaultAsync();
             if (id == null)
             {
                 return -1;
             }
-            return id.Value;
+            return  id.Value;
 
         }
+
     }
 }
