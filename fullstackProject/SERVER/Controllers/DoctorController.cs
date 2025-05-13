@@ -10,22 +10,21 @@ namespace SERVER.Controllers
     public class DoctorController : ControllerBase
     {
 
-        IManagerDAL managerDAL;
         IManagerBL managerBL;
-        public DoctorController(IManagerDAL _managerDAL, IManagerBL _managerBL )
+        public DoctorController( IManagerBL _managerBL )
         {
             managerBL = _managerBL;
-            managerDAL = _managerDAL;
-        }
+                  }
         // GET: api/<gradeManagerController>
         [HttpGet]
         public int GetNumOfClientForToday(string firstName, string lastName)
         {
 
-            int num = managerBL.GetDoctorBL().GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            int num = managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
 
 
             return num;
+            //return 5;
         }
 
     }

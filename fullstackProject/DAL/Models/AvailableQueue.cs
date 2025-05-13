@@ -21,4 +21,7 @@ public partial class AvailableQueue
         Doctor = doctor;
         DoctorId = doctor.DoctorId;
     }
+    public AvailableQueue()
+    {
+    }
 }

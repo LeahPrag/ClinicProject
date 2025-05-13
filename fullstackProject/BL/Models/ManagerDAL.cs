@@ -1,39 +1,29 @@
 ﻿using BL.API;
 using DAL.API;
+using DAL.Models;
 using DAL.service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace BL.Models
+public class ManagerDAL : IManagerDAL
 {
-    public class ManagerDAL:IManagerDAL
+    public IClinicQueueDAL _clinicQueueDAL { get; set; }
+    public IDoctorDAL _doctorDAL { get; set; }
+    public IClientDAL _clientDAL { get; set; }
+    public DB_Manager _dbManager { get; init; }
+
+    public ManagerDAL()
     {
-        private readonly IClinicQueueDAL _clinicQueueDAL;
+        ServiceCollection services = new();
+        services.AddSingleton<IDoctorDAL, DoctorDAL>();
+        services.AddSingleton<IClientDAL, ClientDAL>();
+        services.AddSingleton<IClinicQueueDAL, ClinicQueueDAL>();
+        services.AddSingleton<DB_Manager>();
 
-        private readonly IDoctorDAL _doctorDAL;
-        private readonly IClientDAL _clientDAL;
-        public ManagerDAL(IClinicQueueDAL clinicQueueDAL, IDoctorDAL doctorDAL)
-        {
-            _clinicQueueDAL= clinicQueueDAL;
-            _doctorDAL= doctorDAL;
-        }
+        ServiceProvider serviceProvider = services.BuildServiceProvider();
 
-        public IClinicQueueDAL GetClinicQueueDAL()
-        {
-            return _clinicQueueDAL;
-        }
-        public IDoctorDAL GetDoctorDAL()
-        {
-            return _doctorDAL;
-        }
-        public IClientDAL GetClientDAL()
-        {
-            return _clientDAL;
-        }
-
-        
+        _doctorDAL = serviceProvider.GetService<IDoctorDAL>();
+        _clientDAL = serviceProvider.GetService<IClientDAL>();
+        _clinicQueueDAL = serviceProvider.GetService<IClinicQueueDAL>();
+        _dbManager = serviceProvider.GetService<DB_Manager>();
     }
 }

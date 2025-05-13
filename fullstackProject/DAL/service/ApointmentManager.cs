@@ -13,6 +13,10 @@ namespace DAL.service
     {
         public DB_Manager db;
 
+        public ApointmentManager(DB_Manager db)
+        {
+            this.db = db;
+        }
         public ClinicQueue CheckFirstApoitmentAvailable(string specialization)
         {
             return db.ClinicQueues

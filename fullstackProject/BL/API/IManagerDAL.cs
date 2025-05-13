@@ -1,12 +1,14 @@
 ﻿using DAL.API;
+using DAL.Models;
 using DAL.service;
 
 namespace BL.API
 {
     public interface IManagerDAL
     {
-        IDoctorDAL GetDoctorDAL();
-        IClinicQueueDAL GetClinicQueueDAL();
-        IClientDAL GetClientDAL();
+        public DB_Manager _dbManager { get; init; }
+        public IClinicQueueDAL _clinicQueueDAL { get; set; }
+        public IDoctorDAL _doctorDAL { get; set; }
+        public IClientDAL _clientDAL { get; set; }
     }
 }

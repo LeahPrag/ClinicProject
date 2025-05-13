@@ -1,36 +1,28 @@
 ﻿using BL.API;
-using DAL.API;
+using BL.service;
 using DAL.service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace BL.Models
+public class ManagerBL : IManagerBL
 {
-    public class ManagerBL : IManagerBL
+    public IClientBL _clientBL { get; set; }
+    public IDoctorBL _doctorBL { get; set; }
+    public IClinicQueueBL _clinicQueueBL { get; set; }
+    private readonly IManagerDAL _managerDAL;
+
+    public ManagerBL()
     {
-        private readonly IClinicQueueBL _clinicQueueBL;
+        ServiceCollection services = new();
+        services.AddSingleton<IManagerDAL, ManagerDAL>();
+        services.AddSingleton<IDoctorBL, DoctorBL>();
+        services.AddSingleton<IClientBL, ClientBL>();
+        services.AddSingleton<IClinicQueueBL, ClinicQueueBL>();
 
-        private readonly IDoctorBL _doctorBL;
-        public ManagerBL(IClinicQueueBL clinicQueueBL, IDoctorBL doctorBL)
-        {
-            _clinicQueueBL = clinicQueueBL;
-            _doctorBL = doctorBL;
-        }
+        ServiceProvider serviceProvider = services.BuildServiceProvider();
 
-        public IClinicQueueBL GetClinicQueueBL()
-        {
-            return _clinicQueueBL;
-        }
-        public IDoctorBL GetDoctorBL()
-        {
-            return _doctorBL;
-        }
-        //public IClientDAL GetClientDAL()
-        //{
-        //    return _clientDAL;
-        //}
+        _managerDAL = serviceProvider.GetService<IManagerDAL>();
+        _doctorBL = serviceProvider.GetService<IDoctorBL>();
+        _clientBL = serviceProvider.GetService<IClientBL>();
+        _clinicQueueBL = serviceProvider.GetService<IClinicQueueBL>();
     }
 }

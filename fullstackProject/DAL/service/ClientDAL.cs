@@ -14,6 +14,7 @@ namespace DAL.service
         {
             _dbManager = dbManager;
         }
+
         //רשימה של כל הפציינטים
         public List<Client> GetAllClients()
         {

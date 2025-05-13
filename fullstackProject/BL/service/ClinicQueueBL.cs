@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BL.Models;
 
 namespace BL.service
 {
@@ -17,17 +16,17 @@ namespace BL.service
         private readonly IManagerDAL _managerDal;
 
 
-        public ClinicQueueBL(IManagerDAL managerBL)
+        public ClinicQueueBL(IManagerDAL managerDAL)
         {
 
-            _managerDal = managerBL;
+            _managerDal = managerDAL;
         }
 
         public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
         {
-            int doctorID = _managerDal.GetDoctorDAL().SearchADoctor(doctorFirstname, doctorLastname);
+            int doctorID = _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
             //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
-            return _managerDal.GetClinicQueueDAL().DeleteAnApointment(doctorID, 11);// clientID
+            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
         }
         //קביעת תור
         //public Boolean MakeAnAppointment(string doctorFirstname, string doctorLastname, DateOnly date, string idClient)

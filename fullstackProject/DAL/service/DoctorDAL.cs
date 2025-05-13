@@ -41,13 +41,17 @@ namespace DAL.service
         public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {
 
-            List<Doctor> doctors = _dbManager.Doctors.ToList();
-            Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
-            if (d == null)
+            //List<Doctor> doctors = _dbManager.Doctors.ToList();
+            int? id= _dbManager.Doctors
+                             .Where(c => c.FirstName == doctor_firtsname && c.LastName== doctor_lastname)
+                             .Select(c => c.DoctorId)
+                             .FirstOrDefault();
+            //Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
+            if (id == null)
             {
-                return d.DoctorId;
+                return -1;
             }
-            return -1;
+            return id.Value;
 
         }
     }
