@@ -22,9 +22,9 @@ namespace BL.service
             _managerDal = managerDAL;
         }
 
-        public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
+        public async Task<Boolean> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
         {
-            int doctorID = _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+            int doctorID =await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
             //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
             return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
         }
