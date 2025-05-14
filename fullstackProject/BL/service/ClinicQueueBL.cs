@@ -23,13 +23,13 @@ namespace BL.service
             _managerDal = managerDAL;
         }
 
-<<<<<<< HEAD
-        public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
-        {
-            int doctorID =await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
-            //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
-            return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
-        }
+
+        //public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
+        //{
+        //    int doctorID =await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+        //    //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
+        //    return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
+        //}
         //קביעת תור
         //public Boolean MakeAnAppointment(string doctorFirstname, string doctorLastname, DateOnly date, string idClient)
         //{
@@ -45,14 +45,14 @@ namespace BL.service
         //    var doctorID = _managerDal._doctorDAL.SearchADoctor()
 
         //}
-=======
 
-        public async Task<Boolean> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
+
+        public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
         {
-            int doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+            int doctorID =  _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname).Result;
 
             int clientID = _managerDal._clientDAL.GetClientById(idClient).ClientId;
-            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID);// clientID
+            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID).Result;// clientID
         }
         //קביעת תור
         //public async Task<Boolean> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateOnly date, string idClient)
@@ -70,7 +70,7 @@ namespace BL.service
 
         //קביעת תור
     
->>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
+
         //עדכון תור
 
 
