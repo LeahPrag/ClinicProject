@@ -17,10 +17,10 @@ namespace SERVER.Controllers
                   }
         // GET: api/<gradeManagerController>
         [HttpGet]
-        public async Task<int> GetNumOfClientForToday(string firstName, string lastName)
+        public int GetNumOfClientForToday(string firstName, string lastName)
         {
 
-            int num = await managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            int num =  managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
 
 
             return num;

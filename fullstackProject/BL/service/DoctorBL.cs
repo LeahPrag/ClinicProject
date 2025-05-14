@@ -1,11 +1,5 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BL.API;
-using DAL.API;
+﻿using BL.API;
+using DAL.Models;
 
 
 
@@ -13,25 +7,40 @@ using DAL.API;
 
 namespace BL.service
 {
-    public class DoctorBL: IDoctorBL
+    public class DoctorBL : IDoctorBL
     {
-        private readonly IDoctorDAL _doctorDal;
 
-        public DoctorBL(IManagerDAL  doctorDal)
+        private readonly IManagerDAL _managerDal;
+
+        public DoctorBL(IManagerDAL managerDal)
         {
-            _doctorDal=doctorDal._doctorDAL;
+            _managerDal = managerDal;
         }
 
-        public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
+        public int GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
         {
-            //int doctorId = _doctorDal.SearchADoctor(firstName, lastName);
-            //return _doctorDal.GetDoctorQueesForToday(doctorId,day);
-            int doctorId = await _doctorDal.SearchADoctor(firstName, lastName);
-            int queueCount = await _doctorDal.GetDoctorQueesForToday(doctorId, day);
-            return queueCount;
+
+            int doctorId = _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
+            return _managerDal._doctorDAL.GetDoctorQueesForToday(doctorId, day).Result;
         }
+        public void DeleteADayOfWork(string firstName, string lastName, DateOnly day)
+        {
+            int doctorId = _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
+            List<ClinicQueue> queues =  _managerDal._clinicQueueDAL.GetDoctorQueuesForToday(doctorId, day).Result;
+            foreach (var q in queues)
+            {
+                _managerDal._dbManager.ClinicQueues.Remove(q);
+            }
+             _managerDal._dbManager.SaveChangesAsync();
 
 
+
+        }
+        public List<AvailableQueue> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
+        {
+            int doctorId =  _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
+            return  _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day).Result;
+        }
 
     }
 }

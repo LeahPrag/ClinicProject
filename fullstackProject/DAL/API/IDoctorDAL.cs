@@ -8,5 +8,6 @@ namespace DAL.API
         public Task<List<int>> ClientsNamse(int doctorID);
         public Task<int> GetDoctorQueesForToday(int doctorId, DateOnly day);
         public Task<List<Doctor>> GetList();
+        public Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day);
     }
 }

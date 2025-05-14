@@ -4,7 +4,9 @@ namespace DAL.API
 {
     public interface IClinicQueueDAL
     {
-        List<ClinicQueue> GetList();
-        Boolean DeleteAnApointment(int doctorID, int clientID);
+        Task<List<int>> ClientsNames(int doctorID);
+        Task<List<ClinicQueue>> GetDoctorQueuesForToday(int doctorId, DateOnly day);
+        Task<bool> DeleteAnApointment(int doctorID, int clientID);
+        Task<List<ClinicQueue>> GetList();
     }
 }

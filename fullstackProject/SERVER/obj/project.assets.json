@@ -3158,23 +3158,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\פרג לאה\\.nuget\\packages\\": {},
+    "C:\\Users\\IMOE001\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\לאהלה\\רזרבי4\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+      "projectUniqueName": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
       "projectName": "SERVER",
-      "projectPath": "H:\\לאהלה\\רזרבי4\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
-      "packagesPath": "C:\\Users\\פרג לאה\\.nuget\\packages\\",
-      "outputPath": "H:\\לאהלה\\רזרבי4\\ClinicProject\\fullstackProject\\SERVER\\obj\\",
+      "projectPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\SERVER\\SERVER.csproj",
+      "packagesPath": "C:\\Users\\IMOE001\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\SERVER\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\פרג לאה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IMOE001\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3183,15 +3183,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\לאהלה\\רזרבי4\\ClinicProject\\fullstackProject\\BL\\BL.csproj": {
-              "projectPath": "H:\\לאהלה\\רזרבי4\\ClinicProject\\fullstackProject\\BL\\BL.csproj"
+            "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\BL\\BL.csproj"
             }
           }
         }
@@ -3205,7 +3204,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3235,7 +3235,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

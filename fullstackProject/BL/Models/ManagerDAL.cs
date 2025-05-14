@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 public class ManagerDAL : IManagerDAL
 {
     public IClinicQueueDAL _clinicQueueDAL { get; set; }
+    public IAvailableQueueDAL _availableQueueDAL { get; set; }
     public IDoctorDAL _doctorDAL { get; set; }
     public IClientDAL _clientDAL { get; set; }
     public DB_Manager _dbManager { get; init; }

@@ -29,13 +29,12 @@ namespace DAL.service
 
             return await Task.FromResult(clinicQueues.Count);
         }
-
         public async Task<List<int>> ClientsNamse(int doctorID)
         {
             return await _dbManager.ClinicQueues
                          .Where(c => c.DoctorId == doctorID)
                          .Select(c => c.ClientId)
-                         .ToListAsync(); // Use ToListAsync for async database operations
+                         .ToListAsync();
         }
         public async Task<int> SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {
@@ -45,12 +44,20 @@ namespace DAL.service
                                       .Select(c => c.DoctorId)
                                       .FirstOrDefaultAsync();
             if (id == null)
-            {
-                return -1;
-            }
+                throw new Exception("the doctor is not exist");
             return  id.Value;
 
         }
+        public async Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day)
+        {
+            return await _dbManager.Doctors
+                .Where(d => d.FirstName == doctor_firtsname && d.LastName == doctor_lastname)
+                .SelectMany(d => d.DayDoctors)
+                .Where(dd => dd.Day.DayNum == day)
+                .Select(dd => dd.Day)
+                .FirstOrDefaultAsync();
+        }
+
 
     }
 }

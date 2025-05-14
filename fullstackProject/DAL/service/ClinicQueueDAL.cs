@@ -1,5 +1,6 @@
 ﻿using DAL.API;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,53 +17,53 @@ namespace DAL.service
             _dbManager = dbManager;
         }
 
-        public List<ClinicQueue> GetList()
+        public async Task<List<ClinicQueue>> GetList()
         {
-            return _dbManager.ClinicQueues.ToList();
+            return await _dbManager.ClinicQueues.ToListAsync();
         }
-        public Boolean DeleteAnApointment(int doctorID, int clientID)
+        public async Task<bool> DeleteAnApointment(int doctorID, int clientID)
         {
-            var queue = _dbManager.ClinicQueues.FirstOrDefault(q => q.ClientId == clientID && q.DoctorId == doctorID);
+            var queue = await _dbManager.ClinicQueues
+                .FirstOrDefaultAsync(q => q.ClientId == clientID && q.DoctorId == doctorID);
 
             if (queue == null)
             {
                 return false;
             }
-            //AvailableQueue aq = new AvailableQueue();//////func shiffi
-            //_dbManager.AvailableQueues.Add(aq);
-            //_dbManager.ClinicQueues.Remove(queue);
 
+            _dbManager.ClinicQueues.Remove(queue);
+            await _dbManager.SaveChangesAsync(); 
             return true;
         }
 
-        public List<ClinicQueue> GetDoctorQueesForToday(int doctorId, DateOnly day)
+        public async Task<List<ClinicQueue>> GetDoctorQueuesForToday(int doctorId, DateOnly day)
         {
 
-            var clinicQueues = _dbManager.ClinicQueues
+            return await _dbManager.ClinicQueues
                 .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
-                .ToList();
+                .ToListAsync();
 
-            return clinicQueues;
+
         }
-        public List<int> ClientsNamse(int doctorID)
+        public async Task<List<int>> ClientsNames(int doctorID)
         {
-            return _dbManager.ClinicQueues
-                             .Where(c => c.DoctorId == doctorID)
-                             .Select(c => c.ClientId)
-                             .ToList();
+            return await _dbManager.ClinicQueues
+                .Where(c => c.DoctorId == doctorID)
+                .Select(c => c.ClientId)
+                .ToListAsync();
         }
-        public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
-        {
+        //public int SearchADoctor(string doctor_firtsname, string doctor_lastname)
+        //{
 
-            List<Doctor> doctors = _dbManager.Doctors.ToList();
-            Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
-            if (d == null)
-            {
-                return d.DoctorId;
-            }
-            return -1;
+        //    List<Doctor> doctors = _dbManager.Doctors.ToList();
+        //    Doctor d = doctors.FirstOrDefault(x => x.FirstName.Equals(doctor_firtsname) && x.FirstName.Equals(doctor_lastname));
+        //    if (d == null)
+        //    {
+        //        return d.DoctorId;
+        //    }
+        //    return -1;
 
-        }
+        //}
 
     }
 }

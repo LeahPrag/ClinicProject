@@ -1,4 +1,6 @@
-﻿using DAL.Models;
+﻿using DAL.API;
+using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.service
 {
-    public class AvailableQueueDAL
+    public class AvailableQueueDAL: IAvailableQueueDAL
     {
         public DB_Manager db;
 
@@ -75,6 +77,14 @@ namespace DAL.service
             }
 
             return false;
+        }
+
+        public async Task<List<AvailableQueue>> GetDoctorAvailableQueueForASpesificDay(int doctorId, DateOnly day)
+        {
+            return await db.AvailableQueues.Where(t => t.DoctorId == doctorId &&
+                                                     t.AppointmentDate.Date == day.ToDateTime(TimeOnly.MinValue).Date)
+                                                     .ToListAsync();
+
         }
 
     }
