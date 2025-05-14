@@ -8,7 +8,7 @@ namespace DAL.service
         bool ClientExistById(string id);
         List<Client> GetAllClients();
         Client GetClientById(string id);
-        void RemoveClient(string id);
-        void UpdateClient(Client client);
+        void RemoveClient(Client client);
+        void UpdateClient(Client updatedClient, Client existingClient);
     }
 }

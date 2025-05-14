@@ -24,17 +24,19 @@ namespace DAL.service
         //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
         public Client GetClientById(string id)
         {
-            List<Client> clients = _dbManager.Clients.ToList();
-            return clients.FirstOrDefault(x => x.ClientId.Equals(id));
+            return _dbManager.Clients.FirstOrDefault(x => x.IDNumber.Equals(id));
+            //List<Client> clients = _dbManager.Clients.ToList();
+            //return clients.FirstOrDefault(x => x.ClientId.Equals(id));
         }
 
         //חיפוש פציינט ע"פ ת"ז-בוליאני
         public bool ClientExistById(string id)
         {
-            List<Client> clients = _dbManager.Clients.ToList();
-            Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
-            if (c == null) return false;
-            return true;
+            //List<Client> clients = _dbManager.Clients.ToList();
+            //Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
+            //if (c == null) return false;
+            //return true;
+            return _dbManager.Clients.Any(x => x.IDNumber.Equals(id));
         }
 
         //מוסיף פציינט
@@ -44,22 +46,24 @@ namespace DAL.service
         }
 
         //מוחק פציינט
-        public void RemoveClient(string id)
+        public void RemoveClient(Client client)
         {
-            Client client = GetClientById(id);
+            //Client client = GetClientById(id);
             _dbManager.Clients.Remove(client);
         }
 
-        //מעדכן פרטי פציינט קיים אם קיים
-        public void UpdateClient(Client client)
+
+
+        public void UpdateClient(Client updatedClient, Client existingClient)
         {
-            List<Client> clients = _dbManager.Clients.ToList();
-            if (!ClientExistById(client.IDNumber))
-            {
-                // error- the client not defined
-            }
-            _dbManager.Clients.Update(client);
+         
+            existingClient.LastName = updatedClient.LastName;
+            existingClient.Phone = updatedClient.Phone;
+            existingClient.Email = updatedClient.Email;
+            existingClient.Address = updatedClient.Address;
+            _dbManager.Clients.Update(existingClient);
         }
 
+        
     }
 }

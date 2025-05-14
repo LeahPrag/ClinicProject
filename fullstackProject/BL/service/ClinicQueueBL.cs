@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Sockets;
 
 namespace BL.service
 {
@@ -22,27 +23,30 @@ namespace BL.service
             _managerDal = managerDAL;
         }
 
-        public async Task<Boolean> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
+
+        public async Task<Boolean> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
         {
-            int doctorID =await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
-            //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
-            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
+            int doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+
+            int clientID = _managerDal._clientDAL.GetClientById(idClient).ClientId;
+            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID);// clientID
         }
         //קביעת תור
-        public Boolean MakeAnAppointment(string doctorFirstname, string doctorLastname, DateOnly date, string idClient)
-        {
-            //var doctorID = _managerDal.GetDoctorDAL().SearchADoctor(doctorFirstname, doctorLastname);
-            //if (doctorID == null)
-            //    throw new DoctorNotExsistException(doctorFirstname, doctorLastname);
-            //var clientID = _managerDal.GetClientDAL().GetClientById(idClient);
-            //if (clientID == null)
-            //    throw new ClientNotExsistException(idClient);
-            //_managerDal.GetClinicQueueDAL().
-            if()
+        //public async Task<Boolean> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateOnly date, string idClient)
+        //{
+        //    int doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+        //    if (doctorID == null)
+        //    {
+        //        throw
+        //    }
+        //    int clientID = _managerDal._clientDAL.GetClientById(idClient).ClientId;
+        //    if
 
-            var doctorID = _managerDal._doctorDAL.SearchADoctor()
+        //    return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID);// clientID
+        //}
 
-        }
+        //קביעת תור
+    
         //עדכון תור
 
 
