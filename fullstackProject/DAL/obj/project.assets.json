@@ -4017,23 +4017,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\IMOE001\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+>>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
       "projectName": "DAL",
       "projectPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\IMOE001\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check\\ClinicProject\\fullstackProject\\DAL\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\1\\ClinicProject\\fullstackProject\\DAL\\obj\\",
+>>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\IMOE001\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4103,7 +4119,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
       }
     }
   }

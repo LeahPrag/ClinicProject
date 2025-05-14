@@ -10,8 +10,18 @@ namespace BL.Models
     public class AvailableQeueManager
     {
 
+<<<<<<< HEAD
         private static readonly string _baseUrl = "https://www.hebcal.com/hebcal";
         public AvailableQeueManager()
+=======
+       private static readonly string _baseUrl = "https://www.hebcal.com/hebcal";
+        //public static AvailableQeueManager availableQeueManager { get {
+        //        if (availableQeueManager == null)
+        //        availableQeueManager = new AvailableQeueManager();
+        //        return availableQeueManager;
+        //       } }
+        private AvailableQeueManager()
+>>>>>>> 3c8812b2e20ef1a35c687bd34f0301ca64d526b6
         {
 
         }

@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using BL.API;
 using DAL.API;
+using DAL.service;
+using BL.Exceptions;
 
 namespace DAL.service
 {
@@ -17,51 +19,37 @@ namespace DAL.service
         {
             _clientDal = managerDAL._clientDAL;
         }
-        //רשימה של כל הפציינטים
-        //    public List<Client> GetAllClients()
-        //    {
-        //        return _dbManager.Clients.ToList();
-        //    }
 
-        //    //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
-        //    public Client GetClientById(string id)
-        //    {
-        //        List<Client> clients = _dbManager.Clients.ToList();
-        //        return clients.FirstOrDefault(x => x.ClientId.Equals(id));
-        //    }
+        public List<Client> GetAllClients()
+        {
+            return _clientDal.GetAllClients();
+        }
 
-        //    //חיפוש פציינט ע"פ ת"ז-בוליאני
-        //    public bool ClientExistById(string id)
-        //    {
-        //        List<Client> clients = _dbManager.Clients.ToList();
-        //        Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
-        //        if (c == null) return false;
-        //        return true;
-        //    }
+        public Client GetClientById(string id)
+        {
+            var client = _clientDal.GetClientById(id);
+            if (client == null)
+                throw new ClientNotExsistException(id);
+            return client;
+        }
 
-        //    //מוסיף פציינט
-        //    public void AddClient(Client client)
-        //    {
-        //        _dbManager.Clients.Add(client);
-        //    }
+        public void AddClient(Client client)
+        {
+            if (_clientDal.ClientExistById(client.IDNumber))
+                throw new ClientAlradyExsistException(client.IDNumber);
 
-        //    //מוחק פציינט
-        //    public void RemoveClient(string id)
-        //    {
-        //        Client client = GetClientById(id);
-        //        _dbManager.Clients.Remove(client);
-        //    }
+            if (string.IsNullOrWhiteSpace(client.FirstName) || string.IsNullOrWhiteSpace(client.LastName))
+                throw new ArgumentException("First name and last name are required fields.");
 
-        //    //מעדכן פרטי פציינט קיים אם קיים
-        //    public void UpdateClient(Client client)
-        //    {
-        //        List<Client> clients = _dbManager.Clients.ToList();
-        //        if (!ClientExistById(client.IDNumber))
-        //        {
-        //            // error- the client not defined
-        //        }
-        //        _dbManager.Clients.Update(client);
-        //    }
+            _clientDal.AddClient(client);
+        }
 
+        public void RemoveClient(string id)
+        {
+            var client = GetClientById(id);
+            if (client == null)
+                throw new ClientNotExsistException(id);
+            _clientDal.RemoveClient(client);
+        }
     }
 }
