@@ -1,5 +1,6 @@
 ﻿using System;
 using BL.API;
+using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -26,6 +27,13 @@ namespace SERVER.Controllers
 
 
             //return 5;
+        }
+        [HttpGet("/id")]
+        public async Task<List<Doctor>> GetDoctors()
+        {
+
+            return await managerBL._doctorBL.GetDoctors();
+
         }
 
     }

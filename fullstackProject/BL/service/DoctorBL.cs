@@ -43,5 +43,10 @@ namespace BL.service
             return await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
         }
 
+        public async Task<List<Doctor>> GetDoctors()
+        {
+            return await _managerDal._doctorDAL.GetDoctors();
+        }
+
     }
 }
