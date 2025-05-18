@@ -1,4 +1,5 @@
-﻿using BL.API;
+﻿using System;
+using BL.API;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -17,13 +18,13 @@ namespace SERVER.Controllers
                   }
         // GET: api/<gradeManagerController>
         [HttpGet]
-        public int GetNumOfClientForToday(string firstName, string lastName)
+        public async Task<int> GetNumOfClientForToday(string firstName, string lastName)
         {
 
-            int num =  managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            return  await managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
 
 
-            return num;
+
             //return 5;
         }
 

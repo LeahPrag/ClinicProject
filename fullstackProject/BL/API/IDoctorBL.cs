@@ -8,8 +8,8 @@ namespace BL.API
 {
     public interface IDoctorBL
     {
-        int GetNumOfClientForToday(string firstName, string lastName, DateOnly day);
-        void DeleteADayOfWork(string firstName, string lastName, DateOnly day);
+        Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day);
+        Task DeleteADayOfWork(string firstName, string lastName, DateOnly day);
 
     }
 }

@@ -18,29 +18,29 @@ namespace BL.service
             _managerDal = managerDal;
         }
 
-        public int GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
+        public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
         {
 
-            int doctorId = _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
-            return _managerDal._doctorDAL.GetDoctorQueesForToday(doctorId, day).Result;
+            int doctorId =await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+            return await _managerDal._doctorDAL.GetDoctorQueesForToday(doctorId, day);
         }
-        public void DeleteADayOfWork(string firstName, string lastName, DateOnly day)
+        public async Task DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
-            int doctorId = _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
-            List<ClinicQueue> queues =  _managerDal._clinicQueueDAL.GetDoctorQueuesForToday(doctorId, day).Result;
+            int doctorId =await  _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+            List<ClinicQueue> queues = await _managerDal._clinicQueueDAL.GetDoctorQueuesForToday(doctorId, day);
             foreach (var q in queues)
             {
                 _managerDal._dbManager.ClinicQueues.Remove(q);
             }
-             _managerDal._dbManager.SaveChangesAsync();
+            await _managerDal._dbManager.SaveChangesAsync();
 
 
 
         }
-        public List<AvailableQueue> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
+        public async Task<List<AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
         {
-            int doctorId =  _managerDal._doctorDAL.SearchADoctor(firstName, lastName).Result;
-            return  _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day).Result;
+            int doctorId =await  _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+            return await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
         }
 
     }
