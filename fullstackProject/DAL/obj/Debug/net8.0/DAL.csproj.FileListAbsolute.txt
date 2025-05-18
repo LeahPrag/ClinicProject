@@ -84,3 +84,4 @@ C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check\ClinicProject\fullsta
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\data\db.mdf
