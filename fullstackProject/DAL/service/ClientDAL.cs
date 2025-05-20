@@ -24,7 +24,7 @@ namespace DAL.service
         //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
         public Client GetClientById(string id)
         {
-            return _dbManager.Clients.FirstOrDefault(x => x.IDNumber.Equals(id));
+            return _dbManager.Clients.FirstOrDefault(x => x.IdNumber.Equals(id));
             //List<Client> clients = _dbManager.Clients.ToList();
             //return clients.FirstOrDefault(x => x.ClientId.Equals(id));
         }
@@ -36,7 +36,7 @@ namespace DAL.service
             //Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
             //if (c == null) return false;
             //return true;
-            return _dbManager.Clients.Any(x => x.IDNumber.Equals(id));
+            return _dbManager.Clients.Any(x => x.IdNumber.Equals(id));
         }
 
         //מוסיף פציינט

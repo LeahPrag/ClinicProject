@@ -35,8 +35,8 @@ namespace DAL.service
 
         public void AddClient(Client client)
         {
-            if (_clientDal.ClientExistById(client.IDNumber))
-                throw new ClientAlradyExsistException(client.IDNumber);
+            if (_clientDal.ClientExistById(client.IdNumber))
+                throw new ClientAlradyExsistException(client.IdNumber);
 
             if (string.IsNullOrWhiteSpace(client.FirstName) || string.IsNullOrWhiteSpace(client.LastName))
                 throw new ArgumentException("First name and last name are required fields.");

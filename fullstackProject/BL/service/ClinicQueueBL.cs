@@ -24,10 +24,10 @@ namespace BL.service
         }
 
 
-        //public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idNumber, DateOnly date)
+        //public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string IdNumber, DateOnly date)
         //{
         //    int doctorID =await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
-        //    //int clientID = _managerBL.GetClientDAL().SearchAClient(idNumber);
+        //    //int clientID = _managerBL.GetClientDAL().SearchAClient(IdNumber);
         //    return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, 11);// clientID
         //}
         //קביעת תור

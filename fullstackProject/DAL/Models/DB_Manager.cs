@@ -28,9 +28,26 @@ public partial class DB_Manager : DbContext
     public virtual DbSet<Doctor> Doctors { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\לאהלה\\רזרבי6\\fullstackProject\\DAL\\data\\db.mdf;Integrated Security=True");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            string relativePath = @"data\db.mdf"; // או ClinicDB.mdf, תלוי בשם האמיתי
+            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
 
+            //string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
+            //                         AttachDbFilename={fullPath};
+            //                         Integrated Security=True;
+            //                         Connect Timeout=30";
+
+            //optionsBuilder.UseSqlServer(connectionString);
+            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
+                             AttachDbFilename={fullPath};
+                             Integrated Security=True;
+                             Connect Timeout=30";
+
+            optionsBuilder.UseSqlServer(connectionString);
+        }
+    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AvailableQueue>(entity =>
@@ -99,7 +116,7 @@ public partial class DB_Manager : DbContext
                 .HasColumnName("appointment_date");
             entity.Property(e => e.ClientId).HasColumnName("client_id");
             entity.Property(e => e.DoctorId).HasColumnName("doctor_id");
-            entity.Property(e => e.IsAvailable).HasColumnName("is_available");
+ 
 
             entity.HasOne(d => d.Client).WithMany(p => p.ClinicQueues)
                 .HasForeignKey(d => d.ClientId)
