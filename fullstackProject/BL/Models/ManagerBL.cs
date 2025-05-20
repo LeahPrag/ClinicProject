@@ -17,6 +17,7 @@ public class ManagerBL : IManagerBL
         services.AddSingleton<IDoctorBL, DoctorBL>();
         services.AddSingleton<IClientBL, ClientBL>();
         services.AddSingleton<IClinicQueueBL, ClinicQueueBL>();
+        services.AddAutoMapper(typeof(DoctorBL).Assembly);
 
         ServiceProvider serviceProvider = services.BuildServiceProvider();
 

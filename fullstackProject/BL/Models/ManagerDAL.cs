@@ -1,4 +1,5 @@
 ﻿using BL.API;
+using BL.service;
 using DAL.API;
 using DAL.Models;
 using DAL.service;
@@ -19,6 +20,8 @@ public class ManagerDAL : IManagerDAL
         services.AddSingleton<IClientDAL, ClientDAL>();
         services.AddSingleton<IClinicQueueDAL, ClinicQueueDAL>();
         services.AddSingleton<DB_Manager>();
+        services.AddAutoMapper(typeof(DoctorBL).Assembly);
+
 
         ServiceProvider serviceProvider = services.BuildServiceProvider();
 

@@ -3,7 +3,8 @@ using BL.service;
 using DAL.service;
 using DAL.API;
 using DAL.Models;
-//////////////////////////////////
+using AutoMapper;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddSingleton<DB_Manager>();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 
 var app = builder.Build();
 

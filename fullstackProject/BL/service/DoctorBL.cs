@@ -1,6 +1,9 @@
 ﻿using BL.API;
 using DAL.Models;
 using DAL.service;
+using AutoMapper;
+using BL.Models;
+
 
 
 
@@ -12,11 +15,15 @@ namespace BL.service
     {
 
         private readonly IManagerDAL _managerDal;
+        private readonly IMapper _mapper;
 
-        public DoctorBL(IManagerDAL managerDal)
+        public DoctorBL(IManagerDAL managerDal, IMapper mapper)
         {
             _managerDal = managerDal;
+            _mapper = mapper;
+
         }
+
 
         public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
         {
@@ -43,9 +50,10 @@ namespace BL.service
             return await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
         }
 
-        public async Task<List<Doctor>> GetDoctors()
+        public async Task<List<M_Doctor>> GetDoctors()
         {
-            return await _managerDal._doctorDAL.GetDoctors();
+            var doctors = await _managerDal._doctorDAL.GetDoctors();
+            return _mapper.Map<List<M_Doctor>>(doctors);
         }
 
     }
