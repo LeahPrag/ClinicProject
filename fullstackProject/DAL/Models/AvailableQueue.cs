@@ -12,16 +12,4 @@ public partial class AvailableQueue
     public DateTime AppointmentDate { get; set; }
 
     public virtual Doctor Doctor { get; set; } = null!;
-
-    public AvailableQueue(int queueId, DateTime appointmentDate, Doctor doctor)
-    {
-        QueueId = queueId;
-
-        AppointmentDate = appointmentDate;
-        Doctor = doctor;
-        DoctorId = doctor.DoctorId;
-    }
-    public AvailableQueue()
-    {
-    }
 }
