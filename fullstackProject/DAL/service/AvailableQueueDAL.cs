@@ -29,6 +29,7 @@ namespace DAL.service
                 return false;
             return true;
         }
+        //fgufu
         public Boolean MakeAnAppointment(int doctorId, DateTime dateTime,Client client)
         {
             // Check if the appointment exists

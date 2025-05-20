@@ -101,3 +101,19 @@ H:\c#\‏‏תיקיה חדשה\ClinicProject\fullstackProject\DAL\obj\Debug\net
 H:\c#\‏‏תיקיה חדשה\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
 H:\c#\‏‏תיקיה חדשה\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 H:\c#\‏‏תיקיה חדשה\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
+H:\לאהלה\רזרבי6\fullstackProject\DAL\bin\Debug\net8.0\data\db.mdf
+H:\לאהלה\רזרבי6\fullstackProject\DAL\bin\Debug\net8.0\DAL.deps.json
+H:\לאהלה\רזרבי6\fullstackProject\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+H:\לאהלה\רזרבי6\fullstackProject\DAL\bin\Debug\net8.0\DAL.dll
+H:\לאהלה\רזרבי6\fullstackProject\DAL\bin\Debug\net8.0\DAL.pdb
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.dll
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\refint\DAL.dll
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+H:\לאהלה\רזרבי6\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
