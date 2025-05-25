@@ -24,4 +24,12 @@ public partial class AvailableQueue
     public AvailableQueue()
     {
     }
+    public AvailableQueue(int queueId, int doctorId, DateTime appointmentDate, Doctor doctor)
+    {
+        QueueId = queueId;
+        DoctorId = doctorId;
+        AppointmentDate = appointmentDate;
+        Doctor = doctor;
+    }
+
 }
