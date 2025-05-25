@@ -27,7 +27,7 @@ namespace BL.service
 
 
         //קביעת תור
-        public async Task<Boolean> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateTime date, string idClient)
+        public async Task<bool> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateTime date, string idClient)
         {
             var doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
             if (doctorID == null)
@@ -44,17 +44,12 @@ namespace BL.service
             return _managerDal._availableQueueDAL.MakeAnAppointment(doctorID, clientID.ClientId, date);
 
         }
-        // מחיקה
-
-        public Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
+        public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
         {
-            int doctorID = _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname).Result;
-
+            int doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
             int clientID = _managerDal._clientDAL.GetClientById(idClient).ClientId;
-
-            return _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID).Result;// clientID
+            return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID);
         }
-
 
         // התור הקרוב לא משנה לאיזה רופא
         //    public async Task<Appointment> GetNearestAppointmentAsync(DateTime targetDate, string idClient)

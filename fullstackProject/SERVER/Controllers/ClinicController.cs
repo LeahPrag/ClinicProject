@@ -1,5 +1,8 @@
 ﻿using BL.API;
 using Microsoft.AspNetCore.Mvc;
+using DAL.Models;
+using BL.Models;
+using System.Net.Sockets;
 
 namespace SERVER.Controllers
 {
@@ -15,11 +18,25 @@ namespace SERVER.Controllers
             _managerBL = managerBL;
         }
 
-        // Example endpoint
-        //[HttpGet]
-        //public IActionResult Get()
-        //{
+        [HttpGet("/avalableQeuesForASpesificDay")]
+        public async Task<List<M_AvailableQueue>> AvalableQeuesForASpesificDay(string firstName, string lastName, DateOnly day)
+        {
+            return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, day);
+        }
 
-        //}
+        //another one for all qeues for this day
+
+        [HttpGet("/avalableQeuesForDoctorToday")]
+        public async Task<List<M_AvailableQueue>> avalableQeuesForDoctorToday(string firstName, string lastName)
+        {
+            return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+        }
+        [HttpPost("/makeAnApointment")]
+        public async Task<bool> MakeAnApointment(string firstName, string lastName, string idClient, DateOnly day)
+        {
+            //    List<AvailableQueue>= _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, day);
+            return await _managerBL._clinicQueueBL.DeleteAnApointment(firstName, lastName, idClient, day);
+
+        }
     }
 }

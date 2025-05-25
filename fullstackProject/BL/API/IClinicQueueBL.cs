@@ -8,6 +8,6 @@ namespace BL.API
 {
     public interface IClinicQueueBL
     {
-        Boolean DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date);
+        Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date);
     }
 }
