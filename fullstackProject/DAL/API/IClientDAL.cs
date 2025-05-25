@@ -10,5 +10,8 @@ namespace DAL.service
         Client GetClientById(string id);
         void RemoveClient(Client client);
         void UpdateClient(Client updatedClient, Client existingClient);
+
+
+
     }
 }

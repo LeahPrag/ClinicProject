@@ -10,11 +10,12 @@ namespace BL.API
 {
     public interface IClientBL
     {
-        //List<Client> GetAllClients();
-        //Client GetClientById(string id);
-        //void AddClient(Client client);
-        //void UpdateClient(Client client);
-        //void RemoveClient(string id);
+        List<Client> GetAllClients();
+        Client GetClientById(string id);
+        void AddClient(Client client);
+        void RemoveClient(string id);
+        void UpdateClientEmail(String id, string email);
+        void UpdateClientAdress(String id, string adress);
 
     }
 }

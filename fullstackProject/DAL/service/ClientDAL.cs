@@ -15,55 +15,46 @@ namespace DAL.service
             _dbManager = dbManager;
         }
 
-        //רשימה של כל הפציינטים
+        //List of all patients
         public List<Client> GetAllClients()
         {
             return _dbManager.Clients.ToList();
         }
 
-        //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
+        //Search for a patient by ID number - returns the patient
         public Client GetClientById(string id)
         {
             return _dbManager.Clients.FirstOrDefault(x => x.IdNumber.Equals(id));
-            //List<Client> clients = _dbManager.Clients.ToList();
-            //return clients.FirstOrDefault(x => x.ClientId.Equals(id));
         }
 
-        //חיפוש פציינט ע"פ ת"ז-בוליאני
+        //Search for a patient by ID-Boolean
         public bool ClientExistById(string id)
         {
-            //List<Client> clients = _dbManager.Clients.ToList();
-            //Client c = clients.FirstOrDefault(x => x.ClientId.Equals(id));
-            //if (c == null) return false;
-            //return true;
+
             return _dbManager.Clients.Any(x => x.IdNumber.Equals(id));
         }
 
-        //מוסיף פציינט
         public void AddClient(Client client)
         {
             _dbManager.Clients.Add(client);
         }
 
-        //מוחק פציינט
         public void RemoveClient(Client client)
         {
-            //Client client = GetClientById(id);
             _dbManager.Clients.Remove(client);
         }
 
-
-
         public void UpdateClient(Client updatedClient, Client existingClient)
         {
-         
             existingClient.LastName = updatedClient.LastName;
             existingClient.Phone = updatedClient.Phone;
             existingClient.Email = updatedClient.Email;
             existingClient.Address = updatedClient.Address;
             _dbManager.Clients.Update(existingClient);
         }
-
         
+
+
+
     }
 }

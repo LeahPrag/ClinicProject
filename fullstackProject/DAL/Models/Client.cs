@@ -22,4 +22,19 @@ public partial class Client
     public string IdNumber { get; set; } = null!;
 
     public virtual ICollection<ClinicQueue> ClinicQueues { get; set; } = new List<ClinicQueue>();
+    public Client()
+    {
+
+    }
+    public Client(int clientId, string firstName, string lastName, string? phone, string? email, DateOnly birthDate, string address, string idNumber) {
+        ClientId = clientId;
+        FirstName = firstName;
+        LastName = lastName;
+        Phone = phone;
+        Email = email;
+        BirthDate = birthDate;
+        Address = address;
+        IdNumber = idNumber; 
+        ClinicQueues = new List<ClinicQueue>();
+    }
 }
