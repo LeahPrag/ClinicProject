@@ -51,5 +51,45 @@ namespace DAL.service
                 throw new ClientNotExsistException(id);
             _clientDal.RemoveClient(client);
         }
+        public void UpdateClientEmail(string id, string email)
+        {
+            var client = GetClientById(id);
+            if (client == null)
+                throw new ClientNotExsistException(id);
+            var updateClient = new Client
+            {
+                ClientId = client.ClientId,
+                FirstName = client.FirstName,
+                LastName = client.LastName,
+                Phone = client.Phone,
+                Email = email, 
+                BirthDate = client.BirthDate,
+                Address = client.Address,
+                IdNumber = client.IdNumber,
+                ClinicQueues = client.ClinicQueues
+            };
+
+            _clientDal.UpdateClient(updateClient, client);
+        }
+        public void UpdateClientAdress(string id,String adress)
+        {
+            var client = GetClientById(id);
+            if (client == null)
+                throw new ClientNotExsistException(id);
+            var updateClient = new Client
+            {
+                ClientId = client.ClientId,
+                FirstName = client.FirstName,
+                LastName = client.LastName,
+                Phone = client.Phone,
+                Email = client.Email,
+                BirthDate = client.BirthDate,
+                Address = adress,
+                IdNumber = client.IdNumber,
+                ClinicQueues = client.ClinicQueues
+            };
+
+            _clientDal.UpdateClient(updateClient, client);
+        }
     }
 }

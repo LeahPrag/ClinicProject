@@ -36,15 +36,7 @@ namespace DAL.service
             return true;
         }
 
-        public async Task<List<ClinicQueue>> GetDoctorQueuesForToday(int doctorId, DateOnly day)
-        {
 
-            return await _dbManager.ClinicQueues
-                .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
-                .ToListAsync();
-
-
-        }
         public async Task<List<int>> ClientsNames(int doctorID)
         {
             return await _dbManager.ClinicQueues
@@ -64,6 +56,9 @@ namespace DAL.service
         //    return -1;
 
         //}
-
+        //public async Task<List<ClinicQueue>> GetDoctorQueuesForToday(int doctorId, DateOnly day)
+        //{
+        //    return await _dbManager.
+        //}
     }
 }

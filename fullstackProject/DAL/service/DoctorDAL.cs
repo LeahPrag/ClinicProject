@@ -21,13 +21,13 @@ namespace DAL.service
         {
             return await _dbManager.Doctors.ToListAsync();
         }
-        public async Task<int> GetDoctorQueesForToday(int doctorId, DateOnly day)
+        public async Task<List<ClinicQueue>> GetDoctorQueesForASpesificDay(int doctorId, DateOnly day)
         {
-            var clinicQueues = _dbManager.ClinicQueues
+            List<ClinicQueue> clinicQueues =await _dbManager.ClinicQueues
                 .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
-                .ToList();
+                .ToListAsync();
 
-            return await Task.FromResult(clinicQueues.Count);
+            return  clinicQueues;
         }
         public async Task<List<int>> ClientsNamse(int doctorID)
         {
@@ -61,6 +61,7 @@ namespace DAL.service
         {
             return await _dbManager.Doctors.ToListAsync();
         }
+
 
     }
 }

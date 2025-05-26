@@ -13,7 +13,6 @@ namespace BL.service
     {
 
         private AvailableQueueManager()
-
         {
 
         }
@@ -28,14 +27,7 @@ namespace BL.service
                 return _instance;
             }
         }
-
-
-
         private static readonly string _baseUrl = "https://www.hebcal.com/hebcal";
-
-
-
-
         public async Task<bool> IsHolidayAsync(DateTime date)
         {
             string year = date.Year.ToString();

@@ -17,7 +17,7 @@ namespace SERVER.Controllers
         public DoctorController( IManagerBL _managerBL )
         {
             managerBL = _managerBL;
-                  }
+               }
         // GET: api/<gradeManagerController>
         [HttpGet]
         public async Task<int> GetNumOfClientForToday(string firstName, string lastName)
@@ -34,6 +34,22 @@ namespace SERVER.Controllers
         {
 
             return await managerBL._doctorBL.GetDoctors();
+
+        }
+        //
+        [HttpGet("/qeuesForToday")]
+        public async Task<List<M_ClinicQueue>> QeuesForToday(string firstName, string lastName)
+        {
+
+            return await managerBL._doctorBL.GetDoctorQueesForToday( firstName,  lastName, DateOnly.FromDateTime(DateTime.Now));
+
+        }
+
+        [HttpPost("/id")]
+        public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
+        {
+
+            return await managerBL._doctorBL.DeleteADayOfWork( firstName,  lastName,  day);
 
         }
 
