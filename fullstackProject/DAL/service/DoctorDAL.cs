@@ -62,6 +62,12 @@ namespace DAL.service
             return await _dbManager.Doctors.ToListAsync();
         }
 
-
+        public async Task<List<Doctor>> GetDoctorsWithDays()
+        {
+            return await _dbManager.Doctors
+                .Include(d => d.DayDoctors)
+                    .ThenInclude(dd => dd.Day)
+                .ToListAsync();
+        }
     }
 }

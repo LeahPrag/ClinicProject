@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<IManagerBL, ManagerBL>();
-builder.Services.AddSingleton<DB_Manager>();
+//builder.Services.AddSingleton<DB_Manager>();
 
 
 builder.Services.AddEndpointsApiExplorer();

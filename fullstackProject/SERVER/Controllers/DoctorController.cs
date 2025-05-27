@@ -49,7 +49,7 @@ namespace SERVER.Controllers
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
 
-            return await managerBL._doctorBL.DeleteADayOfWork( firstName,  lastName,  day);
+            return await managerBL._doctorBL.DeleteADayOfWork(firstName, lastName,  day);
 
         }
 

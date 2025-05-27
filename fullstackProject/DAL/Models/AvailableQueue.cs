@@ -21,6 +21,7 @@ public partial class AvailableQueue
         Doctor = doctor;
         DoctorId = doctor.DoctorId;
     }
+
     public AvailableQueue()
     {
     }
@@ -30,6 +31,14 @@ public partial class AvailableQueue
         DoctorId = doctorId;
         AppointmentDate = appointmentDate;
         Doctor = doctor;
+    }
+    public AvailableQueue(DateTime appointmentDate, Doctor doctor)
+    {
+
+
+        AppointmentDate = appointmentDate;
+        Doctor = doctor;
+        DoctorId = doctor.DoctorId;
     }
 
 }

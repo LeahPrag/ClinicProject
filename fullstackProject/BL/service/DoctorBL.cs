@@ -34,15 +34,15 @@ namespace BL.service
         }
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
-            int doctorId =await  _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+            int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
             List<ClinicQueue> queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, day);
             foreach (var q in queues)
             {
-                _managerDal._dbManager.ClinicQueues.Remove(q);
+                await _managerDal._clinicQueueDAL.DeleteAnApointment(q);
             }
-            await _managerDal._dbManager.SaveChangesAsync();
 
-            return  true;
+
+            return true;
 
         }
 

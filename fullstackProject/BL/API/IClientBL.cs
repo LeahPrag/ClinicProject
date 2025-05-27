@@ -16,6 +16,7 @@ namespace BL.API
         void RemoveClient(string id);
         void UpdateClientEmail(String id, string email);
         void UpdateClientAdress(String id, string adress);
+       
 
     }
 }

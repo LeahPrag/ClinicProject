@@ -35,6 +35,18 @@ namespace DAL.service
             await _dbManager.SaveChangesAsync(); 
             return true;
         }
+        public async Task<bool> DeleteAnApointment(ClinicQueue queue)
+        {
+
+            if (queue == null)
+            {
+                return false;
+            }
+
+            _dbManager.ClinicQueues.Remove(queue);
+            await _dbManager.SaveChangesAsync();
+            return true;
+        }
 
 
         public async Task<List<int>> ClientsNames(int doctorID)

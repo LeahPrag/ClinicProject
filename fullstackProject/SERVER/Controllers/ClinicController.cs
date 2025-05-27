@@ -38,5 +38,12 @@ namespace SERVER.Controllers
             return await _managerBL._clinicQueueBL.DeleteAnApointment(firstName, lastName, idClient, day);
 
         }
+        [HttpPost("/addQueues")]
+        public async Task AddQueues()
+        {
+
+            await _managerBL._clinicQueueBL.Appointment();
+
+        }
     }
 }

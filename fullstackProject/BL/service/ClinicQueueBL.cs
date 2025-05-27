@@ -67,7 +67,57 @@ namespace BL.service
         //            return null;
         //        return isBooked;
         //    }
+        public async Task Appointment()
+        {
+            DateTime start = DateTime.Today;
+            DateTime end = start.AddDays(180);
 
+            // Check for null managerDal and doctorDAL
+            if (_managerDal == null || _managerDal._doctorDAL == null)
+                throw new Exception("_managerDal or _doctorDAL is null");
+
+            var doctors = await _managerDal._doctorDAL.GetDoctorsWithDays();
+            if (doctors == null)
+                throw new Exception("doctors is null");
+
+            foreach (var doctor in doctors)
+            {
+                if (doctor.DayDoctors == null) continue; // Skip if no working days
+
+                foreach (var dayDoctor in doctor.DayDoctors)
+                {
+                    if (dayDoctor.Day == null) continue; // Skip if day is null
+
+                    var day = dayDoctor.Day;
+
+                    for (DateTime date = start; date <= end; date = date.AddDays(1))
+                    {
+                        if ((int)date.DayOfWeek == day.DayNum)
+                        {
+                            for (int h = day.StartHour; h < day.EndHour; h++)
+                            {
+                                var appointmentDate = new DateTime(date.Year, date.Month, date.Day, h, 0, 0);
+
+                                // Check _availableQueueDAL for null
+                                if (_managerDal._availableQueueDAL == null)
+                                    throw new Exception("_availableQueueDAL is null");
+
+                                // Use the correct type for exists
+                                var exists = await _managerDal._availableQueueDAL
+                                    .GetDoctorAvailableQueueForASpecificHour(doctor.DoctorId, appointmentDate);
+
+                                if (exists == null)
+                                {
+                                    var appointment = new AvailableQueue(appointmentDate, doctor);
+                                    await _managerDal._availableQueueDAL.AddAvailableQueue(appointment);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+          
+        }
 
 
 

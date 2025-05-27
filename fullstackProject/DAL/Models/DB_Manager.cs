@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Models;
@@ -27,17 +28,32 @@ public partial class DB_Manager : DbContext
 
     public virtual DbSet<Doctor> Doctors { get; set; }
 
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    if (!optionsBuilder.IsConfigured)
+    //    {
+    //        string relativePath = @"data\db.mdf";
+    //       string fullPath = Path.Combine( Path.Combine( AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\"), relativePath);
+
+    //        string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
+    //                         AttachDbFilename={fullPath};
+    //                         Integrated Security=True;
+    //                         Connect Timeout=30";
+
+    //        optionsBuilder.UseSqlServer(connectionString);
+    //    }
+    //}
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {
-            string relativePath = @"data\db.mdf"; 
-            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
-            string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;
-                             AttachDbFilename={fullPath};
-                             Integrated Security=True;
-                             Connect Timeout=30";
+            string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\"));
+            AppDomain.CurrentDomain.SetData("DataDirectory", projectRoot);
 
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
+                                    AttachDbFilename=|DataDirectory|\DAL\data\db.mdf;
+                                    Integrated Security=True;
+                                    Connect Timeout=30";
             optionsBuilder.UseSqlServer(connectionString);
         }
     }
