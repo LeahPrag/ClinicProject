@@ -74,6 +74,11 @@ namespace DAL.service
                                                      .ToListAsync();
 
         }
+        public async Task<List<AvailableQueue>> GetAvailableQueueForASpesificDay( DateOnly day)
+        {
+            return await db.AvailableQueues.Where(t => t.AppointmentDate.Date == day.ToDateTime(TimeOnly.MinValue).Date)
+                                                     .ToListAsync();
+        }
 
     }
 }
