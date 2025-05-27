@@ -44,18 +44,18 @@ namespace SERVER.Controllers
             return await managerBL._doctorBL.GetDoctorQueesForToday( firstName,  lastName, DateOnly.FromDateTime(DateTime.Now));
 
         }
-        //[HttpGet("/availableQueuesForASpezesilation")]
-        //public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string spezesilation)
-        //{
+        [HttpGet("/availableQueuesForASpezesilation")]
+        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string spezesilation)
+        {
 
-        //    return await managerBL._doctorBL.AvailableQueuesForASpezesilation( DateOnly.FromDateTime(DateTime.Now));
+            return await managerBL._doctorBL.AvailableQueuesForASpezesilation(spezesilation);
 
-        //}
+        }
 
         [HttpGet("/AvailableQueuesForToday")]
         public async Task<List<M_AvailableQueue>> AvailableQueuesForToday()
         {
-
+    
             return await managerBL._doctorBL.GetAvailableQueesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
 
         }

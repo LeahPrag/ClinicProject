@@ -28,6 +28,7 @@ namespace BL.Exceptions
     public class specializationNotExistException : Exception
     {
         public int StatusCode { get; }
+        
         public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not exsist")
         {
             StatusCode = 605;

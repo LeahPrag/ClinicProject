@@ -15,5 +15,7 @@ namespace DAL.API
         Boolean MakeAnAppointment(int doctorId, DateTime dateTime, Client client);
         Task<List<AvailableQueue>> GetAvailableQueueForASpesificDay(DateOnly day);
         Task<List<AvailableQueue>> AvailableQueuesForASpezesilation(string specialization);
+        Task<AvailableQueue> GetDoctorAvailableQueueForASpecificHour(int doctorId, DateTime appointmentDate);
+        Task<bool> AddAvailableQueue(AvailableQueue availableQueue);
     }
 }

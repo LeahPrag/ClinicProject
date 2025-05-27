@@ -16,6 +16,9 @@ namespace BL.API
         Task<List<M_AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day);
         Task<List<M_ClinicQueue>> GetDoctorQueesForToday(string firstName, string lastName, DateOnly day);
         Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day);
+        Task<List<M_AvailableQueue>> GetDoctorAvailableQueesForASpesificday(string firstName, string lastName, DateOnly day);
+        Task<List<M_AvailableQueue>> GetAvailableQueesForASpesificday(DateOnly day);
+        Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization);
 
     }
 }
