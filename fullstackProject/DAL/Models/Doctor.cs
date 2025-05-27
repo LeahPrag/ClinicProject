@@ -39,4 +39,12 @@ public partial class Doctor
     {
         
     }
+
+}
+public enum Specialization
+{
+    Gynecologist,
+    ENT,
+    Pediatrician,
+    Adult
 }

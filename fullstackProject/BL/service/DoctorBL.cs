@@ -3,6 +3,7 @@ using DAL.Models;
 using DAL.service;
 using AutoMapper;
 using BL.Models;
+using BL.Exceptions;
 
 
 
@@ -66,6 +67,33 @@ namespace BL.service
             var queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, DateOnly.FromDateTime(DateTime.Now));
             return _mapper.Map<List<M_ClinicQueue>>(queues);
         }
+        public async Task<List<M_AvailableQueue>> GetDoctorAvailableQueesForASpesificday(string firstName, string lastName, DateOnly day)
+        {
+            int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
 
+            var queues = await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId,day);
+            return _mapper.Map<List<M_AvailableQueue>>(queues);
+        }
+        public async Task<List<M_AvailableQueue>> GetAvailableQueesForASpesificday( DateOnly day)
+        {
+            var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay( day);
+            return _mapper.Map<List<M_AvailableQueue>>(queues);
+        }
+        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
+        {
+
+            if (Enum.TryParse<Specialization>(specialization, true, out var result))
+            {
+
+                var queues = await _managerDal._availableQueueDAL.AvailableQueuesForASpezesilation(specialization);
+                return _mapper.Map<List<M_AvailableQueue>>(queues);
+            }
+            else
+            {
+                throw new specializationNotExistException(specialization);
+            }
+
+        }
+        //DateOnly.FromDateTime(DateTime.Now))
     }
 }

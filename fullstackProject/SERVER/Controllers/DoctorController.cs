@@ -29,7 +29,7 @@ namespace SERVER.Controllers
 
             //return 5;
         }
-        [HttpGet("/id")]
+        [HttpGet("/getAllDoctors")]
         public async Task<List<M_Doctor>> GetDoctors()
         {
 
@@ -37,15 +37,31 @@ namespace SERVER.Controllers
 
         }
         //
-        [HttpGet("/qeuesForToday")]
-        public async Task<List<M_ClinicQueue>> QeuesForToday(string firstName, string lastName)
+        [HttpGet("/DoctorqeuesForToday")]
+        public async Task<List<M_ClinicQueue>> DoctorQeuesForToday(string firstName, string lastName)
         {
 
             return await managerBL._doctorBL.GetDoctorQueesForToday( firstName,  lastName, DateOnly.FromDateTime(DateTime.Now));
 
         }
+        //[HttpGet("/availableQueuesForASpezesilation")]
+        //public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string spezesilation)
+        //{
 
-        [HttpPost("/id")]
+        //    return await managerBL._doctorBL.AvailableQueuesForASpezesilation( DateOnly.FromDateTime(DateTime.Now));
+
+        //}
+
+        [HttpGet("/AvailableQueuesForToday")]
+        public async Task<List<M_AvailableQueue>> AvailableQueuesForToday()
+        {
+
+            return await managerBL._doctorBL.GetAvailableQueesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
+
+        }
+
+
+        [HttpPost("/deleteADayOfWork")]
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
 
