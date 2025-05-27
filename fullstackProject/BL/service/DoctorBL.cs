@@ -3,6 +3,7 @@ using DAL.Models;
 using DAL.service;
 using AutoMapper;
 using BL.Models;
+using BL.Exceptions;
 
 
 
@@ -78,10 +79,20 @@ namespace BL.service
             var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay( day);
             return _mapper.Map<List<M_AvailableQueue>>(queues);
         }
-        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(DateOnly day)
+        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
         {
-            var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay(day);
-            return _mapper.Map<List<M_AvailableQueue>>(queues);
+
+            if (Enum.TryParse<Specialization>(specialization, true, out var result))
+            {
+
+                var queues = await _managerDal._availableQueueDAL.AvailableQueuesForASpezesilation(specialization);
+                return _mapper.Map<List<M_AvailableQueue>>(queues);
+            }
+            else
+            {
+                throw new specializationNotExistException(specialization);
+            }
+
         }
         //DateOnly.FromDateTime(DateTime.Now))
     }

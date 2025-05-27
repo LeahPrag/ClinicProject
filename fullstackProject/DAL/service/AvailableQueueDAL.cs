@@ -79,6 +79,11 @@ namespace DAL.service
             return await db.AvailableQueues.Where(t => t.AppointmentDate.Date == day.ToDateTime(TimeOnly.MinValue).Date)
                                                      .ToListAsync();
         }
+        public async Task<List<AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
+        {
+            return await db.AvailableQueues.Where(t => t.Doctor.Specialization == specialization)
+                                                     .ToListAsync();
+        }
 
     }
 }
