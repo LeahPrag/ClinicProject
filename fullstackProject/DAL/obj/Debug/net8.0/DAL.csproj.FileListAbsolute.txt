@@ -245,3 +245,19 @@ H:\f1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\refint\DAL.dll
 H:\f1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
 H:\f1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 H:\f1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\data\db.mdf
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check7\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
