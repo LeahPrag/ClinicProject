@@ -27,28 +27,44 @@ namespace BL.service
 
 
         //קביעת תור
+
+        //public async Task<bool> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateTime date, string idClient)
+        //{
+        //    var doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
+        //    if (doctorID == null)
+        //        throw new DoctorNotExsistException(doctorFirstname, doctorLastname);
+
+        //    var clientID = _managerDal._clientDAL.GetClientById(idClient);
+        //    if (clientID == null)
+        //        throw new ClientNotExsistException(idClient);
+
+
+
+        //    if (await AvailableQueueManager.Instance.IsHolidayAsync(date))
+        //        return false;
+        //    return _managerDal._availableQueueDAL.MakeAnAppointment(doctorID, clientID.ClientId, date);
+
+        //}
         public async Task<bool> MakeAnAppointment(string doctorFirstname, string doctorLastname, DateTime date, string idClient)
         {
             var doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
             if (doctorID == null)
                 throw new DoctorNotExsistException(doctorFirstname, doctorLastname);
 
-            var clientID = _managerDal._clientDAL.GetClientById(idClient);
-            if (clientID == null)
+            var client = await _managerDal._clientDAL.GetClientById(idClient);
+            if (client == null)
                 throw new ClientNotExsistException(idClient);
-
-
 
             if (await AvailableQueueManager.Instance.IsHolidayAsync(date))
                 return false;
-            return _managerDal._availableQueueDAL.MakeAnAppointment(doctorID, clientID.ClientId, date);
+            return _managerDal._availableQueueDAL.MakeAnAppointment(doctorID, client.ClientId, date);
 
         }
         public async Task<bool> DeleteAnApointment(string doctorFirstname, string doctorLastname, string idClient, DateOnly date)
         {
             int doctorID = await _managerDal._doctorDAL.SearchADoctor(doctorFirstname, doctorLastname);
-            int clientID = _managerDal._clientDAL.GetClientById(idClient).ClientId;
-            return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID);
+            var clientID = _managerDal._clientDAL.GetClientById(idClient);
+            return await _managerDal._clinicQueueDAL.DeleteAnApointment(doctorID, clientID.Id);
         }
 
         // התור הקרוב לא משנה לאיזה רופא

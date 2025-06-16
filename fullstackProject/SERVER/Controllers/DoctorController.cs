@@ -18,7 +18,7 @@ namespace SERVER.Controllers
         {
             managerBL = _managerBL;
                }
-        // GET: api/<gradeManagerController>
+        // GET: api/<gradeManagerControllerש
         [HttpGet]
         public async Task<int> GetNumOfClientForToday(string firstName, string lastName)
         {

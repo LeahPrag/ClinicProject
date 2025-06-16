@@ -45,5 +45,70 @@ namespace SERVER.Controllers
             await _managerBL._clinicQueueBL.Appointment();
 
         }
+
+        [HttpGet("getAll/")]
+        public async Task<List<Client>> GetClients()
+        {
+            return await _managerBL._clientBL.GetAllClients();
+        }
+
+
+        [HttpGet("getClientById/{id}")]
+        public async Task<ActionResult<Client>> GetClientById(string id)
+        {
+            try
+            {
+                var client = await _managerBL._clientBL.GetClientById(id);
+                return Ok(client);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+
+        [HttpPost("add/")]
+        public async Task<ActionResult> AddClient([FromBody] Client client)
+        {
+            try
+            {
+                await _managerBL._clientBL.AddClient(client);
+                return Ok("Client added successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("delete/{id}")]
+        public async Task<ActionResult> DeleteClient(string id)
+        {
+            try
+            {
+                await _managerBL._clientBL.RemoveClient(id);
+                return Ok("Client deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPut("update/")]
+        public async Task<ActionResult> UpdateClient([FromBody] Client updatedClient)
+        {
+            try
+            {
+                var existingClient = await _managerBL._clientBL.GetClientById(updatedClient.IdNumber);
+                await _managerBL._clientBL.UpdateClient(updatedClient, existingClient);
+                return Ok("Client updated successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

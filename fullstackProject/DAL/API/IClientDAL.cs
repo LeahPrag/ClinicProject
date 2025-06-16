@@ -4,14 +4,12 @@ namespace DAL.service
 {
     public interface IClientDAL
     {
-        void AddClient(Client client);
-        bool ClientExistById(string id);
-        List<Client> GetAllClients();
-        Client GetClientById(string id);
+        Task<List<Client>> GetAllClients();
+        Task<Client?> GetClientById(string id);
+        Task<bool> ClientExistById(string id);
+        Task AddClient(Client client);
         void RemoveClient(Client client);
         void UpdateClient(Client updatedClient, Client existingClient);
-
-
-
     }
 }
+

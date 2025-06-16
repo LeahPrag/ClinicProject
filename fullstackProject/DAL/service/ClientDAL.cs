@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,27 +17,30 @@ namespace DAL.service
         }
 
         //List of all patients
-        public List<Client> GetAllClients()
+        public async Task<List<Client>> GetAllClients()
         {
-            return _dbManager.Clients.ToList();
+            return await _dbManager.Clients.ToListAsync();
         }
 
         //Search for a patient by ID number - returns the patient
-        public Client GetClientById(string id)
+        //        //חיפוש פציינט ע"פ ת"ז-מחזיר את הפציינט
+        public async Task<Client?> GetClientById(string id)
         {
-            return _dbManager.Clients.FirstOrDefault(x => x.IdNumber.Equals(id));
+            return await _dbManager.Clients.FirstOrDefaultAsync(x => x.IdNumber.Equals(id));
         }
 
         //Search for a patient by ID-Boolean
-        public bool ClientExistById(string id)
+        //        //חיפוש פציינט ע"פ ת"ז-בוליאני
+        public async Task<bool> ClientExistById(string id)
         {
 
-            return _dbManager.Clients.Any(x => x.IdNumber.Equals(id));
+            return await _dbManager.Clients.AnyAsync(x => x.IdNumber.Equals(id));
         }
 
-        public void AddClient(Client client)
+        //מוסיף פציינט
+        public async Task AddClient(Client client)
         {
-            _dbManager.Clients.Add(client);
+            await _dbManager.Clients.AddAsync(client);
         }
 
         public void RemoveClient(Client client)
@@ -50,11 +54,9 @@ namespace DAL.service
             existingClient.Phone = updatedClient.Phone;
             existingClient.Email = updatedClient.Email;
             existingClient.Address = updatedClient.Address;
+
             _dbManager.Clients.Update(existingClient);
         }
-        
-
-
 
     }
 }

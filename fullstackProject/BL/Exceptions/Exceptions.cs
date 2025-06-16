@@ -10,6 +10,7 @@ namespace BL.Exceptions
     {
 
         public int StatusCode { get; }
+
         public ClientNotExsistException(string ClientId) : base($"The Client with Id {ClientId} not exsist")
         {
             StatusCode = 600;
@@ -26,15 +27,16 @@ namespace BL.Exceptions
 
     }
     public class specializationNotExistException : Exception
-    {
-        public int StatusCode { get; }
-        
-        public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not exsist")
         {
-            StatusCode = 605;
+            public int StatusCode { get; }
+
+            public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not exsist")
+            {
+                StatusCode = 605;
+            }
+
         }
 
-    }
     public class DoctorNotExsistException : Exception
     {
 
@@ -54,8 +56,15 @@ namespace BL.Exceptions
         }
     }
 
+    public class IncompatibleOrIincompleteValuesException : Exception
+    {
 
-
+        public int StatusCode { get; }
+        public IncompatibleOrIincompleteValuesException() : base($"Incompatible or incomplete values")
+        {
+            StatusCode = 699;
+        }
+    }
 
 }
 
