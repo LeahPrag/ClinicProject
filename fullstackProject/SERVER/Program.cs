@@ -21,6 +21,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 
+//add it for mapper profil 
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
+
 //builder.Services.AddCors(options =>
 //{
 //    options.AddPolicy("AllowReactApp",

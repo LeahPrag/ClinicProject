@@ -81,8 +81,10 @@ namespace DAL.service
         }
         public async Task<List<AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
         {
-            return await db.AvailableQueues.Where(t => t.Doctor.Specialization == specialization)
-                                                     .ToListAsync();
+            return await db.AvailableQueues
+                        .Include(q => q.Doctor) // 💥 חובה: טעינת רופא יחד עם התור
+                        .Where(q => q.Doctor.Specialization == specialization)
+                        .ToListAsync();
         }
         public async Task<AvailableQueue> GetDoctorAvailableQueueForASpecificHour(int doctorId, DateTime appointmentDate)
         {

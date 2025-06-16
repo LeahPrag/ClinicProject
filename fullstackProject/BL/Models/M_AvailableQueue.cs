@@ -13,7 +13,12 @@ namespace BL.Models
 
         public DateTime AppointmentDate { get; set; }
 
-        public virtual Doctor Doctor { get; set; } = null!;
+        //public virtual Doctor Doctor { get; set; } = null!;
+        public int DoctorId { get; set; }
+
+        public string FirstName { get; set; } = null!;
+
+        public string LastName { get; set; } = null!;
 
     }
 }
