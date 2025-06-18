@@ -76,13 +76,13 @@ namespace DAL.service
         }
         public async Task<List<AvailableQueue>> GetAvailableQueueForASpesificDay( DateOnly day)
         {
-            return await db.AvailableQueues.Where(t => t.AppointmentDate.Date == day.ToDateTime(TimeOnly.MinValue).Date)
+            return await db.AvailableQueues.Include(q => q.Doctor).Where(t => t.AppointmentDate.Date == day.ToDateTime(TimeOnly.MinValue).Date)
                                                      .ToListAsync();
         }
         public async Task<List<AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
         {
             return await db.AvailableQueues
-                        .Include(q => q.Doctor) // 💥 חובה: טעינת רופא יחד עם התור
+                        .Include(q => q.Doctor) 
                         .Where(q => q.Doctor.Specialization == specialization)
                         .ToListAsync();
         }

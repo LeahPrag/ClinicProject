@@ -61,7 +61,7 @@ namespace SERVER.Controllers
         }
 
 
-        [HttpPost("/deleteADayOfWork")]
+        [HttpDelete("/deleteADayOfWork")]
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
 

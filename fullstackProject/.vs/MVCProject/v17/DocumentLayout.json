@@ -15,16 +15,16 @@
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\clinicproject\\fullstackproject\\dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\clinicproject\\fullstackproject\\bl\\service\\availableqeuemanager .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\availableqeuemanager .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\clinicproject\\fullstackproject\\bl\\service\\clinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\clinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\clinicproject\\fullstackproject\\dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\clinicproject\\fullstackproject\\bl\\models\\m_availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -213,13 +213,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ClinicQueueDAL.cs",
               "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
               "RelativeDocumentMoniker": "DAL\\service\\ClinicQueueDAL.cs",
               "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
               "RelativeToolTip": "DAL\\service\\ClinicQueueDAL.cs",
-              "ViewState": "AgIAAAcAAADAzMzMzMwYwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAACgmZmZmZkwwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T08:14:39.216Z",
               "EditorCaption": ""
@@ -232,14 +232,14 @@
               "RelativeDocumentMoniker": "DAL\\service\\AvailableQueueDAL.cs",
               "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\DAL\\service\\AvailableQueueDAL.cs*",
               "RelativeToolTip": "DAL\\service\\AvailableQueueDAL.cs*",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAYwFYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAzwFAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T22:12:41.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ClinicQueueBL.cs",
               "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\BL\\service\\ClinicQueueBL.cs",
               "RelativeDocumentMoniker": "BL\\service\\ClinicQueueBL.cs",
@@ -247,12 +247,11 @@
               "RelativeToolTip": "BL\\service\\ClinicQueueBL.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAlwEIAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:33:04.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T13:33:04.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AvailableQeueManager .cs",
               "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\BL\\service\\AvailableQeueManager .cs",
               "RelativeDocumentMoniker": "BL\\service\\AvailableQeueManager .cs",
@@ -260,8 +259,7 @@
               "RelativeToolTip": "BL\\service\\AvailableQeueManager .cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAcwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T09:32:17.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T09:32:17.847Z"
             },
             {
               "$type": "Document",
@@ -269,9 +267,9 @@
               "Title": "DoctorController.cs",
               "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "SERVER\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "SERVER\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAACYAAADgzMzMzMwMwEkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check9\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs*",
+              "RelativeToolTip": "SERVER\\Controllers\\DoctorController.cs*",
+              "ViewState": "AgIAACoAAAAAnJmZmZnpvzoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T13:35:00.971Z",
               "EditorCaption": ""
@@ -299,8 +297,7 @@
               "RelativeToolTip": "BL\\Models\\M_AvailableQueue.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T10:19:46.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T10:19:46.548Z"
             },
             {
               "$type": "Document",
@@ -312,8 +309,7 @@
               "RelativeToolTip": "SERVER\\Program.cs",
               "ViewState": "AgIAAA0AAABgZmZmZmYowBcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T11:51:14.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T11:51:14.496Z"
             },
             {
               "$type": "Document",
@@ -349,8 +345,7 @@
               "RelativeToolTip": "DAL\\Models\\Client.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAwwBUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:17:44.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T17:17:44.117Z"
             },
             {
               "$type": "Document",
@@ -362,8 +357,7 @@
               "RelativeToolTip": "DAL\\Models\\Doctor.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAmwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:17:38.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T17:17:38.943Z"
             },
             {
               "$type": "Document",
@@ -375,8 +369,7 @@
               "RelativeToolTip": "BL\\Exceptions\\Exceptions.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwDYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T13:11:25.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T13:11:25.232Z"
             },
             {
               "$type": "Document",
@@ -388,8 +381,7 @@
               "RelativeToolTip": "BL\\Models\\QueueMappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T18:23:08.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T18:23:08.764Z"
             },
             {
               "$type": "Document",
