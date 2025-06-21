@@ -11,5 +11,9 @@ namespace DAL.API
         public Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day);
         Task<List<Doctor>> GetDoctors();
         Task<List<Doctor>> GetDoctorsWithDays();
+        Task AddADoctor(Doctor doctor);
+        Task<bool> SearchADoctorById(string id);
+
+
     }
 }

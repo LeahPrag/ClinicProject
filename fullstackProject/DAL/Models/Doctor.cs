@@ -13,6 +13,9 @@ public partial class Doctor
 
     public string Specialization { get; set; } = null!;
 
+    public string IdNumber { get; set; } = null!;
+
+
     public virtual ICollection<AvailableQueue> AvailableQueues { get; set; } = new List<AvailableQueue>();
 
     public virtual ICollection<ClinicQueue> ClinicQueues { get; set; } = new List<ClinicQueue>();
@@ -23,6 +26,7 @@ public partial class Doctor
     string firstName,
     string lastName,
     string specialization,
+    string idNumber,
     ICollection<AvailableQueue>? availableQueues = null,
     ICollection<ClinicQueue>? clinicQueues = null,
     ICollection<DayDoctor>? dayDoctors = null)
@@ -31,6 +35,7 @@ public partial class Doctor
         FirstName = firstName;
         LastName = lastName;
         Specialization = specialization;
+        IdNumber = idNumber;
         AvailableQueues = availableQueues ?? new List<AvailableQueue>();
         ClinicQueues = clinicQueues ?? new List<ClinicQueue>();
         DayDoctors = dayDoctors ?? new List<DayDoctor>();

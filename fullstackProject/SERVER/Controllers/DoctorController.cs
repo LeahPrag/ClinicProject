@@ -59,7 +59,21 @@ namespace SERVER.Controllers
             return await managerBL._doctorBL.GetAvailableQueesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
 
         }
+        [HttpPost("/addDoctor")]
+        public async Task<ActionResult> AddDoctor([FromBody] Doctor doctor)
+        {
 
+
+            try
+            {
+                await managerBL._doctorBL.AddDoctor(doctor);
+                return Ok("Doctor added successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpDelete("/deleteADayOfWork")]
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)

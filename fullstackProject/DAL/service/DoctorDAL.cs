@@ -48,6 +48,14 @@ namespace DAL.service
             return  id.Value;
 
         }
+        public async Task<bool> SearchADoctorById(string id)
+        {
+
+            var doctor = await _dbManager.Doctors
+                                         .FirstOrDefaultAsync(c => c.IdNumber == id);
+            return doctor != null;
+
+        }
         public async Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day)
         {
             return await _dbManager.Doctors
@@ -60,6 +68,12 @@ namespace DAL.service
         public async Task<List<Doctor>> GetDoctors()
         {
             return await _dbManager.Doctors.ToListAsync();
+        }
+        public async Task AddADoctor(Doctor doctor)
+        {
+            await _dbManager.Doctors.AddAsync(doctor);
+            await _dbManager.SaveChangesAsync();
+
         }
 
         public async Task<List<Doctor>> GetDoctorsWithDays()

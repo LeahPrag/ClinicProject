@@ -17,5 +17,7 @@ namespace BL.Models
 
         public string Specialization { get; set; } = null!;
 
+        public string IdNumber { get; set; } = null!;
+
     }
 }

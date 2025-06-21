@@ -94,6 +94,22 @@ namespace BL.service
             }
 
         }
-        //DateOnly.FromDateTime(DateTime.Now))
+        public async Task AddDoctor(Doctor doctor)
+        {
+            if (await _managerDal._doctorDAL.SearchADoctorById(doctor.IdNumber))
+                throw new ClientAlradyExsistException(doctor.IdNumber);
+
+            if (!IsValidInput(doctor.FirstName) || !IsValidInput(doctor.LastName))
+                throw new IncompatibleOrIincompleteValuesException();
+            if (doctor.IdNumber.Length != 9)
+                throw new IncompatibleOrIincompleteValuesException();
+            _managerDal._doctorDAL.AddADoctor(doctor);
+        }
+        public bool IsValidInput(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                throw new IncompatibleOrIincompleteValuesException();
+            return true;
+        }
     }
 }
