@@ -4,6 +4,7 @@ using DAL.service;
 using AutoMapper;
 using BL.Models;
 using BL.Exceptions;
+using System.Numerics;
 
 
 
@@ -44,6 +45,17 @@ namespace BL.service
 
 
             return true;
+
+        }
+        public async Task DeleteADoctor(string id)
+        {
+            Doctor doctor = await _managerDal._doctorDAL.GetADoctorById(id);
+                               
+            if (doctor == null)
+            {
+                throw new DoctorNotExsistException(id);
+            }
+            await _managerDal._doctorDAL.DeleteADoctor(doctor);
 
         }
 
@@ -103,7 +115,7 @@ namespace BL.service
                 throw new IncompatibleOrIincompleteValuesException();
             if (doctor.IdNumber.Length != 9)
                 throw new IncompatibleOrIincompleteValuesException();
-            _managerDal._doctorDAL.AddADoctor(doctor);
+            await _managerDal._doctorDAL.AddADoctor(doctor);
         }
         public bool IsValidInput(string input)
         {

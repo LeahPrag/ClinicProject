@@ -13,7 +13,8 @@ namespace DAL.API
         Task<List<Doctor>> GetDoctorsWithDays();
         Task AddADoctor(Doctor doctor);
         Task<bool> SearchADoctorById(string id);
-
+        Task DeleteADoctor(Doctor doctor);
+        Task<Doctor> GetADoctorById(string id);
 
     }
 }

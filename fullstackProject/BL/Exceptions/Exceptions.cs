@@ -45,6 +45,10 @@ namespace BL.Exceptions
         {
             StatusCode = 620;
         }
+        public DoctorNotExsistException(string id) : base($"The doctor: {id} not exsist")
+        {
+            StatusCode = 621;
+        }
     }
     public class DoctorAlradyExsistException : Exception
     {

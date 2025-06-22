@@ -1,5 +1,6 @@
 ﻿using System;
 using BL.API;
+using BL.Exceptions;
 using BL.Models;
 using DAL.Models;
 using Microsoft.AspNetCore.Http;
@@ -80,6 +81,26 @@ namespace SERVER.Controllers
         {
 
             return await managerBL._doctorBL.DeleteADayOfWork(firstName, lastName,  day);
+
+        }
+        [HttpDelete("/deleteADoctor")]
+        public async Task<ActionResult> DeleteADoctor(string id)
+        {
+
+            try
+            {
+                await managerBL._doctorBL.DeleteADoctor(id);
+                return Ok("Doctor deleted successfully");
+            }
+            catch (DoctorNotExsistException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // בעיה לא צפויה אחרת
+                return StatusCode(500, "Something went wrong");
+            }
 
         }
 

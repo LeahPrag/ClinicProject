@@ -1,7 +1,9 @@
 ﻿using DAL.API;
 using DAL.Models;
+
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,6 +58,14 @@ namespace DAL.service
             return doctor != null;
 
         }
+        public async Task<Doctor> GetADoctorById(string id)
+        {
+
+            Doctor? doctor = await _dbManager.Doctors
+                                         .FirstOrDefaultAsync(d => d.IdNumber == id);
+            return doctor;
+
+        }
         public async Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day)
         {
             return await _dbManager.Doctors
@@ -82,6 +92,12 @@ namespace DAL.service
                 .Include(d => d.DayDoctors)
                     .ThenInclude(dd => dd.Day)
                 .ToListAsync();
+        }
+        public async Task DeleteADoctor(Doctor doctor)
+        {
+            _dbManager.Doctors.Remove(doctor);
+            await _dbManager.SaveChangesAsync();
+
         }
     }
 }

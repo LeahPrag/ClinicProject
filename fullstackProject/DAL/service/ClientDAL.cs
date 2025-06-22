@@ -46,6 +46,7 @@ namespace DAL.service
         public void RemoveClient(Client client)
         {
             _dbManager.Clients.Remove(client);
+            _dbManager.SaveChanges();// leahle added it
         }
 
         public void UpdateClient(Client updatedClient, Client existingClient)

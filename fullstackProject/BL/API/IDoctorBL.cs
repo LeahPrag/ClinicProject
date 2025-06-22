@@ -20,6 +20,7 @@ namespace BL.API
         Task<List<M_AvailableQueue>> GetAvailableQueesForASpesificday(DateOnly day);
         Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization);
         Task AddDoctor(Doctor doctor);
+        Task DeleteADoctor(string id);
 
     }
 }
