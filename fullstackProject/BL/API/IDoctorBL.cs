@@ -21,6 +21,7 @@ namespace BL.API
         Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization);
         Task AddDoctor(Doctor doctor);
         Task DeleteADoctor(string id);
+        Task UpdateDoctor(UpdateDoctorDto updatedDoctor);
 
     }
 }

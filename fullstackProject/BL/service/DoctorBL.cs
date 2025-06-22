@@ -58,6 +58,24 @@ namespace BL.service
             await _managerDal._doctorDAL.DeleteADoctor(doctor);
 
         }
+        public async Task UpdateDoctor(UpdateDoctorDto updatedDoctor)
+        {
+            Doctor existingDoctor =await  _managerDal._doctorDAL.GetADoctorById(updatedDoctor.IdNumber);  
+            if (existingDoctor == null)
+                throw new DoctorNotExsistException(updatedDoctor.IdNumber);
+            if (!string.IsNullOrWhiteSpace(updatedDoctor.FirstName))
+                existingDoctor.FirstName = updatedDoctor.FirstName;
+
+            if (!string.IsNullOrWhiteSpace(updatedDoctor.LastName))
+                existingDoctor.LastName = updatedDoctor.LastName;
+
+            if (!string.IsNullOrWhiteSpace(updatedDoctor.Specialization))
+                existingDoctor.Specialization = updatedDoctor.Specialization;
+
+
+  
+            await _managerDal._doctorDAL.UpdateDoctor(existingDoctor);
+        }
 
         public async Task<List<M_AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
         {

@@ -75,6 +75,11 @@ namespace DAL.service
                 .Select(dd => dd.Day)
                 .FirstOrDefaultAsync();
         }
+        public async Task UpdateDoctor(Doctor doctor)
+        {
+            await _dbManager.SaveChangesAsync(); 
+        }
+
         public async Task<List<Doctor>> GetDoctors()
         {
             return await _dbManager.Doctors.ToListAsync();

@@ -103,6 +103,24 @@ namespace SERVER.Controllers
             }
 
         }
+        [HttpPut("/updateDoctor")]
+        public async Task<ActionResult> UpdateDoctor([FromBody] UpdateDoctorDto updatedDoctor)
+        {
+            try
+            {
+
+                await managerBL._doctorBL.UpdateDoctor(updatedDoctor);
+                return Ok("Doctor updated successfully");
+            }
+            catch (DoctorNotExsistException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }
