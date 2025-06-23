@@ -25,8 +25,13 @@ namespace DAL.service
         }
         public async Task<List<ClinicQueue>> GetDoctorQueesForASpesificDay(int doctorId, DateOnly day)
         {
+            var dateToCheck = day.ToDateTime(TimeOnly.MinValue).Date;// I added it to check
             List<ClinicQueue> clinicQueues =await _dbManager.ClinicQueues
-                .Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
+                .Include(q=>q.Client)
+                .Include(q=> q.Doctor)
+                .Where(q => q.DoctorId == doctorId &&
+                    q.AppointmentDate.Date == dateToCheck)
+                //.Where(t => t.DoctorId == doctorId && t.AppointmentDate.Day == day.Day && t.AppointmentDate.Month == day.Month && t.AppointmentDate.Year == day.Year)
                 .ToListAsync();
 
             return  clinicQueues;
@@ -64,6 +69,16 @@ namespace DAL.service
             Doctor? doctor = await _dbManager.Doctors
                                          .FirstOrDefaultAsync(d => d.IdNumber == id);
             return doctor;
+
+        }
+        public async Task<int> GetDoctorIdByIdNumber(string id)
+        {
+
+            Doctor? doctor = await _dbManager.Doctors
+                                         .FirstOrDefaultAsync(d => d.IdNumber == id);
+            if (doctor == null)
+                return 0;
+            return doctor.DoctorId; ;
 
         }
         public async Task<Day?> GetDoctorDay(string doctor_firtsname, string doctor_lastname, int day)

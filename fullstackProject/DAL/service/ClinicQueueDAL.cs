@@ -21,10 +21,11 @@ namespace DAL.service
         {
             return await _dbManager.ClinicQueues.ToListAsync();
         }
-        public async Task<bool> DeleteAnApointment(int doctorID, int clientID)
+        public async Task<bool> DeleteAnApointment(string doctorID, string clientID, DateTime date)
         {
             var queue = await _dbManager.ClinicQueues
-                .FirstOrDefaultAsync(q => q.ClientId == clientID && q.DoctorId == doctorID);
+                .FirstOrDefaultAsync(q => q.Client.IdNumber == clientID && q.Doctor.IdNumber == doctorID
+                && q.AppointmentDate==date );
 
             if (queue == null)
             {

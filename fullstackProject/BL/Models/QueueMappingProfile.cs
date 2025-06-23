@@ -16,7 +16,7 @@ namespace BL.Models
                 .ForMember(dest => dest.AppointmentDate, opt => opt.MapFrom(src => src.AppointmentDate))
                 .ForMember(dest => dest.DoctorId, opt => opt.MapFrom(src => src.Doctor.DoctorId))
                 .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.Doctor.FirstName))
-                .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.Doctor.LastName)); // לפי הצורך – אולי תעשי דחיסה (Projection) של Doctor
+                .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.Doctor.LastName));
         }
     }
 }

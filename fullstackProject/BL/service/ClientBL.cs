@@ -10,7 +10,7 @@ using DAL.service;
 using BL.Exceptions;
 using System.Text.RegularExpressions;
 
-namespace DAL.service
+namespace BL.service
 {
     public class ClientBL : IClientBL
     {

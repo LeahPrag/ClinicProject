@@ -12,8 +12,12 @@ namespace BL.Models
         public int QueueId { get; set; }
         public DateTime AppointmentDate { get; set; }
 
-        public virtual Client Client { get; set; } = null!;
+        public int ClientId { get; set; }
+        public string ClientFirstName { get; set; } = "";
+        public string ClientLastName { get; set; } = "";
 
-        public virtual Doctor Doctor { get; set; } = null!;
+        public int DoctorId { get; set; }
+        public string DoctorFirstName { get; set; } = "";
+        public string DoctorLastName { get; set; } = "";
     }
 }

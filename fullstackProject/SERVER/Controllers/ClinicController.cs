@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using DAL.Models;
 using BL.Models;
 using System.Net.Sockets;
+using BL.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace SERVER.Controllers
 {
@@ -32,10 +34,51 @@ namespace SERVER.Controllers
             return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
         }
         [HttpPost("/makeAnApointment")]
-        public async Task<bool> MakeAnApointment(string firstName, string lastName, string idClient, DateOnly day)
+        public async Task<ActionResult> MakeAnApointment(string idDoctor, string idClient, DateTime date)
         {
-            //    List<AvailableQueue>= _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, day);
-            return await _managerBL._clinicQueueBL.DeleteAnApointment(firstName, lastName, idClient, day);
+            try
+            {
+                //await _managerBL._clinicQueueBL.DeleteAnApointment(idDoctor, idClient, date);
+                await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), date);
+                return Ok("apointment added successfully");
+            }
+            catch (DoctorNotExsistException ex)
+            {
+                return NotFound(new
+                {
+                    error = "Doctor not found",doctorId = idDoctor,message = ex.Message});
+            }
+            catch (AvailableQueueNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (DayOfQueueIsNotPermission ex)
+            {
+                return BadRequest(new { error = ex.Message, code = ex.StatusCode });
+            }
+            catch (ClientNotExsistException ex)
+            {
+                return NotFound(new
+                {
+                    error = "Client not found",clientId = idClient,message = ex.Message});
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, new
+                {
+                    error = "Database update failed",
+                    message = ex.InnerException?.Message ?? ex.Message
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    error = "Internal server error",
+                    message = ex.Message,
+                    inner = ex.InnerException?.Message
+                });
+            }
 
         }
         [HttpPost("/addQueues")]

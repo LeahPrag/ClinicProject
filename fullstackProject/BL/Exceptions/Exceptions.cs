@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BL.Exceptions
 {
@@ -57,6 +58,34 @@ namespace BL.Exceptions
         public DoctorAlradyExsistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} aleady exsist")
         {
             StatusCode = 624;
+        }
+    }
+    public class QueueDoesNotExsistException : Exception
+    {
+
+        public int StatusCode { get; }
+        public QueueDoesNotExsistException(string idDoctor, string idClient, DateTime date) : base($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not exsist")
+        {
+            StatusCode = 650;
+        }
+    }
+    public class DayOfQueueIsNotPermission : Exception
+    {
+
+        public int StatusCode { get; }
+        public DayOfQueueIsNotPermission( DateTime date) : base($"The date: {date} does not permission for a queue")
+        {
+            StatusCode = 650;
+        }
+    }
+    
+    public class AvailableQueueNotFoundException : Exception
+    {
+
+        public int StatusCode { get; }
+        public AvailableQueueNotFoundException(string idDoctor, DateTime date) : base($"The queue in date: {date:yyyy-MM-dd HH:mm} for doctor {idDoctor} is not available")
+        {
+            StatusCode = 650;
         }
     }
 

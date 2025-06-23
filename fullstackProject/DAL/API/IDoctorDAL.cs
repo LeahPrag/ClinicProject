@@ -16,6 +16,7 @@ namespace DAL.API
         Task DeleteADoctor(Doctor doctor);
         Task<Doctor> GetADoctorById(string id);
         Task UpdateDoctor(Doctor doctor);
+        Task<int> GetDoctorIdByIdNumber(string id);
 
     }
 }
