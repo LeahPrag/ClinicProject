@@ -1,183 +1,183 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\",
+  "WorkspaceRootPath": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\service\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\idoctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\idoctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\service\\doctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\idoctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\idoctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\service\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\doctorbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\service\\doctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\doctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\clinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\service\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\service\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\api\\iclientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\api\\iclientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iclientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\service\\availablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\service\\availablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\availablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\api\\iavailablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\api\\iavailablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iavailablequeuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\service\\apointmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\service\\apointmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\service\\apointmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\db_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\daydoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\daydoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\daydoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\day.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\day.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\day.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\models\\availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\models\\availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\models\\availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\api\\idoctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\api\\idoctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\api\\idoctordal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\dal\\api\\iclinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\dal\\api\\iclinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{494A3906-44A1-4694-8F5D-802AD0BDA3D3}|DAL\\DAL.csproj|solutionrelative:dal\\api\\iclinicqueuedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\service\\clinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\service\\clinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\clinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\iclinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\iclinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\iclinicqueuebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\exceptions\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\exceptions\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\exceptions\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\service\\clientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\service\\clientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\clientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\service\\availableqeuemanager .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\service\\availableqeuemanager .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\service\\availableqeuemanager .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\queuemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\queuemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\queuemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\managerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\managerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\managerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\managerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\managerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\managerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\m_doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\m_doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\m_doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\m_clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\m_clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\m_clinicqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\m_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\m_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\m_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\m_availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\m_availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\m_availablequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\clinicqueuemappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\clinicqueuemappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\clinicqueuemappingprofile .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\imanagerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\imanagerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\imanagerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\imanagerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\imanagerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\imanagerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\iclientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\iclientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\iclientbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\api\\iavailablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\api\\iavailablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\api\\iavailablequeuemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD_\u05E9\u05D9\u05E2\u05D5\u05E8\u05D9_\u05D1\u05D9\u05EA_\u05D5\u05EA\u05E8\u05D2\u05D5\u05DC_\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8_\u05DE\u05E1\u05DB\u05DD_BACEND_1_CLINICPROJECT_FULLSTACKPROJECT_DAL_DATA_DB.MDF/True/SqlTable/dbo.Clients.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\bl\\models\\updatedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\bl\\models\\updatedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C0AC88-4EF1-4F40-8770-0CBB7AC61486}|BL\\BL.csproj|solutionrelative:bl\\models\\updatedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\controllers\\exceptoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\controllers\\exceptoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\controllers\\exceptoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -193,7 +193,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/H__F_CLINICPROJECT_FULLSTACKPROJECT_DAL_DATA_DB.MDF/True/SqlTable/dbo.Doctor.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 c#\\clinicproject\\fullstackproject\\server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|c:\\users\\imoe001\\documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\clinicproject\\fullstackproject\\server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D6CA03DB-37CA-49E0-B282-6DC78E2764B4}|SERVER\\SERVER.csproj|solutionrelative:server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -219,27 +219,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DoctorDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\DoctorDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\service\\DoctorDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\DoctorDAL.cs",
-              "RelativeToolTip": "DAL\\service\\DoctorDAL.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAA1wGAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:06:24.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ClinicController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ClinicController.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ClinicController.cs",
               "RelativeDocumentMoniker": "SERVER\\Controllers\\ClinicController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ClinicController.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ClinicController.cs",
               "RelativeToolTip": "SERVER\\Controllers\\ClinicController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAIwBwAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -250,9 +238,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ClientDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ClientDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ClientDAL.cs",
               "RelativeDocumentMoniker": "DAL\\service\\ClientDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ClientDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ClientDAL.cs",
               "RelativeToolTip": "DAL\\service\\ClientDAL.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -262,9 +250,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "IClientDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IClientDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IClientDAL.cs",
               "RelativeDocumentMoniker": "DAL\\API\\IClientDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IClientDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IClientDAL.cs",
               "RelativeToolTip": "DAL\\API\\IClientDAL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -274,9 +262,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "AvailableQueueDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\AvailableQueueDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\AvailableQueueDAL.cs",
               "RelativeDocumentMoniker": "DAL\\service\\AvailableQueueDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\AvailableQueueDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\AvailableQueueDAL.cs",
               "RelativeToolTip": "DAL\\service\\AvailableQueueDAL.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwB0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -284,23 +272,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "SERVER\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "SERVER\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAMTMzMzMDwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:35:00.971Z"
+              "WhenOpened": "2025-05-13T13:35:00.971Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LogIn.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\LogIn.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\LogIn.cs",
               "RelativeDocumentMoniker": "SERVER\\Controllers\\LogIn.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\LogIn.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\LogIn.cs",
               "RelativeToolTip": "SERVER\\Controllers\\LogIn.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAowB4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -309,34 +298,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IDoctorBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IDoctorBL.cs",
-              "RelativeDocumentMoniker": "BL\\API\\IDoctorBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IDoctorBL.cs",
-              "RelativeToolTip": "BL\\API\\IDoctorBL.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAkAAABiAAAAAAAAAA==",
+              "Title": "DoctorBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\DoctorBL.cs",
+              "RelativeDocumentMoniker": "BL\\service\\DoctorBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\DoctorBL.cs",
+              "RelativeToolTip": "BL\\service\\DoctorBL.cs",
+              "ViewState": "AgIAADoAAADgzMzMzMwmwEMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:40:22.364Z"
+              "WhenOpened": "2025-05-13T12:34:37.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DoctorBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\DoctorBL.cs",
-              "RelativeDocumentMoniker": "BL\\service\\DoctorBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\DoctorBL.cs",
-              "RelativeToolTip": "BL\\service\\DoctorBL.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAxwDsAAABiAAAAAAAAAA==",
+              "Title": "IDoctorBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IDoctorBL.cs",
+              "RelativeDocumentMoniker": "BL\\API\\IDoctorBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IDoctorBL.cs",
+              "RelativeToolTip": "BL\\API\\IDoctorBL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAAoAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:34:37.01Z"
+              "WhenOpened": "2025-05-06T12:40:22.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\DoctorDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\service\\DoctorDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\DoctorDAL.cs",
+              "RelativeToolTip": "DAL\\service\\DoctorDAL.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAA1wGAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:06:24.942Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ClinicQueueDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
               "RelativeDocumentMoniker": "DAL\\service\\ClinicQueueDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ClinicQueueDAL.cs",
               "RelativeToolTip": "DAL\\service\\ClinicQueueDAL.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAwwC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -346,9 +353,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "IAvailableQueueDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IAvailableQueueDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IAvailableQueueDAL.cs",
               "RelativeDocumentMoniker": "DAL\\API\\IAvailableQueueDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IAvailableQueueDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IAvailableQueueDAL.cs",
               "RelativeToolTip": "DAL\\API\\IAvailableQueueDAL.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -358,9 +365,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "ApointmentManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ApointmentManager.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ApointmentManager.cs",
               "RelativeDocumentMoniker": "DAL\\service\\ApointmentManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\service\\ApointmentManager.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\service\\ApointmentManager.cs",
               "RelativeToolTip": "DAL\\service\\ApointmentManager.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAcwEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,9 +377,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Doctor.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Doctor.cs",
               "RelativeToolTip": "DAL\\Models\\Doctor.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAIwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -382,9 +389,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "DB_Manager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\DB_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\DB_Manager.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\DB_Manager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\DB_Manager.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\DB_Manager.cs",
               "RelativeToolTip": "DAL\\Models\\DB_Manager.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAiwJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -394,9 +401,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "DayDoctor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\DayDoctor.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\DayDoctor.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\DayDoctor.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\DayDoctor.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\DayDoctor.cs",
               "RelativeToolTip": "DAL\\Models\\DayDoctor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -406,9 +413,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Day.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Day.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Day.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Day.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Day.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Day.cs",
               "RelativeToolTip": "DAL\\Models\\Day.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAA3wBEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -418,9 +425,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ClinicQueue.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\ClinicQueue.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\ClinicQueue.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\ClinicQueue.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\ClinicQueue.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\ClinicQueue.cs",
               "RelativeToolTip": "DAL\\Models\\ClinicQueue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -430,9 +437,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Client.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Client.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\Client.cs",
               "RelativeToolTip": "DAL\\Models\\Client.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA4wBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -442,9 +449,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "AvailableQueue.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\AvailableQueue.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\AvailableQueue.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AvailableQueue.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\Models\\AvailableQueue.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\Models\\AvailableQueue.cs",
               "RelativeToolTip": "DAL\\Models\\AvailableQueue.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -454,9 +461,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "IDoctorDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IDoctorDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IDoctorDAL.cs",
               "RelativeDocumentMoniker": "DAL\\API\\IDoctorDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IDoctorDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IDoctorDAL.cs",
               "RelativeToolTip": "DAL\\API\\IDoctorDAL.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA3wBEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -466,9 +473,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "IClinicQueueDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IClinicQueueDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IClinicQueueDAL.cs",
               "RelativeDocumentMoniker": "DAL\\API\\IClinicQueueDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\DAL\\API\\IClinicQueueDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\API\\IClinicQueueDAL.cs",
               "RelativeToolTip": "DAL\\API\\IClinicQueueDAL.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -478,9 +485,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "Mapper.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Mapper.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Mapper.cs",
               "RelativeDocumentMoniker": "BL\\Mapper.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Mapper.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Mapper.cs",
               "RelativeToolTip": "BL\\Mapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -490,9 +497,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "ClinicQueueBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\ClinicQueueBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\ClinicQueueBL.cs",
               "RelativeDocumentMoniker": "BL\\service\\ClinicQueueBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\ClinicQueueBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\ClinicQueueBL.cs",
               "RelativeToolTip": "BL\\service\\ClinicQueueBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -502,9 +509,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "IClinicQueueBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IClinicQueueBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IClinicQueueBL.cs",
               "RelativeDocumentMoniker": "BL\\API\\IClinicQueueBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IClinicQueueBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IClinicQueueBL.cs",
               "RelativeToolTip": "BL\\API\\IClinicQueueBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -514,9 +521,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "Exceptions.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Exceptions\\Exceptions.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Exceptions\\Exceptions.cs",
               "RelativeDocumentMoniker": "BL\\Exceptions\\Exceptions.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Exceptions\\Exceptions.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Exceptions\\Exceptions.cs",
               "RelativeToolTip": "BL\\Exceptions\\Exceptions.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwv0AAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -526,9 +533,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "ClientBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\ClientBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\ClientBL.cs",
               "RelativeDocumentMoniker": "BL\\service\\ClientBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\ClientBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\ClientBL.cs",
               "RelativeToolTip": "BL\\service\\ClientBL.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -538,9 +545,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "AvailableQeueManager .cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\AvailableQeueManager .cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\AvailableQeueManager .cs",
               "RelativeDocumentMoniker": "BL\\service\\AvailableQeueManager .cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\service\\AvailableQeueManager .cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\service\\AvailableQeueManager .cs",
               "RelativeToolTip": "BL\\service\\AvailableQeueManager .cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAuwEQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -550,9 +557,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "QueueMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\QueueMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\QueueMappingProfile.cs",
               "RelativeDocumentMoniker": "BL\\Models\\QueueMappingProfile.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\QueueMappingProfile.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\QueueMappingProfile.cs",
               "RelativeToolTip": "BL\\Models\\QueueMappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -562,9 +569,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "ManagerDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerDAL.cs",
               "RelativeDocumentMoniker": "BL\\Models\\ManagerDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerDAL.cs",
               "RelativeToolTip": "BL\\Models\\ManagerDAL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -574,9 +581,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "ManagerBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerBL.cs",
               "RelativeDocumentMoniker": "BL\\Models\\ManagerBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ManagerBL.cs",
               "RelativeToolTip": "BL\\Models\\ManagerBL.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA4wBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -586,9 +593,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "M_Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_Doctor.cs",
               "RelativeDocumentMoniker": "BL\\Models\\M_Doctor.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_Doctor.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_Doctor.cs",
               "RelativeToolTip": "BL\\Models\\M_Doctor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -598,9 +605,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "M_ClinicQueue.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_ClinicQueue.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_ClinicQueue.cs",
               "RelativeDocumentMoniker": "BL\\Models\\M_ClinicQueue.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_ClinicQueue.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_ClinicQueue.cs",
               "RelativeToolTip": "BL\\Models\\M_ClinicQueue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -610,9 +617,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "M_Client.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_Client.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_Client.cs",
               "RelativeDocumentMoniker": "BL\\Models\\M_Client.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_Client.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_Client.cs",
               "RelativeToolTip": "BL\\Models\\M_Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -622,9 +629,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "M_AvailableQueue.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_AvailableQueue.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_AvailableQueue.cs",
               "RelativeDocumentMoniker": "BL\\Models\\M_AvailableQueue.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\M_AvailableQueue.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\M_AvailableQueue.cs",
               "RelativeToolTip": "BL\\Models\\M_AvailableQueue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -634,9 +641,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "ClinicQueueMappingProfile .cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ClinicQueueMappingProfile .cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ClinicQueueMappingProfile .cs",
               "RelativeDocumentMoniker": "BL\\Models\\ClinicQueueMappingProfile .cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\ClinicQueueMappingProfile .cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\ClinicQueueMappingProfile .cs",
               "RelativeToolTip": "BL\\Models\\ClinicQueueMappingProfile .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -646,9 +653,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "IManagerDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IManagerDAL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IManagerDAL.cs",
               "RelativeDocumentMoniker": "BL\\API\\IManagerDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IManagerDAL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IManagerDAL.cs",
               "RelativeToolTip": "BL\\API\\IManagerDAL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -658,9 +665,9 @@
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "IManagerBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IManagerBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IManagerBL.cs",
               "RelativeDocumentMoniker": "BL\\API\\IManagerBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IManagerBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IManagerBL.cs",
               "RelativeToolTip": "BL\\API\\IManagerBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -670,9 +677,9 @@
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "IClientBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IClientBL.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IClientBL.cs",
               "RelativeDocumentMoniker": "BL\\API\\IClientBL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IClientBL.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IClientBL.cs",
               "RelativeToolTip": "BL\\API\\IClientBL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -682,9 +689,9 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "IAvailableQueueManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IAvailableQueueManager.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IAvailableQueueManager.cs",
               "RelativeDocumentMoniker": "BL\\API\\IAvailableQueueManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\API\\IAvailableQueueManager.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\API\\IAvailableQueueManager.cs",
               "RelativeToolTip": "BL\\API\\IAvailableQueueManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -703,9 +710,9 @@
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
               "RelativeDocumentMoniker": "SERVER\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Program.cs",
               "RelativeToolTip": "SERVER\\Program.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAuwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -715,9 +722,9 @@
               "$type": "Document",
               "DocumentIndex": 41,
               "Title": "UpdateDoctorDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\UpdateDoctorDto.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\UpdateDoctorDto.cs",
               "RelativeDocumentMoniker": "BL\\Models\\UpdateDoctorDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\BL\\Models\\UpdateDoctorDto.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\BL\\Models\\UpdateDoctorDto.cs",
               "RelativeToolTip": "BL\\Models\\UpdateDoctorDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -728,9 +735,9 @@
               "DocumentIndex": 42,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-06-22T14:02:57.411Z"
             },
@@ -738,9 +745,9 @@
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "ExceptoinController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ExceptoinController.cs",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ExceptoinController.cs",
               "RelativeDocumentMoniker": "SERVER\\Controllers\\ExceptoinController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ExceptoinController.cs",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\Controllers\\ExceptoinController.cs",
               "RelativeToolTip": "SERVER\\Controllers\\ExceptoinController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -750,9 +757,9 @@
               "$type": "Document",
               "DocumentIndex": 44,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\appsettings.json",
               "RelativeDocumentMoniker": "SERVER\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\appsettings.json",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\appsettings.json",
               "RelativeToolTip": "SERVER\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -798,9 +805,9 @@
               "$type": "Document",
               "DocumentIndex": 49,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\appsettings.Development.json",
               "RelativeDocumentMoniker": "SERVER\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 C#\\ClinicProject\\fullstackProject\\SERVER\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\IMOE001\\Documents\\\u05DC\u05D0\u05D4\u05DC\u05D4  \u05DE\u05E1\u05DC\u05D5\u05DC\\c#\\check11\\ClinicProject\\fullstackProject\\SERVER\\appsettings.Development.json",
               "RelativeToolTip": "SERVER\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -811,9 +818,9 @@
               "DocumentIndex": 50,
               "Title": "Microsoft.Common.props",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Microsoft.Common.props",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-05-14T21:35:47.65Z"
@@ -823,9 +830,9 @@
               "DocumentIndex": 51,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.203\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-05-14T21:32:14.926Z"
             },

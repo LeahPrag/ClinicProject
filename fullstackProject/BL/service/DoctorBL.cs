@@ -65,9 +65,10 @@ namespace BL.service
             var doctors = await _managerDal._doctorDAL.GetDoctors();
             return _mapper.Map<List<M_Doctor>>(doctors);
         }
-        public async Task<List<M_ClinicQueue>> GetDoctorQueesForToday(string firstName, string lastName, DateOnly day)
+        public async Task<List<M_ClinicQueue>> GetDoctorQueesForToday(string idNumber, DateOnly day)
         {
-            int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+            int doctorId = await _managerDal._doctorDAL.GetDoctorIdByIdNumber(idNumber);
+
             var queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, DateOnly.FromDateTime(DateTime.Now));
             return _mapper.Map<List<M_ClinicQueue>>(queues);
         }
