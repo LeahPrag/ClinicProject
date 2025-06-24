@@ -293,3 +293,19 @@ C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check9\ClinicProject\fullst
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check9\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check9\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 C:\Users\IMOE001\Documents\לאהלה  מסלול\c#\check9\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\data\db.mdf
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+C:\Users\User\Desktop\הנדסאים\שיעורי בית ותרגול\פרויקט מסכם\bacend\1\ClinicProject\fullstackProject\DAL\obj\Debug\net8.0\ref\DAL.dll

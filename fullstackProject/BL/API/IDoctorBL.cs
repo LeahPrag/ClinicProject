@@ -22,6 +22,7 @@ namespace BL.API
         Task AddDoctor(Doctor doctor);
         Task DeleteADoctor(string id);
         Task UpdateDoctor(UpdateDoctorDto updatedDoctor);
+        Task<bool> SearchDoctorById(string idNumber);
 
     }
 }

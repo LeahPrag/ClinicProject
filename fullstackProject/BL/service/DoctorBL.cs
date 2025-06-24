@@ -141,5 +141,10 @@ namespace BL.service
                 throw new IncompatibleOrIincompleteValuesException();
             return true;
         }
+
+        public async Task<bool> SearchDoctorById(string idNumber)
+        {
+            return await _managerDal._doctorDAL.SearchADoctorById(idNumber);
+        }
     }
 }
