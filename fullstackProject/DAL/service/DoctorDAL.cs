@@ -14,7 +14,7 @@ namespace DAL.service
         {
             return await _dbManager.Doctors.ToListAsync();
         }
-        public async Task<List<ClinicQueue>> GetDoctorQueesForASpesificDay(int doctorId, DateOnly day)
+        public async Task<List<ClinicQueue>> GetDoctorQueuesForASpesificDay(int doctorId, DateOnly day)
         {
             var dateToCheck = day.ToDateTime(TimeOnly.MinValue).Date;// I added it to check
             List<ClinicQueue> clinicQueues =await _dbManager.ClinicQueues

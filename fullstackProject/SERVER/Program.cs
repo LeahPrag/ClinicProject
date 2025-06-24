@@ -4,6 +4,7 @@ using DAL.service;
 using DAL.API;
 using DAL.Models;
 using AutoMapper;
+using SERVER.Middleware;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,14 +24,6 @@ builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
 
 //add it for mapper profil 
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
-
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowReactApp",
-//        policy => policy.WithOrigins("http://localhost:3000")
-//                        .AllowAnyHeader()
-//                        .AllowAnyMethod());
-//});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
@@ -49,7 +42,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
-
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();

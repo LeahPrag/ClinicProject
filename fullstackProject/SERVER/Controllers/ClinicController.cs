@@ -20,8 +20,8 @@ namespace SERVER.Controllers
             _managerBL = managerBL;
         }
 
-        [HttpGet("/avalableQeuesForASpesificDay")]
-        public async Task<ActionResult<List<M_AvailableQueue>>> AvalableQeuesForASpesificDay(string firstName, string lastName, string date)
+        [HttpGet("/avalableQueuesForASpesificDay")]
+        public async Task<ActionResult<List<M_AvailableQueue>>> AvalableQueuesForASpesificDay(string firstName, string lastName, string date)
         {
 			if (!DateOnly.TryParseExact(date, "dd.MM.yyyy", null, DateTimeStyles.None, out DateOnly parsedDate))
 				return BadRequest("Invalid date format. Use dd.MM.yyyy");
@@ -30,10 +30,10 @@ namespace SERVER.Controllers
 			return Ok(result);
 		}
 
-        //another one for all qeues for this day
+        //another one for all Queues for this day
 
-        [HttpGet("/avalableQeuesForDoctorToday")]
-        public async Task<List<M_AvailableQueue>> avalableQeuesForDoctorToday(string firstName, string lastName)
+        [HttpGet("/avalableQueuesForDoctorToday")]
+        public async Task<List<M_AvailableQueue>> avalableQueuesForDoctorToday(string firstName, string lastName)
         {
             return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
         }

@@ -38,11 +38,11 @@ namespace SERVER.Controllers
 
         }
         //
-        [HttpGet("/DoctorqeuesForToday")]
-        public async Task<List<M_ClinicQueue>> DoctorQeuesForToday(string idNumber)
+        [HttpGet("/DoctorQueuesForToday")]
+        public async Task<List<M_ClinicQueue>> DoctorQueuesForToday(string idNumber)
         {
 
-            return await managerBL._doctorBL.GetDoctorQueesForToday(idNumber, DateOnly.FromDateTime(DateTime.Now));
+            return await managerBL._doctorBL.GetDoctorQueuesForToday(idNumber, DateOnly.FromDateTime(DateTime.Now));
 
         }
         [HttpGet("/availableQueuesForASpezesilation")]
@@ -57,7 +57,7 @@ namespace SERVER.Controllers
         public async Task<List<M_AvailableQueue>> AvailableQueuesForToday()
         {
     
-            return await managerBL._doctorBL.GetAvailableQueesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
+            return await managerBL._doctorBL.GetAvailableQueuesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
 
         }
         [HttpPost("/addDoctor")]

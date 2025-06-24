@@ -19,13 +19,13 @@ namespace BL.service
         public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
         {
             int doctorId =await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            var queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, day);
+            var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, day);
             return queues.Count;
         }
         public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
         {
             int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            List<ClinicQueue> queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, day);
+            List<ClinicQueue> queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, day);
             foreach (var q in queues)
             {
                 await _managerDal._clinicQueueDAL.DeleteAnApointment(q);
@@ -57,28 +57,28 @@ namespace BL.service
         public async Task<List<M_AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
         {
             int doctorId =await  _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            var qeues= await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
-            return _mapper.Map<List<M_AvailableQueue>>(qeues);
+            var Queues= await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
+            return _mapper.Map<List<M_AvailableQueue>>(Queues);
         }
         public async Task<List<M_Doctor>> GetDoctors()
         {
             var doctors = await _managerDal._doctorDAL.GetDoctors();
             return _mapper.Map<List<M_Doctor>>(doctors);
         }
-        public async Task<List<M_ClinicQueue>> GetDoctorQueesForToday(string idNumber, DateOnly day)
+        public async Task<List<M_ClinicQueue>> GetDoctorQueuesForToday(string idNumber, DateOnly day)
         {
             int doctorId = await _managerDal._doctorDAL.GetDoctorIdByIdNumber(idNumber);
 
-            var queues = await _managerDal._doctorDAL.GetDoctorQueesForASpesificDay(doctorId, DateOnly.FromDateTime(DateTime.Now));
+            var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, DateOnly.FromDateTime(DateTime.Now));
             return _mapper.Map<List<M_ClinicQueue>>(queues);
         }
-        public async Task<List<M_AvailableQueue>> GetDoctorAvailableQueesForASpesificday(string firstName, string lastName, DateOnly day)
+        public async Task<List<M_AvailableQueue>> GetDoctorAvailableQueuesForASpesificday(string firstName, string lastName, DateOnly day)
         {
             int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
             var queues = await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId,day);
             return _mapper.Map<List<M_AvailableQueue>>(queues);
         }
-        public async Task<List<M_AvailableQueue>> GetAvailableQueesForASpesificday( DateOnly day)
+        public async Task<List<M_AvailableQueue>> GetAvailableQueuesForASpesificday( DateOnly day)
         {
             var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay( day);
             return _mapper.Map<List<M_AvailableQueue>>(queues);
