@@ -1,27 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DAL.Models;
-
+﻿namespace DAL.Models;
 public partial class AvailableQueue
 {
     public int QueueId { get; set; }
-
     public int DoctorId { get; set; }
-
     public DateTime AppointmentDate { get; set; }
-
     public virtual Doctor Doctor { get; set; } = null!;
-
     public AvailableQueue(int queueId, DateTime appointmentDate, Doctor doctor)
     {
         QueueId = queueId;
-
         AppointmentDate = appointmentDate;
         Doctor = doctor;
         DoctorId = doctor.DoctorId;
     }
-
     public AvailableQueue()
     {
     }
@@ -34,8 +24,6 @@ public partial class AvailableQueue
     }
     public AvailableQueue(DateTime appointmentDate, Doctor doctor)
     {
-
-
         AppointmentDate = appointmentDate;
         Doctor = doctor;
         DoctorId = doctor.DoctorId;

@@ -28,7 +28,7 @@ namespace SERVER.Controllers
 
             var client = await _managerBL._clientBL.GetClientById(id);
             if (client != null)
-                return Ok("client");
+                return Ok("Client");
 
             return NotFound("User not found");
         }

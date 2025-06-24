@@ -5,6 +5,8 @@ using BL.Models;
 using System.Net.Sockets;
 using BL.Exceptions;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Globalization;
 
 namespace SERVER.Controllers
 {
@@ -13,18 +15,20 @@ namespace SERVER.Controllers
     public class ClinicController : ControllerBase // Use ControllerBase for API controllers
     {
         private readonly IManagerBL _managerBL;
-
-        // Constructor for dependency injection
         public ClinicController(IManagerBL managerBL)
         {
             _managerBL = managerBL;
         }
 
         [HttpGet("/avalableQeuesForASpesificDay")]
-        public async Task<List<M_AvailableQueue>> AvalableQeuesForASpesificDay(string firstName, string lastName, DateOnly day)
+        public async Task<ActionResult<List<M_AvailableQueue>>> AvalableQeuesForASpesificDay(string firstName, string lastName, string date)
         {
-            return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, day);
-        }
+			if (!DateOnly.TryParseExact(date, "dd.MM.yyyy", null, DateTimeStyles.None, out DateOnly parsedDate))
+				return BadRequest("Invalid date format. Use dd.MM.yyyy");
+
+			var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, parsedDate);
+			return Ok(result);
+		}
 
         //another one for all qeues for this day
 
@@ -42,7 +46,7 @@ namespace SERVER.Controllers
                 await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), date);
                 return Ok("apointment added successfully");
             }
-            catch (DoctorNotExsistException ex)
+            catch (DoctorNotExistException ex)
             {
                 return NotFound(new
                 {
@@ -56,7 +60,7 @@ namespace SERVER.Controllers
             {
                 return BadRequest(new { error = ex.Message, code = ex.StatusCode });
             }
-            catch (ClientNotExsistException ex)
+            catch (ClientNotExistException ex)
             {
                 return NotFound(new
                 {
@@ -85,7 +89,7 @@ namespace SERVER.Controllers
         public async Task AddQueues()
         {
 
-            await _managerBL._clinicQueueBL.Appointment();
+            await _managerBL._clinicQueueBL.GenerateFutureAvailableQueues();
 
         }
 

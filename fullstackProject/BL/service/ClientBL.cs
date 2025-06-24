@@ -29,14 +29,14 @@ namespace BL.service
         {
             var client = await _clientDal.GetClientById(id);
             if (client == null)
-                throw new ClientNotExsistException(id);
+                throw new ClientNotExistException(id);
             return client;
         }
 
         public async Task AddClient(Client client)
         {
             if (await _clientDal.ClientExistById(client.IdNumber))
-                throw new ClientAlradyExsistException(client.IdNumber);
+                throw new ClientAlradyExistException(client.IdNumber);
 
             if (IsValidInput(client.FirstName) || IsValidInput(client.LastName))
                 throw new IncompatibleOrIincompleteValuesException();
@@ -96,7 +96,7 @@ namespace BL.service
         //{
         //    var client = GetClientById(id);
         //    if (client == null)
-        //        throw new ClientNotExsistException(id);
+        //        throw new ClientNotExistException(id);
         //    var updateClient = new Client
         //    {
         //        ClientId = client.ClientId,
@@ -116,7 +116,7 @@ namespace BL.service
         //{
         //    var client = GetClientById(id);
         //    if (client == null)
-        //        throw new ClientNotExsistException(id);
+        //        throw new ClientNotExistException(id);
         //    var updateClient = new Client
         //    {
         //        ClientId = client.ClientId,
@@ -143,14 +143,14 @@ namespace BL.service
     //    {
     //        var client = _clientDal.GetClientById(id);
     //        if (client == null)
-    //            throw new ClientNotExsistException(id);
+    //            throw new ClientNotExistException(id);
     //        return client;
     //    }
 
     //    public void AddClient(Client client)
     //    {
     //        if (_clientDal.ClientExistById(client.IdNumber))
-    //            throw new ClientAlradyExsistException(client.IdNumber);
+    //            throw new ClientAlradyExistException(client.IdNumber);
 
     //        if (string.IsNullOrWhiteSpace(client.FirstName) || string.IsNullOrWhiteSpace(client.LastName))
     //            throw new ArgumentException("First name and last name are required fields.");
@@ -162,14 +162,14 @@ namespace BL.service
     //    {
     //        var client = GetClientById(id);
     //        if (client == null)
-    //            throw new ClientNotExsistException(id);
+    //            throw new ClientNotExistException(id);
     //        _clientDal.RemoveClient(client);
     //    }
     //    public void UpdateClientEmail(string id, string email)
     //    {
     //        var client = GetClientById(id);
     //        if (client == null)
-    //            throw new ClientNotExsistException(id);
+    //            throw new ClientNotExistException(id);
     //        var updateClient = new Client
     //        {
     //            ClientId = client.ClientId,
@@ -189,7 +189,7 @@ namespace BL.service
     //    {
     //        var client = GetClientById(id);
     //        if (client == null)
-    //            throw new ClientNotExsistException(id);
+    //            throw new ClientNotExistException(id);
     //        var updateClient = new Client
     //        {
     //            ClientId = client.ClientId,

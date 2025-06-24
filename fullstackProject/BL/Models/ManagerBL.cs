@@ -9,7 +9,6 @@ public class ManagerBL : IManagerBL
     public IDoctorBL _doctorBL { get; set; }
     public IClinicQueueBL _clinicQueueBL { get; set; }
     private readonly IManagerDAL _managerDAL;
-
     public ManagerBL()
     {
         ServiceCollection services = new();

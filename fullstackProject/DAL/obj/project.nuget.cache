@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "agMDjrLdTr1SZ6vEAww5uL6a1jBkoaictDP1gEd1lJcejBv3sdQFd5RoK8Tx1kHO3GV1zvSshkVplxf1lNc0yQ==",
+  "dgSpecHash": "OzjR8MoenFU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\הנדסאים\\שיעורי בית ותרגול\\פרויקט מסכם\\bacend\\1\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\פרויקט C#\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

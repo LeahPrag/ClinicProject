@@ -1,5 +1,4 @@
 ﻿using DAL.Models;
-
 namespace DAL.API
 {
     public interface IDoctorDAL
@@ -17,6 +16,5 @@ namespace DAL.API
         Task<Doctor> GetADoctorById(string id);
         Task UpdateDoctor(Doctor doctor);
         Task<int> GetDoctorIdByIdNumber(string id);
-
     }
 }

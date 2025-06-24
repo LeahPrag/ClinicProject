@@ -1,77 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace BL.Exceptions
+﻿namespace BL.Exceptions
 {
-    public class ClientNotExsistException : Exception
+    public class ClientNotExistException : Exception
     {
-
-        public int StatusCode { get; }
-
-        public ClientNotExsistException(string ClientId) : base($"The Client with Id {ClientId} not exsist")
+        public int StatusCode { get; } = 600;
+        public ClientNotExistException(string ClientId) : base($"The Client with Id {ClientId} not Exist")
         {
             StatusCode = 600;
         }
-
     }
-    public class ClientAlradyExsistException : Exception
+    public class ClientAlradyExistException : Exception
     {
         public int StatusCode { get; }
-        public ClientAlradyExsistException(string ClientId) : base($"The  Client with Id {ClientId} aleady exsist")
+        public ClientAlradyExistException(string ClientId) : base($"The  Client with Id {ClientId} aleady Exist")
         {
             StatusCode = 604;
         }
-
     }
     public class specializationNotExistException : Exception
-        {
-            public int StatusCode { get; }
-
-            public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not exsist")
-            {
-                StatusCode = 605;
-            }
-
-        }
-
-    public class DoctorNotExsistException : Exception
     {
-
         public int StatusCode { get; }
-        public DoctorNotExsistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} not exsist")
+        public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not Exist")
+        {
+            StatusCode = 605;
+        }
+    }
+    public class DoctorNotExistException : Exception
+    {
+        public int StatusCode { get; }
+        public DoctorNotExistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} not Exist")
         {
             StatusCode = 620;
         }
-        public DoctorNotExsistException(string id) : base($"The doctor: {id} not exsist")
+        public DoctorNotExistException(string id) : base($"The doctor: {id} not Exist")
         {
             StatusCode = 621;
         }
     }
-    public class DoctorAlradyExsistException : Exception
+    public class DoctorAlradyExistException : Exception
     {
-
         public int StatusCode { get; }
-        public DoctorAlradyExsistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} aleady exsist")
+        public DoctorAlradyExistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} aleady Exist")
         {
             StatusCode = 624;
         }
     }
-    public class QueueDoesNotExsistException : Exception
+    public class QueueDoesNotExistException : Exception
     {
-
         public int StatusCode { get; }
-        public QueueDoesNotExsistException(string idDoctor, string idClient, DateTime date) : base($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not exsist")
+        public QueueDoesNotExistException(string idDoctor, string idClient, DateTime date) : base($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not Exist")
         {
             StatusCode = 650;
         }
     }
     public class DayOfQueueIsNotPermission : Exception
     {
-
         public int StatusCode { get; }
         public DayOfQueueIsNotPermission( DateTime date) : base($"The date: {date} does not permission for a queue")
         {
@@ -81,23 +63,19 @@ namespace BL.Exceptions
     
     public class AvailableQueueNotFoundException : Exception
     {
-
         public int StatusCode { get; }
         public AvailableQueueNotFoundException(string idDoctor, DateTime date) : base($"The queue in date: {date:yyyy-MM-dd HH:mm} for doctor {idDoctor} is not available")
         {
             StatusCode = 650;
         }
     }
-
     public class IncompatibleOrIincompleteValuesException : Exception
     {
-
         public int StatusCode { get; }
         public IncompatibleOrIincompleteValuesException() : base($"Incompatible or incomplete values")
         {
             StatusCode = 699;
         }
     }
-
 }
 

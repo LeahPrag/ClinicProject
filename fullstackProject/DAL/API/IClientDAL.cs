@@ -1,5 +1,4 @@
 ﻿using DAL.Models;
-
 namespace DAL.service
 {
     public interface IClientDAL
@@ -12,4 +11,3 @@ namespace DAL.service
         void UpdateClient(Client updatedClient, Client existingClient);
     }
 }
-

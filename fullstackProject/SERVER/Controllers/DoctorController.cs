@@ -92,7 +92,7 @@ namespace SERVER.Controllers
                 await managerBL._doctorBL.DeleteADoctor(id);
                 return Ok("Doctor deleted successfully");
             }
-            catch (DoctorNotExsistException ex)
+            catch (DoctorNotExistException ex)
             {
                 return NotFound(ex.Message);
             }
@@ -112,7 +112,7 @@ namespace SERVER.Controllers
                 await managerBL._doctorBL.UpdateDoctor(updatedDoctor);
                 return Ok("Doctor updated successfully");
             }
-            catch (DoctorNotExsistException ex)
+            catch (DoctorNotExistException ex)
             {
                 return NotFound(ex.Message);
             }

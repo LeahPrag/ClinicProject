@@ -1,22 +1,14 @@
 ﻿using BL.API;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BL.service
 {
     public class AvailableQueueManager : IAvailableQueueManager
     {
-
         private AvailableQueueManager()
         {
 
         }
-
         private static AvailableQueueManager _instance;
         public static AvailableQueueManager Instance
         {
@@ -33,18 +25,14 @@ namespace BL.service
             string year = date.Year.ToString();
             string month = date.Month.ToString("D2");
             string day = date.Day.ToString("D2");
-
             var url = $"{_baseUrl}?v=1&cfg=json&year={year}&month={month}&maj=on&min=off&mod=on&nx=off";
-
             using (HttpClient client = new HttpClient())
             {
                 var response = await client.GetAsync(url);
-
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();
                     var json = JObject.Parse(jsonString);
-
                     // מחפשים את התאריך בתוך רשימת החגים
                     var items = json["items"];
                     Console.WriteLine(items);
@@ -61,19 +49,14 @@ namespace BL.service
                                 }
                                 else if (item["subcat"].ToString().Equals("modern"))
                                 {
-
                                     Console.WriteLine(item["title"]);
                                     Console.WriteLine(item["subcat"]);
-
                                     return false;
                                 }
-
-
                                 return true;
                             }
                         }
                     }
-
                     return false; // לא נמצא חג
                 }
                 else
@@ -84,4 +67,3 @@ namespace BL.service
         }
     }
 }
-

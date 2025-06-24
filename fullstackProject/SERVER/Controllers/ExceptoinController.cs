@@ -20,7 +20,7 @@ namespace SERVER.Controllers
             {
 
             }
-            if (exceptionDetails?.Error is ClientNotExsistException notExistExc)
+            if (exceptionDetails?.Error is ClientNotExistException notExistExc)
             {
                 ;
                 return Problem(

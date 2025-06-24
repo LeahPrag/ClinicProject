@@ -1,24 +1,15 @@
-﻿using DAL.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BL.Models
+﻿namespace BL.Models
 {
-    public class M_AvailableQueue
-    {
-        public int QueueId { get; set; }
+	public class M_AvailableQueue
+	{
+		public int QueueId { get; set; }
 
-        public DateTime AppointmentDate { get; set; }
+		public DateTime AppointmentDate { get; set; }
+		public int DoctorId { get; set; }
 
-        //public virtual Doctor Doctor { get; set; } = null!;
-        public int DoctorId { get; set; }
+		public string FirstName { get; set; } = null!;
 
-        public string FirstName { get; set; } = null!;
+		public string LastName { get; set; } = null!;
 
-        public string LastName { get; set; } = null!;
-
-    }
+	}
 }
