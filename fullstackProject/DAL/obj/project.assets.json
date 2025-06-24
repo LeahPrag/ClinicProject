@@ -4077,23 +4077,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\IMOE001\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\פרויקט C#\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\User\\Desktop\\פרויקט C#\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\פרויקט C#\\ClinicProject\\fullstackProject\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\IMOE001\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IMOE001\\Documents\\לאהלה  מסלול\\c#\\check11\\ClinicProject\\fullstackProject\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IMOE001\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4167,7 +4167,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
