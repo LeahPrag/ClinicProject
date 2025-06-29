@@ -42,7 +42,7 @@ namespace DAL.service
 					.Select(c => c.DoctorId)
 					.FirstOrDefaultAsync();
 
-				if (id == null)
+				if (id == 0)
 					throw new Exception("The doctor is not exist");
 
 				return id.Value;

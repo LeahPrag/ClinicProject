@@ -27,7 +27,6 @@ namespace BL.service
                 throw new Exception("BL Error - GetAllClients: " + ex.Message, ex);
             }
         }
-
         public async Task<Client> GetClientById(string id)
         {
             try
@@ -40,7 +39,6 @@ namespace BL.service
                 throw new Exception("BL Error - GetClientById: " + ex.Message, ex);
             }
         }
-
         public async Task AddClient(Client client)
         {
             try
@@ -61,7 +59,6 @@ namespace BL.service
                 throw new Exception("BL Error - AddClient: " + ex.Message, ex);
             }
         }
-
         public async Task RemoveClient(string id)
         {
             try
@@ -74,7 +71,6 @@ namespace BL.service
                 throw new Exception("BL Error - RemoveClient: " + ex.Message, ex);
             }
         }
-
         public async Task UpdateClient(Client updatedClient, Client existingClient)
         {
             try
@@ -94,7 +90,6 @@ namespace BL.service
                 throw new Exception("BL Error - UpdateClient: " + ex.Message, ex);
             }
         }
-
         public static bool IsValidDateOfBirth(DateOnly date)
         {
             var today = DateOnly.FromDateTime(DateTime.Today);
@@ -106,7 +101,6 @@ namespace BL.service
         {
             if (string.IsNullOrWhiteSpace(email))
                 return false;
-
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
@@ -117,7 +111,6 @@ namespace BL.service
                 return false;
             }
         }
-
         public static bool IsValidPhone(string? phone)
         {
             if (string.IsNullOrWhiteSpace(phone))
