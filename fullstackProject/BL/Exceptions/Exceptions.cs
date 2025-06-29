@@ -1,28 +1,16 @@
 ﻿namespace BL.Exceptions
 {
-    public class ClientNotExistException : Exception
+    public class ClientNotExistException(string ClientId) : Exception($"The Client with Id {ClientId} not Exist")
     {
         public int StatusCode { get; } = 600;
-        public ClientNotExistException(string ClientId) : base($"The Client with Id {ClientId} not Exist")
-        {
-            StatusCode = 600;
-        }
     }
-    public class ClientAlradyExistException : Exception
+    public class ClientAlreadyExistException(string ClientId) : Exception($"The  Client with Id {ClientId} aleady Exist")
     {
-        public int StatusCode { get; }
-        public ClientAlradyExistException(string ClientId) : base($"The  Client with Id {ClientId} aleady Exist")
-        {
-            StatusCode = 604;
-        }
+        public int StatusCode { get; } = 604;
     }
-    public class specializationNotExistException : Exception
+    public class SpecializationNotExistException(string specialization) : Exception($"The  specialization {specialization} not Exist")
     {
-        public int StatusCode { get; }
-        public specializationNotExistException(string specialization) : base($"The  specialization {specialization} not Exist")
-        {
-            StatusCode = 605;
-        }
+        public int StatusCode { get; } = 605;
     }
     public class DoctorNotExistException : Exception
     {
@@ -36,38 +24,21 @@
             StatusCode = 621;
         }
     }
-    public class DoctorAlradyExistException : Exception
+    public class DoctorAlreadyExistException(string firstName, string lastName) : Exception($"The doctor: {firstName} {lastName} aleady Exist")
     {
-        public int StatusCode { get; }
-        public DoctorAlradyExistException(string firstName, string lastName) : base($"The doctor: {firstName} {lastName} aleady Exist")
-        {
-            StatusCode = 624;
-        }
+        public int StatusCode { get; } = 624;
     }
-    public class QueueDoesNotExistException : Exception
+    public class QueueDoesNotExistException(string idDoctor, string idClient, DateTime date) : Exception($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not Exist")
     {
-        public int StatusCode { get; }
-        public QueueDoesNotExistException(string idDoctor, string idClient, DateTime date) : base($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not Exist")
-        {
-            StatusCode = 650;
-        }
+        public int StatusCode { get; } = 650;
     }
-    public class DayOfQueueIsNotPermission : Exception
+    public class DayOfQueueIsNotPermission(DateTime date) : Exception($"The date: {date} does not permission for a queue")
     {
-        public int StatusCode { get; }
-        public DayOfQueueIsNotPermission( DateTime date) : base($"The date: {date} does not permission for a queue")
-        {
-            StatusCode = 650;
-        }
+        public int StatusCode { get; } = 650;
     }
-    
-    public class AvailableQueueNotFoundException : Exception
+    public class AvailableQueueNotFoundException(string idDoctor, DateTime date) : Exception($"The queue in date: {date:yyyy-MM-dd HH:mm} for doctor {idDoctor} is not available")
     {
-        public int StatusCode { get; }
-        public AvailableQueueNotFoundException(string idDoctor, DateTime date) : base($"The queue in date: {date:yyyy-MM-dd HH:mm} for doctor {idDoctor} is not available")
-        {
-            StatusCode = 650;
-        }
+        public int StatusCode { get; } = 650;
     }
     public class IncompatibleOrIincompleteValuesException : Exception
     {

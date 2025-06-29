@@ -5,7 +5,6 @@ using BL.Models;
 using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 
 namespace SERVER.Controllers
 {
@@ -13,114 +12,74 @@ namespace SERVER.Controllers
     [ApiController]
     public class DoctorController : ControllerBase
     {
+        private readonly IManagerBL managerBL;
 
-        IManagerBL managerBL;
-        public DoctorController( IManagerBL _managerBL )
+        public DoctorController(IManagerBL _managerBL)
         {
             managerBL = _managerBL;
-               }
-        // GET: api/<gradeManagerControllerש
-        [HttpGet]
-        public async Task<int> GetNumOfClientForToday(string firstName, string lastName)
-        {
-
-            return  await managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
-
-
-
-            //return 5;
-        }
-        [HttpGet("/getAllDoctors")]
-        public async Task<List<M_Doctor>> GetDoctors()
-        {
-
-            return await managerBL._doctorBL.GetDoctors();
-
-        }
-        //
-        [HttpGet("/DoctorQueuesForToday")]
-        public async Task<List<M_ClinicQueue>> DoctorQueuesForToday(string idNumber)
-        {
-
-            return await managerBL._doctorBL.GetDoctorQueuesForToday(idNumber, DateOnly.FromDateTime(DateTime.Now));
-
-        }
-        [HttpGet("/availableQueuesForASpezesilation")]
-        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string spezesilation)
-        {
-
-            return await managerBL._doctorBL.AvailableQueuesForASpezesilation(spezesilation);
-
         }
 
-        [HttpGet("/AvailableQueuesForToday")]
-        public async Task<List<M_AvailableQueue>> AvailableQueuesForToday()
+        [HttpGet("numOfClientsForToday")]
+        public async Task<IActionResult> GetNumOfClientForToday([FromQuery] string firstName, [FromQuery] string lastName)
         {
-    
-            return await managerBL._doctorBL.GetAvailableQueuesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
-
-        }
-        [HttpPost("/addDoctor")]
-        public async Task<ActionResult> AddDoctor([FromBody] Doctor doctor)
-        {
-
-
-            try
-            {
-                await managerBL._doctorBL.AddDoctor(doctor);
-                return Ok("Doctor added successfully");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            int count = await managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            return Ok(count);
         }
 
-        [HttpDelete("/deleteADayOfWork")]
-        public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
+        [HttpGet("getAllDoctors")]
+        public async Task<IActionResult> GetDoctors()
         {
-
-            return await managerBL._doctorBL.DeleteADayOfWork(firstName, lastName,  day);
-
-        }
-        [HttpDelete("/deleteADoctor")]
-        public async Task<ActionResult> DeleteADoctor(string id)
-        {
-
-            try
-            {
-                await managerBL._doctorBL.DeleteADoctor(id);
-                return Ok("Doctor deleted successfully");
-            }
-            catch (DoctorNotExistException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                // בעיה לא צפויה אחרת
-                return StatusCode(500, "Something went wrong");
-            }
-
-        }
-        [HttpPut("/updateDoctor")]
-        public async Task<ActionResult> UpdateDoctor([FromBody] UpdateDoctorDto updatedDoctor)
-        {
-            try
-            {
-
-                await managerBL._doctorBL.UpdateDoctor(updatedDoctor);
-                return Ok("Doctor updated successfully");
-            }
-            catch (DoctorNotExistException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var doctors = await managerBL._doctorBL.GetDoctors();
+            return Ok(doctors);
         }
 
+        [HttpGet("DoctorQueuesForToday")]
+        public async Task<IActionResult> DoctorQueuesForToday([FromQuery] string idNumber)
+        {
+            var queues = await managerBL._doctorBL.GetDoctorQueuesForToday(idNumber, DateOnly.FromDateTime(DateTime.Now));
+            return Ok(queues);
+        }
+
+        [HttpGet("availableQueuesForASpezesilation")]
+        public async Task<IActionResult> AvailableQueuesForASpezesilation([FromQuery] string spezesilation)
+        {
+            var queues = await managerBL._doctorBL.AvailableQueuesForASpezesilation(spezesilation);
+            return Ok(queues);
+        }
+
+        [HttpGet("AvailableQueuesForToday")]
+        public async Task<IActionResult> AvailableQueuesForToday()
+        {
+            var queues = await managerBL._doctorBL.GetAvailableQueuesForASpesificday(DateOnly.FromDateTime(DateTime.Now));
+            return Ok(queues);
+        }
+
+        [HttpPost("addDoctor")]
+        public async Task<IActionResult> AddDoctor([FromBody] Doctor doctor)
+        {
+            await managerBL._doctorBL.AddDoctor(doctor);
+            return Ok("Doctor added successfully");
+        }
+
+        [HttpDelete("deleteADayOfWork")]
+        public async Task<IActionResult> DeleteADayOfWork([FromQuery] string firstName, [FromQuery] string lastName, [FromQuery] DateOnly day)
+        {
+            bool deleted = await managerBL._doctorBL.DeleteADayOfWork(firstName, lastName, day);
+            return Ok(deleted);
+        }
+
+        [HttpDelete("deleteADoctor")]
+        public async Task<IActionResult> DeleteADoctor([FromQuery] string id)
+        {
+            await managerBL._doctorBL.DeleteADoctor(id);
+            return Ok("Doctor deleted successfully");
+        }
+
+        [HttpPut("updateDoctor")]
+        public async Task<IActionResult> UpdateDoctor([FromBody] UpdateDoctorDto updatedDoctor)
+        {
+            await managerBL._doctorBL.UpdateDoctor(updatedDoctor);
+            return Ok("Doctor updated successfully");
+        }
     }
 }

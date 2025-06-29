@@ -1,161 +1,91 @@
 ﻿using BL.API;
-using Microsoft.AspNetCore.Mvc;
-using DAL.Models;
-using BL.Models;
-using System.Net.Sockets;
 using BL.Exceptions;
+using BL.Models;
+using DAL.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Globalization;
 
 namespace SERVER.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClinicController : ControllerBase // Use ControllerBase for API controllers
+    public class ClinicController : ControllerBase
     {
         private readonly IManagerBL _managerBL;
+
         public ClinicController(IManagerBL managerBL)
         {
             _managerBL = managerBL;
         }
 
-        [HttpGet("/avalableQueuesForASpesificDay")]
-        public async Task<ActionResult<List<M_AvailableQueue>>> AvalableQueuesForASpesificDay(string firstName, string lastName, string date)
+        [HttpGet("availableQueuesForDay")]
+        public async Task<IActionResult> GetAvailableQueuesForDay(
+            [FromQuery] string firstName,
+            [FromQuery] string lastName,
+            [FromQuery] string date)
         {
-			if (!DateOnly.TryParseExact(date, "dd.MM.yyyy", null, DateTimeStyles.None, out DateOnly parsedDate))
-				return BadRequest("Invalid date format. Use dd.MM.yyyy");
+            if (!DateOnly.TryParseExact(date, "dd.MM.yyyy", null, DateTimeStyles.None, out var parsedDate))
+                return BadRequest("Invalid date format. Use dd.MM.yyyy");
 
-			var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, parsedDate);
-			return Ok(result);
-		}
-
-        //another one for all Queues for this day
-
-        [HttpGet("/avalableQueuesForDoctorToday")]
-        public async Task<List<M_AvailableQueue>> avalableQueuesForDoctorToday(string firstName, string lastName)
-        {
-            return await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, parsedDate);
+            return Ok(result);
         }
-        [HttpPost("/makeAnApointment")]
-        public async Task<ActionResult> MakeAnApointment(string idDoctor, string idClient, DateTime date)
-        {
-            try
-            {
-                //await _managerBL._clinicQueueBL.DeleteAnApointment(idDoctor, idClient, date);
-                await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), date);
-                return Ok("apointment added successfully");
-            }
-            catch (DoctorNotExistException ex)
-            {
-                return NotFound(new
-                {
-                    error = "Doctor not found",doctorId = idDoctor,message = ex.Message});
-            }
-            catch (AvailableQueueNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
-            catch (DayOfQueueIsNotPermission ex)
-            {
-                return BadRequest(new { error = ex.Message, code = ex.StatusCode });
-            }
-            catch (ClientNotExistException ex)
-            {
-                return NotFound(new
-                {
-                    error = "Client not found",clientId = idClient,message = ex.Message});
-            }
-            catch (DbUpdateException ex)
-            {
-                return StatusCode(500, new
-                {
-                    error = "Database update failed",
-                    message = ex.InnerException?.Message ?? ex.Message
-                });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new
-                {
-                    error = "Internal server error",
-                    message = ex.Message,
-                    inner = ex.InnerException?.Message
-                });
-            }
 
+        [HttpGet("availableQueuesForToday")]
+        public async Task<IActionResult> GetAvailableQueuesForToday([FromQuery] string firstName, [FromQuery] string lastName)
+        {
+            var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            return Ok(result);
         }
-        [HttpPost("/addQueues")]
-        public async Task AddQueues()
-        {
 
+        [HttpPost("makeAppointment")]
+        public async Task<IActionResult> MakeAppointment([FromQuery] string idDoctor, [FromQuery] string idClient, [FromQuery] DateTime date)
+        {
+            await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), date);
+            return Ok("Appointment added successfully");
+        }
+
+        [HttpPost("addQueues")]
+        public async Task<IActionResult> AddQueues()
+        {
             await _managerBL._clinicQueueBL.GenerateFutureAvailableQueues();
-
+            return Ok("Queues added successfully");
         }
 
-        [HttpGet("getAll/")]
-        public async Task<List<Client>> GetClients()
+        [HttpGet("clients")]
+        public async Task<ActionResult<List<Client>>> GetClients()
         {
             return await _managerBL._clientBL.GetAllClients();
         }
 
-
-        [HttpGet("getClientById/{id}")]
+        [HttpGet("clients/{id}")]
         public async Task<ActionResult<Client>> GetClientById(string id)
         {
-            try
-            {
-                var client = await _managerBL._clientBL.GetClientById(id);
-                return Ok(client);
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
+            var client = await _managerBL._clientBL.GetClientById(id);
+            return Ok(client);
         }
 
-
-        [HttpPost("add/")]
-        public async Task<ActionResult> AddClient([FromBody] Client client)
+        [HttpPost("clients")]
+        public async Task<IActionResult> AddClient([FromBody] Client client)
         {
-            try
-            {
-                await _managerBL._clientBL.AddClient(client);
-                return Ok("Client added successfully");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            await _managerBL._clientBL.AddClient(client);
+            return Ok("Client added successfully");
         }
 
-        [HttpDelete("delete/{id}")]
-        public async Task<ActionResult> DeleteClient(string id)
+        [HttpDelete("clients/{id}")]
+        public async Task<IActionResult> DeleteClient(string id)
         {
-            try
-            {
-                await _managerBL._clientBL.RemoveClient(id);
-                return Ok("Client deleted successfully");
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
+            await _managerBL._clientBL.RemoveClient(id);
+            return Ok("Client deleted successfully");
         }
 
-        [HttpPut("update/")]
-        public async Task<ActionResult> UpdateClient([FromBody] Client updatedClient)
+        [HttpPut("clients")]
+        public async Task<IActionResult> UpdateClient([FromBody] Client updatedClient)
         {
-            try
-            {
-                var existingClient = await _managerBL._clientBL.GetClientById(updatedClient.IdNumber);
-                await _managerBL._clientBL.UpdateClient(updatedClient, existingClient);
-                return Ok("Client updated successfully");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var existingClient = await _managerBL._clientBL.GetClientById(updatedClient.IdNumber);
+            await _managerBL._clientBL.UpdateClient(updatedClient, existingClient);
+            return Ok("Client updated successfully");
         }
     }
 }

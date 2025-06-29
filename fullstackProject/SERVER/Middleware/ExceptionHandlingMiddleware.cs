@@ -15,11 +15,11 @@ namespace SERVER.Middleware
         {
             try
             {
-                await _next(context); // הרצת הבקשה הרגילה
+                await _next(context); 
             }
             catch (Exception ex)
             {
-                await HandleExceptionAsync(context, ex); // טיפול בשגיאות
+                await HandleExceptionAsync(context, ex); 
             }
         }
         private static Task HandleExceptionAsync(HttpContext context, Exception exception)
@@ -28,7 +28,6 @@ namespace SERVER.Middleware
             string title = "Internal Server Error";
             string message = "Something went wrong.";
 
-            // טיפול מותאם לסוגי שגיאות שלך
             switch (exception)
             {
                 case ClientNotExistException e:
@@ -36,12 +35,12 @@ namespace SERVER.Middleware
                     title = "Client Not Found";
                     message = e.Message;
                     break;
-                case ClientAlradyExistException e:
+                case ClientAlreadyExistException e:
                     statusCode = e.StatusCode;
                     title = "Client Already Exists";
                     message = e.Message;
                     break;
-                case specializationNotExistException e:
+                case SpecializationNotExistException e:
                     statusCode = e.StatusCode;
                     title = "Specialization Not Found";
                     message = e.Message;
@@ -51,7 +50,7 @@ namespace SERVER.Middleware
                     title = "Doctor Not Found";
                     message = e.Message;
                     break;
-                case DoctorAlradyExistException e:
+                case DoctorAlreadyExistException e:
                     statusCode = e.StatusCode;
                     title = "Doctor Already Exists";
                     message = e.Message;

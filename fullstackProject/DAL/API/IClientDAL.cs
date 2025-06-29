@@ -8,6 +8,6 @@ namespace DAL.service
         Task<bool> ClientExistById(string id);
         Task AddClient(Client client);
         void RemoveClient(Client client);
-        void UpdateClient(Client updatedClient, Client existingClient);
+        Task UpdateClient(Client updatedClient, Client existingClient);
     }
 }

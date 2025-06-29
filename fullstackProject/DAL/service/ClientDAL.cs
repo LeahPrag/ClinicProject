@@ -1,5 +1,6 @@
 ﻿using DAL.Models;
 using Microsoft.EntityFrameworkCore;
+
 namespace DAL.service
 {
     public class ClientDAL : IClientDAL
@@ -9,39 +10,78 @@ namespace DAL.service
         {
             _dbManager = dbManager;
         }
-
-        //List of all patients
         public async Task<List<Client>> GetAllClients()
         {
-            return await _dbManager.Clients.ToListAsync();
+            try
+            {
+                return await _dbManager.Clients.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - GetAllClients: " + ex.Message, ex);
+            }
         }
-        //Search for a patient by ID number - returns the patient
         public async Task<Client?> GetClientById(string id)
         {
-            return await _dbManager.Clients.FirstOrDefaultAsync(x => x.IdNumber.Equals(id));
+            try
+            {
+                return await _dbManager.Clients.FirstOrDefaultAsync(x => x.IdNumber == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - GetClientById: " + ex.Message, ex);
+            }
         }
-        //Search for a patient by ID-Boolean
         public async Task<bool> ClientExistById(string id)
         {
-            return await _dbManager.Clients.AnyAsync(x => x.IdNumber.Equals(id));
+            try
+            {
+                return await _dbManager.Clients.AnyAsync(x => x.IdNumber == id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - ClientExistById: " + ex.Message, ex);
+            }
         }
-        //מוסיף פציינט
         public async Task AddClient(Client client)
         {
-            await _dbManager.Clients.AddAsync(client);
+            try
+            {
+                await _dbManager.Clients.AddAsync(client);
+                await _dbManager.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - AddClient: " + ex.Message, ex);
+            }
         }
         public void RemoveClient(Client client)
         {
-            _dbManager.Clients.Remove(client);
-            _dbManager.SaveChanges();// leahle added it
+            try
+            {
+                _dbManager.Clients.Remove(client);
+                _dbManager.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - RemoveClient: " + ex.Message, ex);
+            }
         }
-        public void UpdateClient(Client updatedClient, Client existingClient)
+        public async Task UpdateClient(Client updatedClient, Client existingClient)
         {
-            existingClient.LastName = updatedClient.LastName;
-            existingClient.Phone = updatedClient.Phone;
-            existingClient.Email = updatedClient.Email;
-            existingClient.Address = updatedClient.Address;
-            _dbManager.Clients.Update(existingClient);
+            try
+            {
+                existingClient.LastName = updatedClient.LastName;
+                existingClient.Phone = updatedClient.Phone;
+                existingClient.Email = updatedClient.Email;
+                existingClient.Address = updatedClient.Address;
+                _dbManager.Clients.Update(existingClient);
+                await _dbManager.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DAL Error - UpdateClient: " + ex.Message, ex);
+            }
         }
     }
 }
