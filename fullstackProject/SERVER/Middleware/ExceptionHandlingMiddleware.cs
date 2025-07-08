@@ -35,37 +35,62 @@ namespace SERVER.Middleware
                     title = "Client Not Found";
                     message = e.Message;
                     break;
+
                 case ClientAlreadyExistException e:
                     statusCode = e.StatusCode;
                     title = "Client Already Exists";
                     message = e.Message;
                     break;
+
                 case SpecializationNotExistException e:
                     statusCode = e.StatusCode;
                     title = "Specialization Not Found";
                     message = e.Message;
                     break;
+
                 case DoctorNotExistException e:
                     statusCode = e.StatusCode;
                     title = "Doctor Not Found";
                     message = e.Message;
                     break;
+
                 case DoctorAlreadyExistException e:
                     statusCode = e.StatusCode;
                     title = "Doctor Already Exists";
                     message = e.Message;
                     break;
+
                 case IncompatibleOrIincompleteValuesException e:
                     statusCode = e.StatusCode;
                     title = "Invalid Values";
                     message = e.Message;
                     break;
+
                 case AvailableQueueNotFoundException e:
                     statusCode = e.StatusCode;
                     title = "No Available Queues";
                     message = e.Message;
                     break;
+
+                case QueueDoesNotExistException e:
+                    statusCode = e.StatusCode;
+                    title = "Queue Not Found";
+                    message = e.Message;
+                    break;
+
+                case DayOfQueueIsNotPermission e:
+                    statusCode = e.StatusCode;
+                    title = "Invalid Queue Date";
+                    message = e.Message;
+                    break;
+
+                default:
+                    statusCode = 500;
+                    title = "Unhandled Exception";
+                    message = exception.Message;
+                    break;
             }
+
             var problemDetails = new ProblemDetails
             {
                 Status = statusCode,

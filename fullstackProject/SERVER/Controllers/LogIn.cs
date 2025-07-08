@@ -10,8 +10,6 @@ namespace SERVER.Controllers
     public class LogIn : ControllerBase
     {
         private readonly IManagerBL _managerBL;
-
-        // Constructor for dependency injection
         public LogIn(IManagerBL managerBL)
         {
             _managerBL = managerBL;

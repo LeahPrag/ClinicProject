@@ -153,7 +153,7 @@ namespace BL.service
 			try
 			{
 				if (await _managerDal._doctorDAL.SearchADoctorById(doctor.IdNumber))
-					throw new ClientAlreadyExistException(doctor.IdNumber);
+					throw new DoctorAlreadyExistException(doctor.IdNumber);
 				if (!IsValidInput(doctor.FirstName) || !IsValidInput(doctor.LastName))
 					throw new IncompatibleOrIincompleteValuesException();
 				if (doctor.IdNumber.Length != 9)

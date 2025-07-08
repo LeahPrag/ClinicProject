@@ -24,9 +24,9 @@
             StatusCode = 621;
         }
     }
-    public class DoctorAlreadyExistException(string firstName, string lastName) : Exception($"The doctor: {firstName} {lastName} aleady Exist")
+    public class DoctorAlreadyExistException(string ClientId) : Exception($"The  Doctor with Id {ClientId} aleady Exist")
     {
-        public int StatusCode { get; } = 624;
+        public int StatusCode { get; } = 604;
     }
     public class QueueDoesNotExistException(string idDoctor, string idClient, DateTime date) : Exception($"The queue: doctor: {idDoctor} client:{idClient} date: {date}does not Exist")
     {
