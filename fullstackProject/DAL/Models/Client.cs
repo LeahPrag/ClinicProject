@@ -10,6 +10,7 @@ public partial class Client
     public string Address { get; set; } = null!;
     public string IdNumber { get; set; } = null!;
     public virtual ICollection<ClinicQueue> ClinicQueues { get; set; } = new List<ClinicQueue>();
+
     public Client()
     {
     }

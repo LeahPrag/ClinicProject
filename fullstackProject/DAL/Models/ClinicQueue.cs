@@ -7,7 +7,7 @@ public partial class ClinicQueue
 	public DateTime AppointmentDate { get; set; }
 	public virtual Client Client { get; set; } = null!;
 	public virtual Doctor Doctor { get; set; } = null!;
-	public ClinicQueue(AvailableQueue a, Client c)
+    public ClinicQueue(AvailableQueue a, Client c)
 	{
 		QueueId = a.QueueId;
 		ClientId = c.ClientId;

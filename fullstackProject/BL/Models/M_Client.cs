@@ -8,5 +8,7 @@
         public string? Email { get; set; }
         public string Address { get; set; } = null!;
         public string IdNumber { get; set; } = null!;
+        public List<M_ClinicQueue> ClinicQueues { get; set; } = new();
+
     }
 }

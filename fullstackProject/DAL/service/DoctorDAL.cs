@@ -39,15 +39,11 @@ namespace DAL.service
 			{
 				int? id = await _dbManager.Doctors
 					.Where(c => c.FirstName == doctor_firtsname && c.LastName == doctor_lastname)
-					.Select(c => c.DoctorId)
+					.Select(c => (int?)c.DoctorId)
 					.FirstOrDefaultAsync();
-
-				if (id == 0)
-					throw new Exception("The doctor is not exist");
-
-				return id.Value;
-			}
-			catch (Exception ex)
+                return id ?? throw new Exception("The doctor is not exist");
+            }
+            catch (Exception ex)
 			{
 				throw new Exception($"DAL Error - SearchADoctor: {ex.Message}", ex);
 			}

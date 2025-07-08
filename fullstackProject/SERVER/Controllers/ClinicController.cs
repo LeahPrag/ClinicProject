@@ -13,21 +13,18 @@ namespace SERVER.Controllers
     public class ClinicController : ControllerBase
     {
         private readonly IManagerBL _managerBL;
-
         public ClinicController(IManagerBL managerBL)
         {
             _managerBL = managerBL;
         }
-
         [HttpGet("availableQueuesForDay")]
         public async Task<IActionResult> GetAvailableQueuesForDay(
-            [FromQuery] string firstName,
-            [FromQuery] string lastName,
-            [FromQuery] string date)
+        [FromQuery] string firstName,
+        [FromQuery] string lastName,
+        [FromQuery] string date)
         {
-            if (!DateOnly.TryParseExact(date, "dd.MM.yyyy", null, DateTimeStyles.None, out var parsedDate))
+            if (!DateConverter.TryConvertToDateOnly(date, out DateOnly parsedDate))
                 return BadRequest("Invalid date format. Use dd.MM.yyyy");
-
             var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, parsedDate);
             return Ok(result);
         }
@@ -35,17 +32,20 @@ namespace SERVER.Controllers
         [HttpGet("availableQueuesForToday")]
         public async Task<IActionResult> GetAvailableQueuesForToday([FromQuery] string firstName, [FromQuery] string lastName)
         {
-            var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            var today = DateOnly.FromDateTime(DateTime.Now);
+            var result = await _managerBL._doctorBL.IsDoctorAvailable(firstName, lastName, today);
             return Ok(result);
         }
 
         [HttpPost("makeAppointment")]
-        public async Task<IActionResult> MakeAppointment([FromQuery] string idDoctor, [FromQuery] string idClient, [FromQuery] DateTime date)
+        public async Task<IActionResult> MakeAppointment([FromQuery] string idDoctor, [FromQuery] string idClient, [FromQuery] string date,int hour)
         {
-            await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), date);
-            return Ok("Appointment added successfully");
-        }
+            if (!DateConverter.TryConvertToDateOnly(date, out DateOnly appointmentDate))
+                return BadRequest("Invalid date format. Use dd.MM.yyyy");
 
+            await _managerBL._clinicQueueBL.MakeAnAppointment(idDoctor.Trim(), idClient.Trim(), appointmentDate, hour);
+            return Ok($"Appointment added successfully with doctor:{idDoctor}, client:{idClient}, date:{date},hour:{hour}");
+        }
         [HttpPost("addQueues")]
         public async Task<IActionResult> AddQueues()
         {
@@ -54,11 +54,10 @@ namespace SERVER.Controllers
         }
 
         [HttpGet("clients")]
-        public async Task<ActionResult<List<Client>>> GetClients()
+        public async Task<ActionResult<List<M_Client>>> GetClients()
         {
-            return await _managerBL._clientBL.GetAllClients();
+            return await _managerBL._clientBL.GetAllClients();  
         }
-
         [HttpGet("clients/{id}")]
         public async Task<ActionResult<Client>> GetClientById(string id)
         {
@@ -67,7 +66,7 @@ namespace SERVER.Controllers
         }
 
         [HttpPost("clients")]
-        public async Task<IActionResult> AddClient([FromBody] Client client)
+        public async Task<IActionResult> AddClient([FromBody] M_Client client)
         {
             await _managerBL._clientBL.AddClient(client);
             return Ok("Client added successfully");
@@ -81,11 +80,12 @@ namespace SERVER.Controllers
         }
 
         [HttpPut("clients")]
-        public async Task<IActionResult> UpdateClient([FromBody] Client updatedClient)
+        public async Task<IActionResult> UpdateClient([FromBody] M_Client updatedClient)
         {
-            var existingClient = await _managerBL._clientBL.GetClientById(updatedClient.IdNumber);
-            await _managerBL._clientBL.UpdateClient(updatedClient, existingClient);
+            var existingClientId = updatedClient.IdNumber;
+            await _managerBL._clientBL.UpdateClient(updatedClient, existingClientId);
             return Ok("Client updated successfully");
         }
+
     }
 }

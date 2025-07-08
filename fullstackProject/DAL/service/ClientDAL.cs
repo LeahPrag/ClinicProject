@@ -14,7 +14,9 @@ namespace DAL.service
         {
             try
             {
-                return await _dbManager.Clients.ToListAsync();
+                return await _dbManager.Clients
+                    .Include(c => c.ClinicQueues)
+                    .ToListAsync();
             }
             catch (Exception ex)
             {
@@ -25,7 +27,9 @@ namespace DAL.service
         {
             try
             {
-                return await _dbManager.Clients.FirstOrDefaultAsync(x => x.IdNumber == id);
+                return await _dbManager.Clients
+                    .Include(c => c.ClinicQueues)
+                    .FirstOrDefaultAsync(x => x.IdNumber == id);
             }
             catch (Exception ex)
             {

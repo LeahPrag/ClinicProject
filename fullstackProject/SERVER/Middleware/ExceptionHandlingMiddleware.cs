@@ -26,7 +26,7 @@ namespace SERVER.Middleware
         {
             int statusCode = 500;
             string title = "Internal Server Error";
-            string message = "Something went wrong.";
+            string message = exception.Message;
 
             switch (exception)
             {

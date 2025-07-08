@@ -1,39 +1,42 @@
 using BL.API;
-using BL.service;
-using DAL.service;
-using DAL.API;
-using DAL.Models;
 using AutoMapper;
 using SERVER.Middleware;
-
+using DAL.Models;
+using BL.service;
+using DAL.API;
+using DAL.service;
+using BL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+});
 
+// DAL
+builder.Services.AddScoped<IClientDAL, ClientDAL>();
+builder.Services.AddScoped<IDoctorDAL, DoctorDAL>();
+builder.Services.AddScoped<IAvailableQueueDAL, AvailableQueueDAL>();
+builder.Services.AddScoped<IManagerDAL, ManagerDAL>();
+builder.Services.AddScoped<DB_Manager>();
 
-
-builder.Services.AddControllers();
-
-builder.Services.AddSingleton<IManagerBL, ManagerBL>();
-//builder.Services.AddSingleton<DB_Manager>();
-
+// BL
+builder.Services.AddScoped<IClientBL, ClientBL>();
+builder.Services.AddScoped<IDoctorBL, DoctorBL>();
+builder.Services.AddScoped<IManagerBL, ManagerBL>();
 
 builder.Services.AddEndpointsApiExplorer();
-
 builder.Services.AddSwaggerGen();
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
-
-//add it for mapper profil 
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Mapper).Assembly));
+builder.Services.AddAutoMapper(typeof(ClinicQueueMappingProfile));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         policy => policy.AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod());
-});
-
+});    
 var app = builder.Build();
-
 
 if (app.Environment.IsDevelopment())
 {
@@ -44,10 +47,9 @@ app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthorization();
-
 app.MapControllers();
-
-
-
-
 app.Run();
+
+
+
+

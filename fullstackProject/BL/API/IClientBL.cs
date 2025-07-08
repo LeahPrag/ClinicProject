@@ -1,12 +1,13 @@
 ﻿using DAL.Models;
+using BL.Models;
 namespace BL.API
 {
     public interface IClientBL
     {
-        Task<List<Client>> GetAllClients();
-        Task<Client> GetClientById(string id);
-        Task AddClient(Client client);
+        Task<List<M_Client>> GetAllClients();
+        Task<M_Client> GetClientById(string id);
+        Task AddClient(M_Client client);
         Task RemoveClient(string id);
-        Task UpdateClient(Client updatedClient, Client existingClient);
+        Task UpdateClient(M_Client updatedClient, string existingClientId);
     }
 }

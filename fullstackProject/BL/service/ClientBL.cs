@@ -3,6 +3,8 @@ using BL.API;
 using DAL.API;
 using BL.Exceptions;
 using System.Text.RegularExpressions;
+using AutoMapper;
+using BL.Models;
 using DAL.service;
 
 namespace BL.service
@@ -10,86 +12,54 @@ namespace BL.service
     public class ClientBL : IClientBL
     {
         private readonly IClientDAL _clientDal;
+        private readonly IMapper _mapper;
 
-        public ClientBL(IManagerDAL managerDAL)
+        public ClientBL(IManagerDAL managerDAL, IMapper mapper)
         {
             _clientDal = managerDAL._clientDAL;
+            _mapper = mapper;
         }
-
-        public async Task<List<Client>> GetAllClients()
+        public async Task<List<M_Client>> GetAllClients()
         {
-            try
-            {
-                return await _clientDal.GetAllClients();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("BL Error - GetAllClients: " + ex.Message, ex);
-            }
+            var clients = await _clientDal.GetAllClients();
+            return _mapper.Map<List<M_Client>>(clients);
         }
-        public async Task<Client> GetClientById(string id)
+        public async Task<M_Client> GetClientById(string id)
         {
-            try
-            {
-                var client = await _clientDal.GetClientById(id);
-                return client ?? throw new ClientNotExistException(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("BL Error - GetClientById: " + ex.Message, ex);
-            }
+            var client = await _clientDal.GetClientById(id);
+            return client == null ? throw new ClientNotExistException(id) : _mapper.Map<M_Client>(client);
         }
-        public async Task AddClient(Client client)
+        public async Task AddClient(M_Client mClient)
         {
-            try
-            {
-                if (await _clientDal.ClientExistById(client.IdNumber))
-                    throw new ClientAlreadyExistException(client.IdNumber);
+            if (await _clientDal.ClientExistById(mClient.IdNumber))
+                throw new ClientAlreadyExistException(mClient.IdNumber);
 
-                if (!IsValidInput(client.FirstName) || !IsValidInput(client.LastName))
-                    throw new IncompatibleOrIincompleteValuesException();
+            if (!IsValidInput(mClient.FirstName) || !IsValidInput(mClient.LastName) || !IsValidEmail(mClient.Email) || !IsValidPhone(mClient.Phone))
+                throw new IncompatibleOrIincompleteValuesException();
 
-                if (client.IdNumber.Length != 9 || !IsValidDateOfBirth(client.BirthDate))
-                    throw new IncompatibleOrIincompleteValuesException();
-
-                await _clientDal.AddClient(client);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("BL Error - AddClient: " + ex.Message, ex);
-            }
+            var client = _mapper.Map<Client>(mClient);
+            await _clientDal.AddClient(client);
         }
+
         public async Task RemoveClient(string id)
         {
-            try
-            {
-                var client = await GetClientById(id);
-                await Task.Run(() => _clientDal.RemoveClient(client));
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("BL Error - RemoveClient: " + ex.Message, ex);
-            }
+            var client = await _clientDal.GetClientById(id) ?? throw new ClientNotExistException(id);
+            await Task.Run(() => _clientDal.RemoveClient(client));
         }
-        public async Task UpdateClient(Client updatedClient, Client existingClient)
+
+        public async Task UpdateClient(M_Client updatedMClient, string existingClientId)
         {
-            try
-            {
-                await GetClientById(existingClient.IdNumber);
+            var existingClient = await _clientDal.GetClientById(existingClientId) ?? throw new ClientNotExistException(existingClientId);
+            if (!IsValidEmail(updatedMClient.Email) ||
+                !IsValidInput(updatedMClient.LastName) ||
+                !IsValidPhone(updatedMClient.Phone) ||
+                !IsValidInput(updatedMClient.Address))
+                throw new IncompatibleOrIincompleteValuesException();
 
-                if (!IsValidEmail(updatedClient.Email) ||
-                    !IsValidInput(updatedClient.LastName) ||
-                    !IsValidPhone(updatedClient.Phone) ||
-                    !IsValidInput(updatedClient.Address))
-                    throw new IncompatibleOrIincompleteValuesException();
-
-                await _clientDal.UpdateClient(updatedClient, existingClient);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("BL Error - UpdateClient: " + ex.Message, ex);
-            }
+            var updatedClient = _mapper.Map<Client>(updatedMClient);
+            await _clientDal.UpdateClient(updatedClient, existingClient);
         }
+
         public static bool IsValidDateOfBirth(DateOnly date)
         {
             var today = DateOnly.FromDateTime(DateTime.Today);
@@ -111,6 +81,7 @@ namespace BL.service
                 return false;
             }
         }
+
         public static bool IsValidPhone(string? phone)
         {
             if (string.IsNullOrWhiteSpace(phone))
