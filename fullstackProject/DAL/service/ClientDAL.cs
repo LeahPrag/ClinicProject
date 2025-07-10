@@ -16,6 +16,7 @@ namespace DAL.service
             {
                 return await _dbManager.Clients
                     .Include(c => c.ClinicQueues)
+                    .ThenInclude(c => c.Doctor)
                     .ToListAsync();
             }
             catch (Exception ex)

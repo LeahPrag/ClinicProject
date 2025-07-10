@@ -8,11 +8,7 @@ using DAL.service;
 using BL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-{
-    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-});
+builder.Services.AddControllers();
 
 // DAL
 builder.Services.AddScoped<IClientDAL, ClientDAL>();
