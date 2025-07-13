@@ -148,24 +148,34 @@ namespace BL.service
 				throw new SpecializationNotExistException(specialization);
 			}
 		}
-		public async Task AddDoctor(Doctor doctor)
-		{
-			try
-			{
-				if (await _managerDal._doctorDAL.SearchADoctorById(doctor.IdNumber))
-					throw new DoctorAlreadyExistException(doctor.IdNumber);
-				if (!IsValidInput(doctor.FirstName) || !IsValidInput(doctor.LastName))
-					throw new IncompatibleOrIincompleteValuesException();
-				if (doctor.IdNumber.Length != 9)
-					throw new IncompatibleOrIincompleteValuesException();
+        public async Task AddDoctor(M_Doctor mDoctor)
+        {
+            try
+            {
+                var doctor = new Doctor
+                {
+                    FirstName = mDoctor.FirstName,
+                    LastName = mDoctor.LastName,
+                    IdNumber = mDoctor.IdNumber,
+                    Specialization = mDoctor.Specialization
+                };
 
-				await _managerDal._doctorDAL.AddADoctor(doctor);
-			}
-			catch (Exception)
-			{
-				throw new IncompatibleOrIincompleteValuesException();
-			}
-		}
+                if (await _managerDal._doctorDAL.SearchADoctorById(doctor.IdNumber))
+                    throw new DoctorAlreadyExistException(doctor.IdNumber);
+
+                if (!IsValidInput(doctor.FirstName) || !IsValidInput(doctor.LastName))
+                    throw new IncompatibleOrIincompleteValuesException();
+
+                if (doctor.IdNumber.Length != 9)
+                    throw new IncompatibleOrIincompleteValuesException();
+
+                await _managerDal._doctorDAL.AddADoctor(doctor);
+            }
+            catch (Exception)
+            {
+                throw new IncompatibleOrIincompleteValuesException();
+            }
+        }
 		public static bool IsValidInput(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -175,6 +185,10 @@ namespace BL.service
         public async Task<bool> SearchDoctorById(string idNumber)
         {
             return await _managerDal._doctorDAL.SearchADoctorById(idNumber);
+        }
+		public async Task<M_Doctor> GetDoctorById(string id)
+		{
+            return _mapper.Map <M_Doctor>( await _managerDal._doctorDAL.GetADoctorById(id) ?? throw new DoctorNotExistException(id));
         }
     }
 }

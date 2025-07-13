@@ -55,7 +55,7 @@ namespace SERVER.Controllers
         }
 
         [HttpPost("addDoctor")]
-        public async Task<IActionResult> AddDoctor([FromBody] Doctor doctor)
+        public async Task<IActionResult> AddDoctor([FromBody] M_Doctor doctor)
         {
             await managerBL._doctorBL.AddDoctor(doctor);
             return Ok("Doctor added successfully");
@@ -81,5 +81,14 @@ namespace SERVER.Controllers
             await managerBL._doctorBL.UpdateDoctor(updatedDoctor);
             return Ok("Doctor updated successfully");
         }
+        [HttpGet("GetDoctorName")]
+        public async Task<IActionResult> GetDoctorName([FromQuery] string id)
+        {
+            var doctor = await managerBL._doctorBL.GetDoctorById(id);
+            if (doctor == null)
+                return NotFound("Doctor not found");
+            return Ok($"{doctor.FirstName} {doctor.LastName}");
+        }
+
     }
 }

@@ -1,5 +1,4 @@
 ﻿using BL.Models;
-using DAL.Models;
 
 namespace BL.API
 {
@@ -13,10 +12,10 @@ namespace BL.API
         Task<List<M_AvailableQueue>> GetDoctorAvailableQueuesForASpesificday(string firstName, string lastName, DateOnly day);
         Task<List<M_AvailableQueue>> GetAvailableQueuesForASpesificday(DateOnly day);
         Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization);
-        Task AddDoctor(Doctor doctor);
+        Task AddDoctor(M_Doctor doctor);
         Task DeleteADoctor(string id);
         Task UpdateDoctor(UpdateDoctorDto updatedDoctor);
         Task<bool> SearchDoctorById(string idNumber);
-
+        Task<M_Doctor> GetDoctorById(string id);
     }
 }
