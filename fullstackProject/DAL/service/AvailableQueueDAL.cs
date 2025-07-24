@@ -53,7 +53,8 @@ namespace DAL.service
 		{
 			return await db.AvailableQueues
 						.Include(q => q.Doctor)
-						.Where(q => q.Doctor.Specialization == specialization)
+						.Where(q => q.Doctor.Specialization == specialization&&
+						q.AppointmentDate>= DateTime.Now)
 						.ToListAsync();
 		}
 		public async Task<AvailableQueue> GetDoctorAvailableQueueForASpecificHour(int doctorId, DateTime AppointmentDate)

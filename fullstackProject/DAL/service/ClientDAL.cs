@@ -30,6 +30,7 @@ namespace DAL.service
             {
                 return await _dbManager.Clients
                     .Include(c => c.ClinicQueues)
+                        .ThenInclude(d=>d.Doctor)
                     .FirstOrDefaultAsync(x => x.IdNumber == id);
             }
             catch (Exception ex)

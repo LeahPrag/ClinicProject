@@ -20,9 +20,9 @@ namespace SERVER.Controllers
         }
 
         [HttpGet("numOfClientsForToday")]
-        public async Task<IActionResult> GetNumOfClientForToday([FromQuery] string firstName, [FromQuery] string lastName)
+        public async Task<IActionResult> GetNumOfClientForToday([FromQuery] string idNumber)
         {
-            int count = await managerBL._doctorBL.GetNumOfClientForToday(firstName, lastName, DateOnly.FromDateTime(DateTime.Now));
+            int count = await managerBL._doctorBL.GetNumOfClientForToday(idNumber, DateOnly.FromDateTime(DateTime.Now));
             return Ok(count);
         }
 
@@ -62,9 +62,9 @@ namespace SERVER.Controllers
         }
 
         [HttpDelete("deleteADayOfWork")]
-        public async Task<IActionResult> DeleteADayOfWork([FromQuery] string firstName, [FromQuery] string lastName, [FromQuery] DateOnly day)
+        public async Task<IActionResult> DeleteADayOfWork([FromQuery] string idNumber, [FromQuery] DateOnly day)
         {
-            bool deleted = await managerBL._doctorBL.DeleteADayOfWork(firstName, lastName, day);
+            bool deleted = await managerBL._doctorBL.DeleteADayOfWork(idNumber, day);
             return Ok(deleted);
         }
 

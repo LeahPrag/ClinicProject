@@ -87,5 +87,14 @@ namespace SERVER.Controllers
             return Ok("Client updated successfully");
         }
 
+        [HttpGet("GetClientName")]
+        public async Task<IActionResult> GetClientName([FromQuery] string id)
+        {
+            var client = await _managerBL._clientBL.GetClientById(id);
+            if (client == null)
+                return NotFound("Client not found");
+            return Ok($"{client.FirstName} {client.LastName}");
+        }
+
     }
 }

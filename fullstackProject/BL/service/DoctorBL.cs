@@ -16,138 +16,138 @@ namespace BL.service
             _managerDal = managerDal;
             _mapper = mapper;
         }
-		public async Task<int> GetNumOfClientForToday(string firstName, string lastName, DateOnly day)
-		{
-			try
-			{
-				int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-				var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, day);
-				return queues.Count;
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(firstName, lastName);
-			}
-		}
-		public async Task<bool> DeleteADayOfWork(string firstName, string lastName, DateOnly day)
+        public async Task<int> GetNumOfClientForToday(string idNumber, DateOnly day)
         {
-            try { 
-            int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            List<ClinicQueue> queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, day);
-            foreach (var q in queues)
+            try
             {
-                await _managerDal._clinicQueueDAL.DeleteAnApointment(q);
+                var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(idNumber, day);
+                return queues.Count;
             }
-            return true;
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(firstName, lastName);
-			}
-		}
-		public async Task DeleteADoctor(string id)
-		{
-			try
-			{
-				Doctor doctor = await _managerDal._doctorDAL.GetADoctorById(id) ?? throw new DoctorNotExistException(id);
-				await _managerDal._doctorDAL.DeleteADoctor(doctor);
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(id);
-			}
-		}
-		public async Task UpdateDoctor(UpdateDoctorDto updatedDoctor)
-		{
-			try
-			{
-				Doctor existingDoctor = await _managerDal._doctorDAL.GetADoctorById(updatedDoctor.IdNumber) ?? throw new DoctorNotExistException(updatedDoctor.IdNumber);
-				if (!string.IsNullOrWhiteSpace(updatedDoctor.FirstName))
-					existingDoctor.FirstName = updatedDoctor.FirstName;
-				if (!string.IsNullOrWhiteSpace(updatedDoctor.LastName))
-					existingDoctor.LastName = updatedDoctor.LastName;
-				if (!string.IsNullOrWhiteSpace(updatedDoctor.Specialization))
-					existingDoctor.Specialization = updatedDoctor.Specialization;
-				await _managerDal._doctorDAL.UpdateDoctor(existingDoctor);
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(updatedDoctor.IdNumber);
-			}
-		}
-		public async Task<List<M_AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(idNumber);
+            }
+        }
+        public async Task<bool> DeleteADayOfWork(string doctorId, DateOnly day)
         {
-            try { 
-            int doctorId =await  _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            var Queues= await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
-            return _mapper.Map<List<M_AvailableQueue>>(Queues);
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(firstName, lastName);
-			}
-		}
+            try
+            {
+                List<ClinicQueue> queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, day);
+                foreach (var q in queues)
+                {
+                    await _managerDal._clinicQueueDAL.DeleteAnApointment(q);
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(doctorId);
+            }
+        }
+        public async Task DeleteADoctor(string id)
+        {
+            try
+            {
+                Doctor doctor = await _managerDal._doctorDAL.GetADoctorById(id) ?? throw new DoctorNotExistException(id);
+                await _managerDal._doctorDAL.DeleteADoctor(doctor);
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(id);
+            }
+        }
+        public async Task UpdateDoctor(UpdateDoctorDto updatedDoctor)
+        {
+            try
+            {
+                Doctor existingDoctor = await _managerDal._doctorDAL.GetADoctorById(updatedDoctor.IdNumber) ?? throw new DoctorNotExistException(updatedDoctor.IdNumber);
+                if (!string.IsNullOrWhiteSpace(updatedDoctor.FirstName))
+                    existingDoctor.FirstName = updatedDoctor.FirstName;
+                if (!string.IsNullOrWhiteSpace(updatedDoctor.LastName))
+                    existingDoctor.LastName = updatedDoctor.LastName;
+                if (!string.IsNullOrWhiteSpace(updatedDoctor.Specialization))
+                    existingDoctor.Specialization = updatedDoctor.Specialization;
+                await _managerDal._doctorDAL.UpdateDoctor(existingDoctor);
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(updatedDoctor.IdNumber);
+            }
+        }
+        public async Task<List<M_AvailableQueue>> IsDoctorAvailable(string firstName, string lastName, DateOnly day)
+        {
+            try
+            {
+                int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+                var Queues = await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
+                return _mapper.Map<List<M_AvailableQueue>>(Queues);
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(firstName, lastName);
+            }
+        }
         public async Task<List<M_Doctor>> GetDoctors()
         {
             var doctors = await _managerDal._doctorDAL.GetDoctors();
             return _mapper.Map<List<M_Doctor>>(doctors);
         }
-		public async Task<List<M_ClinicQueue>> GetDoctorQueuesForToday(string idNumber, DateOnly day)
-		{
-			try
-			{
-				int doctorId = await _managerDal._doctorDAL.GetDoctorIdByIdNumber(idNumber);
-				var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(doctorId, DateOnly.FromDateTime(DateTime.Now));
-				return _mapper.Map<List<M_ClinicQueue>>(queues);
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(idNumber);
-			}
-		}
-		public async Task<List<M_AvailableQueue>> GetDoctorAvailableQueuesForASpesificday(string firstName, string lastName, DateOnly day)
+        public async Task<List<M_ClinicQueue>> GetDoctorQueuesForToday(string idNumber, DateOnly day)
         {
-            try { 
-            int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
-            var queues = await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId,day);
-            return _mapper.Map<List<M_AvailableQueue>>(queues);
-			}
-			catch (Exception)
-			{
-				throw new DoctorNotExistException(firstName, lastName);
-			}
-		}
-		public async Task<List<M_AvailableQueue>> GetAvailableQueuesForASpesificday(DateOnly day)
-		{
-			try
-			{
-				var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay(day);
-				return _mapper.Map<List<M_AvailableQueue>>(queues);
-			}
-			catch (Exception)
-			{
-				throw new AvailableQueueNotFoundException("general", day.ToDateTime(TimeOnly.MinValue));
-			}
-		}
-		public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
-		{
-			try
-			{
-				if (Enum.TryParse<Specialization>(specialization, true, out var result))
-				{
-					var queues = await _managerDal._availableQueueDAL.AvailableQueuesForASpezesilation(specialization);
-					return _mapper.Map<List<M_AvailableQueue>>(queues);
-				}
-				else
-				{
-					throw new SpecializationNotExistException(specialization);
-				}
-			}
-			catch (Exception)
-			{
-				throw new SpecializationNotExistException(specialization);
-			}
-		}
+            try
+            {
+                var queues = await _managerDal._doctorDAL.GetDoctorQueuesForASpesificDay(idNumber, DateOnly.FromDateTime(DateTime.Now));
+                return _mapper.Map<List<M_ClinicQueue>>(queues);
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(idNumber);
+            }
+        }
+        public async Task<List<M_AvailableQueue>> GetDoctorAvailableQueuesForASpesificday(string firstName, string lastName, DateOnly day)
+        {
+            try
+            {
+                int doctorId = await _managerDal._doctorDAL.SearchADoctor(firstName, lastName);
+                var queues = await _managerDal._availableQueueDAL.GetDoctorAvailableQueueForASpesificDay(doctorId, day);
+                return _mapper.Map<List<M_AvailableQueue>>(queues);
+            }
+            catch (Exception)
+            {
+                throw new DoctorNotExistException(firstName, lastName);
+            }
+        }
+        public async Task<List<M_AvailableQueue>> GetAvailableQueuesForASpesificday(DateOnly day)
+        {
+            try
+            {
+                var queues = await _managerDal._availableQueueDAL.GetAvailableQueueForASpesificDay(day);
+                return _mapper.Map<List<M_AvailableQueue>>(queues);
+            }
+            catch (Exception)
+            {
+                throw new AvailableQueueNotFoundException("general", day.ToDateTime(TimeOnly.MinValue));
+            }
+        }
+        public async Task<List<M_AvailableQueue>> AvailableQueuesForASpezesilation(string specialization)
+        {
+            try
+            {
+                if (Enum.TryParse<Specialization>(specialization, true, out var result))
+                {
+                    var queues = await _managerDal._availableQueueDAL.AvailableQueuesForASpezesilation(specialization);
+                    return _mapper.Map<List<M_AvailableQueue>>(queues);
+                }
+                else
+                {
+                    throw new SpecializationNotExistException(specialization);
+                }
+            }
+            catch (Exception)
+            {
+                throw new SpecializationNotExistException(specialization);
+            }
+        }
         public async Task AddDoctor(M_Doctor mDoctor)
         {
             try
@@ -176,7 +176,7 @@ namespace BL.service
                 throw new IncompatibleOrIincompleteValuesException();
             }
         }
-		public static bool IsValidInput(string input)
+        public static bool IsValidInput(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
                 throw new IncompatibleOrIincompleteValuesException();
@@ -186,9 +186,9 @@ namespace BL.service
         {
             return await _managerDal._doctorDAL.SearchADoctorById(idNumber);
         }
-		public async Task<M_Doctor> GetDoctorById(string id)
-		{
-            return _mapper.Map <M_Doctor>( await _managerDal._doctorDAL.GetADoctorById(id) ?? throw new DoctorNotExistException(id));
+        public async Task<M_Doctor> GetDoctorById(string id)
+        {
+            return _mapper.Map<M_Doctor>(await _managerDal._doctorDAL.GetADoctorById(id) ?? throw new DoctorNotExistException(id));
         }
     }
 }
