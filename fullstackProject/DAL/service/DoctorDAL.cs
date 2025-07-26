@@ -91,8 +91,32 @@ namespace DAL.service
         }
         public async Task DeleteADoctor(Doctor doctor)
         {
+            var doctorId = doctor.DoctorId;
+
+            // 1. מחק את כל DayDoctor של הרופא
+            var dayDoctors = await _dbManager.DayDoctors
+                .Where(d => d.DoctorId == doctorId)
+                .ToListAsync();
+            _dbManager.DayDoctors.RemoveRange(dayDoctors);
+
+            // 2. מחק את כל AvailableQueue של הרופא
+            var availableQueues = await _dbManager.AvailableQueues
+                .Where(a => a.DoctorId == doctorId)
+                .ToListAsync();
+            _dbManager.AvailableQueues.RemoveRange(availableQueues);
+
+
+            var clinicQueues = await _dbManager.ClinicQueues
+                .Where(q => q.DoctorId == doctorId)
+                .ToListAsync();
+            _dbManager.ClinicQueues.RemoveRange(clinicQueues);
+
+
             _dbManager.Doctors.Remove(doctor);
+
             await _dbManager.SaveChangesAsync();
         }
+
     }
 }
+
