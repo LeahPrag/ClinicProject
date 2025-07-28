@@ -11,17 +11,24 @@ namespace DAL.service
         {
             _dbManager = dbManager;
         }
-        public async Task<List<ClinicQueue>> GetDoctorQueuesForASpesificDay(string doctorId, DateOnly day)
+        public async Task<List<ClinicQueue>> GetDoctorQueuesForASpesificDay(string idNumber, DateOnly day)
         {
             var dateToCheck = day.ToDateTime(TimeOnly.MinValue).Date;
-            int number = int.Parse(doctorId);
+            // Find the DoctorId by idNumber
+            var doctor = await _dbManager.Doctors.FirstOrDefaultAsync(d => d.IdNumber == idNumber);
+            if (doctor == null)
+                throw new Exception($"Doctor with idNumber {idNumber} not found");
+
+            int doctorId = doctor.DoctorId;
+
             List<ClinicQueue> clinicQueues = await _dbManager.ClinicQueues
                 .Include(q => q.Client)
                 .Include(q => q.Doctor)
-                .Where(q => q.DoctorId == number &&
+                .Where(q => q.DoctorId == doctorId &&
                     q.AppointmentDate.Date == dateToCheck)
                 .ToListAsync();
-            return clinicQueues ?? throw new Exception("There is no queues for this docror in this date");
+
+            return clinicQueues ?? throw new Exception("There is no queues for this doctor on this date");
         }
         public async Task<int> SearchADoctor(string doctor_firtsname, string doctor_lastname)
         {

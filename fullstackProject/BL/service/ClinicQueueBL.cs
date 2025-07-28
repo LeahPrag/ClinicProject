@@ -1,5 +1,6 @@
 ﻿using BL.API;
 using BL.Exceptions;
+using BL.Models;
 using DAL.Models;
 namespace BL.service
 {
@@ -66,5 +67,30 @@ namespace BL.service
                 }
             }
         }
+        public async Task<List<M_ClinicQueue>> GetClientQueues(string clientId)
+        {
+            var queues = await _managerDal._clinicQueueDAL.GetClientsQueues(clientId);
+
+            var result = queues.Select(q => new M_ClinicQueue
+            {
+                QueueId = q.QueueId,
+                AppointmentDate = q.AppointmentDate,
+                ClientId = q.Client.ClientId,
+                ClientFirstName = q.Client.FirstName,
+                ClientLastName = q.Client.LastName,
+                DoctorId = q.Doctor.DoctorId,
+                DoctorFirstName = q.Doctor.FirstName,
+                DoctorLastName = q.Doctor.LastName
+            }).ToList();
+
+            return result;
+        }
+
+        public async Task<List<int>> ClientsNames(int doctorID)
+        {
+            return await _managerDal._clinicQueueDAL.ClientsNames(doctorID);
+        }
+
+
     }
 }

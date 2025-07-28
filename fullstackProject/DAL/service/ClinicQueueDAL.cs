@@ -11,9 +11,15 @@ namespace DAL.service
         {
             _dbManager = dbManager;
         }
-        public async Task<List<ClinicQueue>> GetList()
+        public async Task<List<ClinicQueue>> GetClientsQueues(string clientId)
         {
-            return await _dbManager.ClinicQueues.ToListAsync();
+            var clientQueues = await _dbManager.ClinicQueues
+                .Include(q => q.Client)
+                .Include(q => q.Doctor)
+                .Where(q => q.Client.IdNumber == clientId)
+                .ToListAsync();
+
+            return clientQueues;
         }
         public async Task<bool> DeleteAnApointment(string doctorID, string clientID, DateTime date)
         {

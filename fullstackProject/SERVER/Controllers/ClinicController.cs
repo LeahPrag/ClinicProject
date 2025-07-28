@@ -96,5 +96,16 @@ namespace SERVER.Controllers
             return Ok($"{client.FirstName} {client.LastName}");
         }
 
+        [HttpGet("GetClientQueues")]
+        public async Task<IActionResult> GetClientQueues([FromQuery] string clientId)
+        {
+            var queues= await _managerBL._clinicQueueBL.GetClientQueues(clientId);
+            if (queues == null)
+            {
+                return NotFound("No Queues found.");
+            }
+            return Ok(queues);
+        }
+
     }
 }

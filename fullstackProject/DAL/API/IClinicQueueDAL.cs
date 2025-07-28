@@ -6,6 +6,6 @@ namespace DAL.API
         Task<List<int>> ClientsNames(int doctorID);  
         Task<bool> DeleteAnApointment(ClinicQueue queue);
         Task<bool> DeleteAnApointment(string doctorID, string clientID, DateTime date);
-        Task<List<ClinicQueue>> GetList();
+        Task<List<ClinicQueue>> GetClientsQueues(string clientId);
     }
 }
